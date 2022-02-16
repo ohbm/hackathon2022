@@ -1,0 +1,49 @@
+<!-- About Hackathon Section -->
+<section id="about-hackathon" class="about-hackathon">
+    <div class="content-wrapper">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>{{ site.aboutHackathonTitle }}</h3>
+            <div style="text-align: justify;">
+                <h6>
+                    <br>The <b>HackTrack</b> is the official <b>fun side</b> of a <b>Brainhack</b> event, where people
+                    can work together on projects. What projects? Any kind! From
+                    <a href="https://github.com/ohbm/hackathon2020/issues/124" target="_blank">exploding brains</a> to
+                    <a href="https://github.com/ohbm/hackathon2020/issues/166" target="_blank">resource gathering</a> and
+                    <a href="https://github.com/ohbm/hackathon2020/issues/156" target="_blank">data sharing</a>!<br><br>
+
+                    Would you like to propose a project? Just open
+                    <a href="https://github.com/ohbm/hackathon2021/issues/new/choose" target="_blank">
+                        an issue on our GitHub repository</a> and fill
+                    the template, we will be in touch to help you get going! But be sure to
+                    <a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4073" target="_blank">
+                        register</a> first!<br><br>
+
+                    Do you plan to focus on visualization? Are you getting images so weird that they are kind of
+                    beautiful? Consider participating in the <em>output-of-hackathon</em> competition organized by the
+                    <a href="https://ohbm-brainart.github.io" target="_blank">BrainArt SIG</a>! You can find the
+                    submission form <a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__j4T6xBUQlNJUENRTFVESFgzQ1BLVFUwM0oyUUhLRC4u" target="_blank">here</a>.<br><br>
+
+                    And one more thing: as this year we are sponsored by QMENTA, you can take advantage of their
+                    platform to run your project using resources in the cloud! Do you want to know more about it? You
+                    can check out <a href="https://www.youtube.com/watch?v=N_gKc30kdEA&t=2s" target="_blank">this video</a> or you can get in touch directly with them
+                    on their <a href="http://brain-innovation-hub.slack.com/" target="_blank">Brain Innovation Hub Slack</a>!
+                </h6>
+            </div>
+            {% for row in site.data.projects %}
+            {% assign check = forloop.index0 | modulo:2 %}
+            <div class="hackathon-row {% if check == 0 %}float-left{% else %}float-right{% endif %} col-md-12">
+                <div class="hackathon-img-wrapper animated hiding" data-animation="{% if check == 0 %}fadeInLeft{% else %}fadeInRight{% endif %}" data-delay="0">
+                    <img class="img-responsive" src="{{ site.baseurl }}/img/hackathon/{{ row.image }}" alt="Hackathon">
+                </div>
+                <div class="hackathon-details animated hiding" data-animation="{% if check == 0 %}fadeInRight{% else %}fadeInLeft{% endif %}" data-delay="0">
+                    <h4>{{ row.title }}</h4>
+                    <h6> Time slot : <a href="{{ site.baseurl }}/schedule">{{ row.timeslot }}</a></h6>
+                    <p>PROJECT DESCRIPTION</p>
+                    <p>{{ row.details }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End About Hackathon Section -->

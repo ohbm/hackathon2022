@@ -1,0 +1,147 @@
+-
+  id: 0
+  name: "Matteo"
+  surname: "Mancini"
+  title: "Hackathon Co-chair"
+  thumbnailUrl: matteo_mancini.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/ingmatman"}
+    - {name: "github", link: "https://github.com/matteomancini"}
+-
+  id: 1
+  name: "Tibor"
+  surname: "Auer"
+  title: "Hackathon Co-chair"
+  thumbnailUrl: tibor_auer.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/TiborAuer"}
+    - {name: "github", link: "https://github.com/tiborauer"}
+-
+  id: 2
+  name: "Aki"
+  surname: "Nikolaidis"
+  title: "OS SIG Chair"
+  thumbnailUrl: aki_nikolaidis.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/AkiNikolaidis"}
+-
+  id: 3
+  name: "Katie"
+  surname: "Bottenhorn"
+  title: "OS SIG Secretary"
+  thumbnailUrl: katie_bottenhorn.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/62442katieb"}
+-
+  id: 4
+  name: "Tristan"
+  surname: "Glatard"
+  title: "OS SIG Treasurer"
+  thumbnailUrl: tristan_glatard.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/TristanGlatard"}
+-
+  id: 5
+  name: "Eva"
+  surname: "Alonso Ortiz"
+  title: "Open Science Room Co-organizer"
+  thumbnailUrl: eva_alonso_ortiz.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/EvaAlonsoOrtiz"}
+-
+  id: 6
+  name: "Gabriel"
+  surname: "Gonzalez-Escamilla"
+  title: "Open Science Room Co-organizer"
+  thumbnailUrl: gabriel_gonzalez_escamilla.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/NeuroGabriel"}
+-
+  id: 7
+  name: "Sofie"
+  surname: "Valk"
+  title: "Volunteer Coordinator"
+  thumbnailUrl: sofie_valk.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/sofievalk"}
+-
+  id: 8
+  name: "Melvin"
+  surname: "Selim Atay"
+  title: "Inclusivity Officer"
+  thumbnailUrl: melvin_selim_atay.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/i_am_mel_dev"}
+-
+  id: 9
+  name: "Camille"
+  surname: "Maumet"
+  title: "Past OS SIG Chair"
+  thumbnailUrl: camille_maumet.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/cmaumet"}
+    - {name: "github", link: "https://github.com/cmaumet"}
+-
+  id: 10
+  name: "Ana"
+  surname: "Van Gulick"
+  title: "Past OS SIG Secretary"
+  thumbnailUrl: ana_van_gulick.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/anavangulick"}
+-
+  id: 11
+  name: "Eugene"
+  surname: "Duff"
+  title: "Past OS SIG Treasurer"
+  thumbnailUrl: eugene_duff.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/EugenePDuff"}
+-
+  id: 12
+  name: "Janine"
+  surname: "Bijsterbosch"
+  title: "OS SIG Chair Elect"
+  thumbnailUrl: janine_bijsterbosch.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/PersonomicsLab"}
+-
+  id: 13
+  name: "Johanna"
+  surname: "Bayer"
+  title: "OS SIG Secretary Elect"
+  thumbnailUrl: johanna_bayer.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/likeajumprope"}
+-
+  id: 14
+  name: "Benjamin"
+  surname: "De Leener"
+  title: "OS SIG Treasurer Elect"
+  thumbnailUrl: benjamin_de_leener.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/bendeleener"}
+-
+  id: 15
+  name: "Pierre"
+  surname: "Bellec"
+  title: "OHBM Council Liason"
+  thumbnailUrl: pierre_bellec.jpg
+  team: true
+  social:
+    - {name: "twitter", link: "https://twitter.com/pierre_bellec"}

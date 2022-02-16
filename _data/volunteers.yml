@@ -1,0 +1,271 @@
+# -------------------------------------------------------------------------------------------------#
+#                                      Time slot: rising sun (1AM-6AM UTC)
+# -------------------------------------------------------------------------------------------------#
+    # -
+    #   id: #number
+    #   name: " "
+    #   surname: " "
+    #   title: " "
+    #   location: " "
+    #   thumbnailUrl: # picture file name #  pictures should be added in the img/team folder
+    #   team: true
+    #   social:
+    #     - {name: "github", link: "https://github.com/"}
+    #     - {name: "twitter", link: "https://twitter.com/"}
+# -------------------------------------------------------------------------------------------------#
+# -------------------------------------------------------------------------------------------------#
+- hub:
+  name: "Time slot: rising sun"
+  description:
+  team:
+    -
+      id: 0
+      name: "Johanna"
+      surname: "Bayer"
+      title: "Social media"
+      location: "Melbourne, Australia"
+      thumbnailUrl: johanna_bayer.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/likeajumprope"}
+    -
+      id: 1
+      name: "Kelly"
+      surname: "Garner"
+      title: "Q&A co-host, Project monitor"
+      location: "Brisbane, Australia"
+      thumbnailUrl: kelly_400x400.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/garner_theory"}
+    -
+      id: 2
+      name: "Steffen"
+      surname: "Bollmann"
+      title: "Q&A co-host, Brainhack buddy"
+      location: "Australia"
+      thumbnailUrl: steffen_bollmann.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/sbollmann_MRI"}
+        - {name: "github", link: "https://github.com/stebo85/"}
+    -
+      id: 3
+      name: "Sina"
+      surname: "Mansour L."
+      title: "Q&A co-host"
+      location: "Melbourne, Australia"
+      thumbnailUrl: Sina_Mansour.JPG
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/Sina_Mansour_L/"}
+        - {name: "github", link: "https://github.com/sina-mansour/"}
+    -
+      id: 4
+      name: "Chun-Hui"
+      surname: "Li"
+      title: "Q&A co-host"
+      location: "Taipei, Taiwan"
+      thumbnailUrl: chun-hui_li.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/iamscli/"}
+        - {name: "github", link: "https://github.com/iamsc/"}
+    -
+      id: 5
+      name: "Cooper"
+      surname: "Smouth"
+      title: "Q&A co-host"
+      location: "Brisbane, Australia"
+      thumbnailUrl: cooper_smout.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/coopsmout/"}
+        - {name: "github", link: "https://github.com/coopersmout/"}
+    -
+      id: 6
+      name: "Ye"
+      surname: "Tian"
+      title: "Brainhack host"
+      location: "Melbourne, Australia"
+      thumbnailUrl: ye_tian.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/yetianmed/"}
+        - {name: "github", link: "https://github.com/yetianmed/"}
+    -
+      id: 7
+      name: "Jou-An"
+      surname: "Chung"
+      title: "Q&A co-host"
+      location: "Taipei"
+      thumbnailUrl: JouAn.jpg
+      team: true
+
+# -------------------------------------------------------------------------------------------------#
+#                                      Time slot: atlantis (2PM-7PM UTC)
+# -------------------------------------------------------------------------------------------------#
+    # -
+    #   id: #number
+    #   name: " "
+    #   surname: " "
+    #   title: " "
+    #   location: " "
+    #   thumbnailUrl: # picture file name #  pictures should be added in the img/team folder
+    #   team: true
+    #   social:
+    #     - {name: "github", link: "https://github.com/"}
+    #     - {name: "twitter", link: "https://twitter.com/"}
+# -------------------------------------------------------------------------------------------------#
+# -------------------------------------------------------------------------------------------------#
+- hub:
+  name: "Time slot: atlantis"
+  description:
+  team:
+    -
+      id: 0
+      name: "Isil"
+      surname: "Poyraz Bilgin"
+      title: "Brainhack Diversity Equity and Justice"
+      location: "UK"
+      thumbnailUrl: isil_p.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/complexbrains"}
+        - {name: "github", link: "https://github.com/complexbrains"}
+    -
+      id: 1
+      name: "Steph"
+      surname: "Noble"
+      title: "Social media, Brainhack Diversity Equity and Justice"
+      location: "New Haven, CT, USA"
+      thumbnailUrl: steph_noble.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/sneuroble"}
+        - {name: "github", link: "https://github.com/sneuroble"}
+    -
+      id: 2
+      name: "Jasmine"
+      surname: "Kwasa"
+      title: "Website, Brainhack Diversity Equity and Justice"
+      location: "Pittsburgh, PA, USA"
+      thumbnailUrl: jasmine_kwasa.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "twitter.com/JasmineKwasa "}
+    -
+      id: 3
+      name: "Adina"
+      surname: "Wagner"
+      title: "Q&A co-host"
+      location: "Braunschweig, Germany"
+      thumbnailUrl: adina_wagner.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/AdinaKrik"}
+        - {name: "github", link: "https://github.com/adswa"}
+    -
+      id: 4
+      name: "Hao-Ting"
+      surname: "Wang"
+      title: "Q&A co-host"
+      location: "UK"
+      thumbnailUrl: hao_ting_wang.jpg
+      team: true
+      social:
+        - {name: "github", link: "https://github.com/htwangtw"}
+        - {name: "twitter", link: "https://twitter.com/HaoTing713"}
+    -
+      id: 5
+      name: "Pradeep"
+      surname: "Reddy Raamana"
+      title: "Q&A co-host"
+      location: "Toronto, Canada"
+      thumbnailUrl: pradeepreddyraamana.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/raamana_/"}
+        - {name: "github", link: "https://github.com/raamana/"}
+    -
+      id: 6
+      name: "Stefano"
+      surname: "Moia"
+      title: "Brainhack buddy"
+      location: "Donostia, Spain"
+      thumbnailUrl: stefano_moia.jpg
+      team: true
+    -
+      id: 7
+      name: "JC"
+      surname: "Noble"
+      title: "Brainhack Diversity Equity and Justice"
+      location: "Stockholm, Sweden"
+      thumbnailUrl: joyce_noble.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/JCMolBio/"}
+    -
+      id: 8
+      name: "Danielle"
+      surname: "Kurtin"
+      title: "Q&A co-host"
+      location: "UK"
+      thumbnailUrl: danielle_kurtin.jpg
+      team: true
+      social:
+          - {name: "twitter", link: "https://twitter.com/daniellekurtin/"}
+    -
+      id: 9
+      name: "Gisela"
+      surname: "Govaart"
+      title: "Q&A co-host"
+      location: "Leipzig, Germany"
+      thumbnailUrl: gisela_govaart.png
+      team: true
+      social:
+          - {name: "twitter", link: "https://twitter.com/GiselaGovaart/"}
+          - {name: "github", link: "https://github.com/GiselaGovaart/"}
+    -
+      id: 10
+      name: "Fede"
+      surname: "Raimondo"
+      title: "Q&A co-host"
+      location: "Belgium"
+      thumbnailUrl: fede_raimondo.jpg
+      team: true
+      social:
+          - {name: "twitter", link: "https://twitter.com/RaimondoFede/"}
+          - {name: "github", link: "https://github.com/fraimondo/"}
+    -
+      id: 11
+      name: "Avinash"
+      surname: "Kalyani"
+      title: "Brainhack host"
+      location: "Magdeburg, Germany"
+      thumbnailUrl: avinash_kalyani.jpg
+      team: true
+      social:
+          - {name: "twitter", link: "https://twitter.com/avinash_kalyani/"}
+    -
+      id: 12
+      name: "Surendra"
+      surname: "Maharjan"
+      title: "Brainhack host"
+      location: "Kathmandu, Nepal"
+      thumbnailUrl: surendra_maharjan.png
+      team: true
+      social:
+          - {name: "github", link: "https://github.com/surendra116083/"}
+    - id: 13
+      name: "Ishi"
+      surname: "Tandon"
+      title: "Brainhack host"
+      location: "India"
+      thumbnailUrl: ishi_tandon.jpg
+      team: true
+      social:
+        - {name: "twitter", link: "https://twitter.com/ishitandon18"}
+
+
+

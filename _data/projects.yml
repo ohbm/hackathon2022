@@ -1,0 +1,273 @@
+# PROJECT TEMPLATE
+# -
+#   title: "Your awesome project"
+#   # images must be put in the img/hackathon folder. If there is no image you can use whatever.png
+#   image: whatever.png
+#   details: "Tell us about what you want to achieve. More information here: <a href=https://github.com/ohbm/hackathon2020/issues/INSERT_ISSUE_NUMBER_HERE</a>"
+#   hub: "Americas/ Asia / Pacific / Europe / Middle-East / Africa"
+# -------------------------------------------------------------------------------------------------
+
+# EXAMPLES
+# -
+#   title: "Automated Cortical Lesion Detection using Python Tools"
+#   image: brain_lesion.png
+#   details: "More information here <a href=\"https://github.com/barbrakr/CLF-python\">https://github.com/barbrakr/CLF-python</a>."
+# -
+#   title: "Multi-table PCA methods for group and individual functional connectivity"
+#   image: matrix.png
+#   details: "C-MARINeR is a focused sub-project MARINeR: Multivariate Analysis and Resampling Inference
+#     for Neuroimaging in R. The C stands generally for connectivity, but specifically and statistically:
+#     covariance or correlation. The C-MARINeR project aims to develop and distribute an R package and
+#     ShinyApp. Together, R + Shiny allows for ease of use and, hopefully, simpler exploration of such
+#     complex data, and quicker adoption of the techniques. <br> More info here:
+#     <a href=https://github.com/jennyrieck/C-MARINeR>https://github.com/jennyrieck/C-MARINeR</a>."
+# -
+#   title: "Bring your own method/data"
+#   image: whatever.png
+#   details: "The three methods suggested above are just a starting point. If a group of participants wants to work
+#     on something else, this is of course possible. We have also prepare some data to use the methods above,
+#     but if you have your own data, please bring it with you and try to hack it with the methods presented."
+
+-
+  title: "NeuroDesk - A scalable and easy to use data analysis environment for reproducible neuroimaging"
+  image: neurodesk.jpg
+  details: "Neuroimaging researchers require a diverse collection of bespoke command-line and graphical tools
+  to analyse data and answer research questions. Installing and maintaining a neuroimaging software setup is
+  challenging and often results in un-reproducible environments. Container technology, such as docker or singularity, enables the execution of software
+  on different operating systems and could aid in distributing scientific software. We are developing NeuroDesk, a
+  platform build on container technology for processing and analysing neuroimaging data with the aim to lower the
+  barrier of using various neuroimaging software in a reproducible environment, so that researchers spend less time on
+  setting up and maintaining an analysis environment.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/2>in this github issue</a>"
+  timeslot: "Rising sun"
+-
+  title: "Brain QR Modem - A setup to stream MRI images unidirectionally to the cloud via QR code animations"
+  image: qrmodem.gif
+  details: "Have you ever been annoyed how hard it is to get brain data off the scanner? The fact that scanners usually
+  contain private information about patients and are thus embedded in maximally restrictive clinical cyber-security
+  environments, makes it quite complicated to get access to the data. Especially when visiting collaborative sites.
+  In this Hackathon project, we aim to develop a purely uni-directional (safe) data streaming “hack” to transfer MRI
+  data directly to the cloud by means dynamic QR codes. In the early days of the Internet, modems
+  (modulator-demodulator) were used to (i) convert digital information into audio streams, (ii) transfer them across
+  telephone lines, and (iii) convert them back into the digital domain. Here, we aim to do the same thing with pixel
+  data of MRI scans. However, instead of audio signal we will use machine-readable visual information: QR codes.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/4>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Flooding brains: Mesmerizing & relaxing volumetric brain animations"
+  image: flooding.gif
+  details: "After 🎆 exploding brains 🎆 in the last year's brainhack, now it is time for animations of a more relaxing
+  sort. I will be mainly using a few LayNii programs that I have been developing for high resolution imaging over the
+  last year (e.g. layers, columns) to generate mesmerizing brain animations. I will focus on using animal brains from
+  one of my favorite projects: https://braincatalogue.org/.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/5>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "BIDS Execution Specification"
+  image: squirrel.png
+  details: "An extension proposal that has been in the works for a while, and builds upon the original BIDS Apps paper,
+  this extension seeks to further standardize the execution specification for BIDS applications, including integration
+  with Boutiques.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/6>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Phys2BIDScoin: Integrating BIDScoin and phys2bids for a user-friendly GUI based BIDS conversion of physiological files"
+  image: BIDScoin.png
+  details: "Phys2bids is a python3 toolkit meant to format physiological files in BIDS. BIDScoin is also a python3 toolkit 
+  that is meant to format MRI source files in BIDS. BIDScoin comes with a data discovery routine and a graphical interface 
+  to customize the formatting heuristics. The actual data discovery and formatting is done using plugins and the BIDScoin
+  framework itself is agnostic about the source modality. Phys2bids currently lacks data discovery functionality and 
+  BIDScoin lacks a formatting backend for physiological data. The goal of this project is to develop the plugin interface
+  between BIDScoin and phys2bids and hence combine their complementary functionality for both projects.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/12>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Physiological signal classification challenge"
+  image: physiopy.png
+  details: "Phys2bids is a python3 library to format physiological files in BIDS. One of the current development goals is 
+  to make phys2bids smarter by implementing an automatic signal classificator. Ideally, given a physiological signal as 
+  input, phys2bids should be able to determine the type of the signal (cardiac, respiratory …).<br><br>
+  To move forward, this project is structured as a challenge: we provide time-series data of 4 kinds of physiological 
+  signals (cardiac, respiratory_chest, O2 and CO2) and the goal will be to collaborate to find robust features that 
+  allow discerning between them.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/15>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Brainhack book: all the shenanigans"
+  image: brainhackbook.png
+  details: "Brainhack Jupyterbook is an growing resource originated from the conception of the 2021 Neuroview paper. 
+  Currently, the book contains companion material of the paper, but we are looking forward to hear what other content
+  the community want it to have. Join the discussion!<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/16>in this github issue</a>"
+  timeslot: "Atlantis+Rising sun"
+-  
+  title: "Social gather.town for the hackathon and OSR"
+  image: gathertown.png
+  details: "We aim to decorate the open science gather.town room for the open science activities
+  and set up something fun for the OSR social.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/10>in this github issue</a>"
+  timeslot: "Atlantis+Rising sun"
+-  
+  title: "ARTEM-IS web app: working towards an Agreed Reporting Template for EEG Methodology (International Standard)"
+  image: ARTEM-IS.png
+  details: "The dense data streams and analytical flexibility of electroencephalography (EEG), result in a substantial
+  ‘Garden of Forking Paths’. Recent research (<a href=https://psyarxiv.com/jp6wy>Šoškić et al 2021</a>) shows that most research reports do not contain
+  sufficient detail in their methods to know which path has been taken, hampering reproducibility, replication and meta-science.
+  Our initiative to create an Agreed Reporting Template for an International Standard (<a href=https://doi.org/10.17605/OSF.IO/PDX6Y>ARTEM-IS</a>) includes
+  a draft template designed to make reporting EEG methodology easier and more accurate, by providing fields for researchers 
+  to input specific methodological details. Read more about why we need this tool and how you can help 
+  to make it better in our (<a href=https://psyarxiv.com/myn7t>preprint</a>).<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/11>in this github issue</a>"
+  timeslot: "Atlantis+Rising sun"
+-  
+  title: "The courtois-neuromod physiological data as a use-case for phys2bids"
+  image: cneuromod.svg
+  details: "Phys2bids provides a way to convert physiological recording files to bids format. This brainhack project acts
+  as user testing for the software by applying its workflow to a large-scale dataset. The Courtois Neuromod project is 
+  a longitudinal program which collects massive amounts of multimodal data (neuroimaging, peripheral physiologicals signal
+  and eye-tracking) with the same 6 subjects throughout different tasks. We want to apply the phys2bids workflow 
+  to the entire physiological signals (electrocardiographic, electrodermal, respiration and pulse) dataset.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/20>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "BIDS-Prov Specification"
+  image: bidsprov.png
+  details: "A BIDS extension proposal to represent what pipeline was applied to a given dataset.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/7>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Developing collective action campaigns for the neuroimaging community"
+  image: fok.png
+  details: "Academia is trapped in a collective action problem: we all know there are better ways we could be doing
+  things, but feel pressured to 'play the game' in order to survive a competitive career in science. Historically,
+  collective action problems like this have been solved with collective action, i.e. the mass uptake of new behaviours
+  that aim to further the group's interests. More recently, online conditional pledge platforms (e.g., Kickstarter)
+  have demonstrated that collective action can be organised on a global scale with zero risk to users, serving to cut
+  out middle-men and directly benefit the users themselves. At present, however, this strategy has yet to take hold in academia.
+  <br><br>
+  Project Free Our Knowledge (FOK) aims to rectify this by organising collective action in the research community.
+  Using our platform, researchers can pledge to support open science practices, subject to there being a critical mass
+  of support for the proposed behaviour. If the threshold is achieved, everyone who has pledged is contacted and
+  directed to carry out the action together, thus motivating cultural change with minimal risk to individuals.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/17>in this github issue</a>"
+  timeslot: "Rising sun"
+-
+  title: "FLOW - Integrating EEG analysis scripts in a cloud-based database management system"
+  image: flow.png
+  details: "Brain Electrophysiology Laboratory is proud to present FLOW (Forward Looking Operations Workflow), an
+  all-in-one solution for EEG database management, ERP analysis pipelines, and visualization with AWS cloud or
+  on-premises server implementations. We use containerization technology to run ERP analysis Python scripts as
+  modular units with I/O to the FLOW database, thus facilitating reproducibility across different stages of analysis.
+  The containerization approach allows easy integration of existing analysis scripts, thus making FLOW an environment
+  the can be adjusted to lab needs.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/21>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Automated evaluation of quality metrics for brain data using deep learning"
+  image: auto-qc.png
+  details: "The goal of this project is to create an automated deep-learning based pipeline for evaluation of quality
+  metrics for 3D brain imaging data and providing a decision on the quality and usability of the data.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/22>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Nobrainer: a python framework for neuroimaging data"
+  image: nobrainer.png
+  details: "Nobrainer is a deep learning toolbox for 3D neuroimaging data analysis. It includes implementation of 
+  many deep learning tools including data preprocessing pipelines, models structures, trained models, etc. 
+  In this hackathon project we are going to develop various aspects of this toolbox. This project has different parts
+  depending on your skills. It spans from data curation to adding new implementations to the toolbox.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/24>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Fuzzy libmath, transparently evaluating the numerical stability of your pipeline against the elementary mathematical functions (libm)"
+  image: fuzzylibmath.png
+  details: "Fuzzy libmath is evaluating the pipeline stability by applying noise to mathematical functions using
+  the library call interposition technique. This project aims to study whether the Monte Carlo Arithmetic method
+  is a truly good perturbation model for evaluating pipeline stability across the operating systems.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/25>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Nipype 2.0: building new ecosystem around Pydra"
+  image: nipype.png
+  details: "We are creating Nipype 2.0 ecosystem around Pydra package.
+  Pydra is a new dataflow engine, coordinating the movement of data from the output of one computational node 
+  to the input of another node. A workflow is represented as a graph, and each node is a Task object, which may be
+  a Python function or an interface to an external tool.
+  <br><br>
+  During this hackathon we want to work on the core package, but also prepare converters for Nipype 1.0 interfaces.
+  We are also planning to improve documentation and tutorials.
+  <br><br>
+  Pyrda is a lightweight, Py3.7+ dataflow engine for computational graph construction, manipulation, 
+  and distributed execution.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/29>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Snakebids: Snakemake + BIDS"
+  image: snakebids.png
+  details: "Snakemake (<a href=https://snakemake.github.io/>url</a>, <a href=https://f1000research.com/articles/10-33>paper</a>) is a fast-growing open source workflow management system that provides 
+  a high level of transparency, reproducibility and adaptability. Despite its wide adoption in the scientific community
+  (>5 new citations per week), Snakemake has not yet had significant uptake in the neuroimaging community.
+  <br><br>
+  We have been working on an extension, Snakebids, to ease working with neuroimaging (specifically BIDS) data,
+  and allow the creation of BIDS Apps with Snakemake (e.g. <a href=https://github.com/khanlab/hippunfold>https://github.com/khanlab/hippunfold</a>).<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/30>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "cleanBibImpact: Evaluating the impact of citation diversity statements"
+  image: cleanbibimpact.png
+  details: "Gender imbalance is a big problem in academic research, and it is even reflected in our citation behavior.
+  Our goal is to assess the 'impact' of the <a href=https://github.com/dalejn/cleanBib>cleanBib</a> tool, which was created to make researchers more aware of this problem. 
+  his tool can be used to assess the gender balance of authors in a reference list. Specifically, we want to find papers
+  that cite the cleanBib <a href=https://doi.org/10.5281/zenodo.3672109>code</a>/<a href=https://doi.org/10.1038/s41593-020-0658-y>paper</a>/<a href=https://doi.org/10.1101/2020.01.03.894378>preprint</a>, and see whether those citing papers have better gender balance 
+  n their reference lists than papers that do not.
+  <br><br>
+  In previous hackathons, we created this figure by manually collecting citation diversity data from papers with 
+  citation diversity statements. It shows the relative gender proportions in reference lists of papers 
+  with diversity statements (relative to the expected gender proportions).<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/26>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Opscientia: Open Science Data Wallet"
+  image: opscientia_datawallet.png
+  details: "The DataWallet is a dashboard connecting users to the decentralized web, and providing the option to validate
+  and upload BIDS-compliant neuroimaging data, along with relevant metadata (Authors, paper, description, etc.) 
+  to peer to peer storage (IPFS). Data provenance and versioning is done using datalad with a special remote for IPFS.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/31>in this github issue</a>"
+  timeslot: "Atlantis+Rising sun"
+-
+  title: "Opscientia: Decentralised Open Science Stack"
+  image: opscientia.png
+  details: "Opscientia is a decentralised autonomous organisation (DAO) aiming to catalyse the pace of scientific discovery
+  — starting with Neuroscience. Today, progress is limited by centralised systems built on outdated infrastructure. 
+  This restricts global access to study participation, research funding, scientific collaboration and knowledge creation.
+  Participants also do not retain ownership or control over their own data. Our solution is a decentralised open science stack
+  leveraging blockchain technologies. Global citizens are empowered to take part in studies whilst retaining full ownership 
+  and control over their data, and scientists are incentivised to share data and collaborate with their peers. 
+  Our solution empowers both citizens and scientists to become the new shareholders of scientific progress.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/32>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Python library to handle confounds/covariates: focus on ComBat"
+  image: confounds.png
+  details: "Develop a python library of methods to handle confounds in various neuroscientific analyses, esp. statistics and
+  predictive modeling. More info and slides <a href=https://crossinvalidation.com/2020/03/04/conquering-confounds-and-covariates-in-machine-learning>here</a>.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/34>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "CONP: Sharing data and tools"
+  image: conp.png
+  details: "The Canadian Open Neuroscience Platform (CONP) provides an infrastructure for the promotion of open-science workflows
+  and the sharing of neuroscience data. This platform brings together many of the country’s leading scientists in basic and 
+  clinical neuroscience to form an interactive network of collaborations in brain research, interdisciplinary student training,
+  international partnership, clinical translation, and open publishing. The CONP aims to propel Canada’s basic and clinical
+  neuroscience communities into a new era of commonly shared, digitally integrated, data- and algorithmic-rich neuroscience research.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/37>in this github issue</a>"
+  timeslot: "Atlantis"
+-
+  title: "Sea: A lightweight filesystem to process large neuroimaging data on HPC"
+  image: sea.png
+  details: "Large file transfers to and from slow storage can impede the processing of neuroimaging workflows processing such data.
+  Sea is a file system that aims to reduce the costs of such file transfers by leveraging compute-local storage whenever possible 
+  during pipeline execution to offset the overhead of reading and writing to local storage.<br>
+  More information <a href=https://github.com/ohbm/hackathon2021/issues/38>in this github issue</a>"
+  timeslot: "Atlantis"
