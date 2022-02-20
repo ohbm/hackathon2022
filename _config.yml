@@ -69,14 +69,14 @@ typeoutTextValues: '"June 16-18th, 2022", "Virtual", ""'
 typeoutFallback: ""
 heroButtons:
    - {link: "#about", text: "What is it"}
-   - {link: "https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4073", text: "Register"}
-   - {link: "https://github.com/ohbm/hackathon2022/issues/new/choose", text: "Submit your project"}
+  #  - {link: "https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4073", text: "Register"}
+  #  - {link: "https://github.com/ohbm/hackathon2022/issues/new/choose", text: "Submit your project"}
   #  - {link: "https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAC9pqdJUQlRINlAzUVdXMzhDTFIwRzkwNDBKUU45SC4u", text: "Sign up for hands-on sessions" }
 
 aboutButtons:
- - {link: "https://ohbm.github.io/hackathon2022/hacktrack/", text: "Peek at the projects!"}
- - {link: "https://ohbm.github.io/hackathon2022/traintrack/", text: "What can I learn?"}
- - {link: "https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAC9pqdJUMEJGRUszWlk3N1JBTDAwRkdCNDZYTzBOTS4u", text: "Want to volunteer?"}
+#  - {link: "https://ohbm.github.io/hackathon2022/hacktrack/", text: "Peek at the projects!"}
+#  - {link: "https://ohbm.github.io/hackathon2022/traintrack/", text: "What can I learn?"}
+#  - {link: "https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAC9pqdJUMEJGRUszWlk3N1JBTDAwRkdCNDZYTzBOTS4u", text: "Want to volunteer?"}
 
 
 
@@ -178,18 +178,18 @@ footerBlocks:
   title: "Links"
   links:
    - {link: "https://ossig.netlify.com/", text: "OHBM Open Science SIG"}
-   - {link: "https://www.brainhack.org/", text: "Brainhack global"}
+   - {link: "https://www.brainhack.org/", text: "Brainhack Global"}
  -
   title: "Organizers and contacts"
   links:
-   - {link: "https://twitter.com/ingmatman", text: "Matteo Mancini (Brainhack Co-chair)"}
-   - {link: "https://twitter.com/TiborAuer", text: "Tibor Auer (Brainhack Co-chair)"}
+   - {link: "https://twitter.com/HaoTingW713", text: "Hao-Ting Wang (Brainhack Co-chair)"}
+   - {link: "https://twitter.com/SteMoia", text: "Stefano Moia (Brainhack Co-chair)"}
    - {link: "mailto:OHBMopenscience@gmail.com", text: "OHBMopenscience@gmail.com"}
  -
   title: "Resources"
   links:
    - {link: "/hackathon2022/coc", text: "Code of Conduct"}
-   - {link: "/hackathon2022/FAQ/", text: "FAQ"}
+  #  - {link: "/hackathon2022/FAQ/", text: "FAQ"}
    - {link: "/hackathon2022/contact/", text: "Contact"}
 # Blog
 blogTitle: "Latest news"

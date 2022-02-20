@@ -20,7 +20,7 @@
 -->
           <div class="about-cols">
 
-            <div class="col-lg-4 col-lg-offset-1 about-text about-col">
+            <div class="col-lg-4 {% if site.aboutButtons %}col-lg-offset-1{% else %}col-lg-offset-2{% endif %} about-text about-col">
                 <p><b>The event will take place on Sparkle! Every registered participants will receive the credentials
                     via email, if you did not get the email please <a href="mailto:ohbmopenscience@gmail.com">get in touch!</a></b><br><br>
                     <b>What is OHBM?</b> OHBM is the Organization for Human Brain Mapping. A Society of scientists
@@ -32,10 +32,7 @@
                     (during the traintrack).<br><br>
 
                     Brainhacks are not the typical academic conference. Here, attendees can actively
-                    take part in the program and learn from each other - sounds something you would like? You can
-                    become a part of the event as a volunteer filling
-                    <a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAC9pqdJUMEJGRUszWlk3N1JBTDAwRkdCNDZYTzBOTS4u"
-                        target="_blank">this form</a>. Many Brainhack
+                    take part in the program and learn from each other - sounds something you would like? Many Brainhack
                     projects might involve coding, but it is not a requirement and you can contribute in most cases
                     even without coding skills.<br><br>
 
@@ -46,6 +43,7 @@
                 </p>
             </div>
 
+            {% if site.aboutButtons %}
             <div class="col-lg-3 about-col">
               {% for button in site.aboutButtons %}
                 <a  class="btn btn-primary btn-about"
@@ -60,8 +58,9 @@
                     {{ button.text }}</a>
               {% endfor %}
             </div>
+            {% endif %}
 
-            <div class="col-lg-3 about-col">
+            <div class="{% if site.aboutButtons %}col-lg-3{% else %}col-lg-4{% endif %} about-col">
               <figure>
 
                 <img  src="/hackathon2022/img/brainhack_venn_diagram.png"
