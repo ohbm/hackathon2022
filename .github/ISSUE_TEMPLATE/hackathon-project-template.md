@@ -18,7 +18,7 @@ assignees: '@ohbm/hack2022-monitors'
 
 Thank you!
 
-*After submittion, we will assign a 'project monitor' to follow your submission. If at any time you need help or anything is unclear, please add a comment and ping your project monitor. Our team is here to help!*
+*After submission, we will assign a 'project monitor' to follow your submission. If at any time you need help or anything is unclear, please add a comment and ping your project monitor. Our team is here to help!*
 
 
 ----------------------------
