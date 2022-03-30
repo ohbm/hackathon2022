@@ -10,41 +10,58 @@ assignees: '@ohbm/hack2022-monitors'
 
 *We are very excited to meet you at the 2022 OHBM Brainhack 🎉* *To submit a project, you need to be an attendee of the 2022 OHBM Brainhack. We ask you to register first over [here](http://www.humanbrainmapping.org/HackathonReg/). Thank you!*
 
-*We have prepared a checklist to help with your project submission. Here is how to proceed:*
- 1. *Before filling in any part, please submit this issue*
- 2. *Check items in the checklist below as you go through them*
- 3. *Once you are done (at least all 'required' items must be provided), please delete the "Guidelines" section add a comment saying 'hi @ohbm/project-monitors: My project is ready!'*
+*We have prepared this template to help with your project submission. Here is how to proceed:*
+ 1. *Before fill the template and [the guidline](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md) be sure to include as many information as possible*
+ 2. *Submit the issue*
+ 3. *Check items in the checklist*
+ 4. *Once you are done (at least all 'required' items must be provided), please delete the "Guidelines" section add a comment saying 'hi @ohbm/project-monitors: My project is ready!'*
 
 Thank you!
 
-*After step 1 (issue submitted), we will assign a 'project monitor' to follow your submission. If at any time you need help or anything is unclear, please add a comment and ping your project monitor. Our team is here to help!*
+*After submittion, we will assign a 'project monitor' to follow your submission. If at any time you need help or anything is unclear, please add a comment and ping your project monitor. Our team is here to help!*
 
 
 ----------------------------
 ## Project info
-<!-- *Please fill this in first and then submit the issue* -->
+<!-- *Please fill this in first and then submit the issue* 
+See [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#link-to-project)
+-->
 
 **Title**:
 <!--Name of your awesome project. Please also update the title of the issue to be the title of your project-->
 
-**Project lead**:
-<!--Your name and GitHub login, possibly more than 1 lead-->
+**Project leaders with Mattermost handle and GitHub login**:
+<!--Please provide more than one leader if possible and include the [Mattermost handle](https://mattermost.brainhack.org/) (i.e. your username). 
+If you do not have an account, please [sign up here](https://mattermost.brainhack.org/signup_email).
+Include the GitHub login if you are planning to use.
+-->
 
-**[Timezone](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#timezone)**:
-<!--UTC offset of your timezone (cf. https://www.timeanddate.com/time/map/ for example).-->
+**[In-person/online]**:
+<!--Provide information if leaders are planning to be in-person and/or online. 
+If online, please provide your timezone (cf. https://www.timeanddate.com/time/map/ for example).
+-->
 
 **Description**:
 <!--Describe the main idea and context of your project in a few sentences.-->
 
 **Link to project**:
 
-**Mattermost handle**:
-
 **Goals for the OHBM Brainhack**
-
-**Good first issues**:
+<!-- Describe what you want to achieve during this brainhack, 
+see [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#goals)
+-->
 
 **Skills**:
+<!--Provide a list of the skills, you can specify required and recommended, 
+see [examples](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-skills)
+-->
+
+**List of recommended tutorials**
+<!--TODO/trainhack-->
+
+**Good first issues**:
+<!--If you would like to welcome new people, please provide a list of good-first-issues-->
+
 
 **Chat channel**:
 <!-- If you are creating a channel on the [brainhack mattermost](https://mattermost.brainhack.org/) try to create a
@@ -71,27 +88,13 @@ As we are not finalised the platform for the hackathon yet, for now there is no 
 ## Project submission
 
 ## Submission checklist
-*Once the issue is submitted, please check items in this list as you add under 'Additional project info'*
+*Once the issue is submitted, please check items in this list
 
-Please include the following above (all required):
--   [ ] Link to your project: could be a code repository, a shared document, etc. See [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#link-to-project)
--   [ ] Include your [Mattermost handle](https://mattermost.brainhack.org/) (i.e. your username). If you do not have an account, please [sign up here](https://mattermost.brainhack.org/signup_email).
--   [ ] Goals for the OHBM Brainhack: describe what you want to achieve during this brainhack. See [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#goals).
--   [ ] Flesh out at least 2 "good first issues": those are tasks that do not require any prior knowledge about your project, could be defined as issues in a GitHub repository, or in a shared document, cf [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-2-good-first-issues).
--   [ ] Skills: list skills that would be particularly suitable for your project. We ask you to include at least one non-coding skill, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-skills).
--   [ ] Chat channel: A link to a chat channel that will be used during the OHBM Brainhack. This can be an existing channel or a new one. We recommend using the [Brainhack space on mattermost](https://mattermost.brainhack.org/), cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#chat).
--   [ ] Provide an image of your project for the OHBM brainhack website
+Please be sure to include:
+-   [ ] Link to your project: could be a code repository, a shared document, etc.
+-   [ ] List of the leaders with Mattermost handle.
+-   [ ] Goals for the OHBM Brainhack.
+-   [ ] Chat channel.
+-   [ ] Skills: list skills that would be particularly suitable for your project.
 
-You can also include information about (all optional):
--   [ ] Someone co-leading the project in the timeslot you have not selected to provide additional visibility.
--   [ ] Number of participants, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#participant-capacity)
--   [ ] Twitter-size summary of your project pitch, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)
--   [ ] Set up a kanban board on your repository to better divide the work and keep track of things, cf [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#set-up-a-kanban-board)
--   [ ] Project snippet for the OHBM Brainhack website, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#project-snippet-for-the-ohbm-brainhack-website)
-
-We would like to think about how you will credit and onboard new members to your project. We recommend reading references from [this section](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#credit-and-onboarding). If you'd like to share your thoughts with future project participants, you can include information about (recommended):
--   [ ] Specify how will you acknowledge contributions (e.g. listing members on a contributing page).
--   [ ] Provide links to onboarding documents if you have some.
-
-QMENTA has agreed to sponsor the event and provide computational resources through their platform.
--   [ ] Get in touch with QMENTA through their [Brain Innovation Hub Slack space](https://brain-innovation-hub.slack.com), if you think your project would benefit from their support.
+Please think about how you will credit and onboard new members to your project. We recommend reading references from [this section](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#credit-and-onboarding). 
