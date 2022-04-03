@@ -16,7 +16,6 @@ email: ""
 description: "OHBM Brainhack June 16-18th, 2022. Organized by the OHBM Open Science SIG."
 baseurl: "/hackathon2022"
 url: "https://ohbm.github.io/hackathon2022"
-permalink: "/blog/:title"
 googleAnalyticsTrackingId: ""
 googleAnalyticsSiteUrl: ""
 siteVerification: ""
@@ -43,7 +42,7 @@ c4sponsorsUrl: ""
 
 # Navigation
 navigationLinks:
- - {permalink: "/", text: "Home"}
+#  - {permalink: "/", text: "Home"}
  # - {permalink: "/#about/", text: "About"}
 #  - {permalink: "/schedule", text: "Schedule"}
 #  - {permalink: "/hacktrack", text: "HackTrack"}
@@ -65,10 +64,10 @@ heroImage: "braindesk.jpg"
 heroTitle: "OHBM Brainhack <typeout>"
 eventDate: "June 16-18th 2022"
 hubStreamingInfo: ""
-typeoutTextValues: '"June 16-18th, 2022", "Virtual", ""'
+typeoutTextValues: '"June 16-18th, 2022", "Hybrid", ""'
 typeoutFallback: ""
 heroButtons:
-   - {link: "#about", text: "What is it"}
+  #  - {link: "#about", text: "What is it"}
   #  - {link: "https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4073", text: "Register"}
   #  - {link: "https://github.com/ohbm/hackathon2022/issues/new/choose", text: "Submit your project"}
   #  - {link: "https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAC9pqdJUQlRINlAzUVdXMzhDTFIwRzkwNDBKUU45SC4u", text: "Sign up for hands-on sessions" }
@@ -251,19 +250,19 @@ hackathonRows:
 # - {title: "2nd Place", image: "prize-2.png", info: "Amazing Moto 360"}
 
 # Hackathon Location Block
-#hackathonLocationBlockTitle: "Location"
-#hackathonLocationName: "Communa"
-#hackathonLocationLink: "http://communa.net.ua/"
-#hackathonStreetAddress: "1 Halytska St"
-#hackathonAddressLocality: "Lviv"
-#hackathonAddressLocalityRegion: "Lvivska"
-#hackathonPostalCode: "79000"3
-#hackathonAddressCountry: "Ukraine"
-#hackathonTimeTitle: "Hack through"
-#hackathonStartTime: "2014-10-24T10:00"
-#hackathonDoorTime: "09:00"
-#hackathonEndTime: "2014-10-25T00:00"
-#viewOnMap: "View on Google Maps"
-#hackathonPlaceCoordinates: "49.840999, 24.031144"
-#hackathonMapCenterCoordinates: "49.840696, 24.028754"
-#hackathonMapMobileCenterCoordinates: "49.841639, 24.031182"
+hackathonLocationBlockTitle: "Location"
+hackathonLocationName: "Queen Margaret Union"
+hackathonLocationLink: "http://communa.net.ua/"
+hackathonStreetAddress: "22 University Gardens"
+hackathonAddressLocality: "Glasgow"
+hackathonAddressLocalityRegion: ""
+hackathonPostalCode: "G12 8QN"
+hackathonAddressCountry: "United Kingdom"
+hackathonTimeTitle: 
+hackathonStartTime: "2022-06-16"
+hackathonDoorTime: "09:00"
+hackathonEndTime: "2022-06-16"
+viewOnMap: "View on Google Maps"
+hackathonPlaceCoordinates: "55.8735962, -4.2913955"
+hackathonMapCenterCoordinates: "55.8735962, -4.2913955"
+hackathonMapMobileCenterCoordinates: "55.8735962, -4.2913955"

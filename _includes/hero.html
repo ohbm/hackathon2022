@@ -2,22 +2,48 @@
 <section id="top-section-hero" class="top-section-hero top-section image-section" style="background-image: url('{{ site.baseurl }}/img/sections-background/{{ site.heroImage }}');">
     {% include navigation.html %}
     <div class="content-wrapper">
-    <div class="jumbotron">
-        <div class="animated hiding" style="background-color: #333a" data-animation="fadeInDown" data-delay="500">
-            {% assign heroText = site.heroTitle | split:"<typeout>" %}
-            <h1>{{ heroText[0] }}<span id="typeout-text" class="hidden-xs"></span><span class="typeout-fallback">{{ site.typeoutFallback }}</span>{{ heroText[1] }}</h1>
-            <p>{{ site.eventDate }}</p>
-            <p>{{ site.hubStreamingInfo }}</p>
-            {% for button in site.heroButtons %}
-            <a href="{% if button.permalink != null %} {{ button.permalink | prepend: site.baseurl }} {% else %} {{ button.link }} {% endif %}" class="btn btn-primary waves-effect waves-button waves-light waves-float" {% if button.link != null %}target="_blank"{% endif %}>{{ button.text }}</a>
-            {% endfor %}
+        <div class="jumbotron">
+            <div class="animated hiding" style="background-color: #333a" data-animation="fadeInDown" data-delay="500">
+                {% assign heroText = site.heroTitle | split:"<typeout>" %}
+                <h1>{{ heroText[0] }}<span id="typeout-text" class="hidden-xs"></span><span class="typeout-fallback">{{ site.typeoutFallback }}</span>{{ heroText[1] }}</h1>
+                <p>{{ site.eventDate }}</p>
+                <p>{{ site.hubStreamingInfo }}</p>
+                <div class="container face-to-face">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-md-offset-3">
+                        <div class="card">
+                            <div class="card-body">
+                            <p>{{ site.hackathonLocationName }}</p>
+                            <p>{{ site.hackathonStreetAddress }}, {{ site.hackathonAddressLocality }}</p>
+        
+                            {% for button in site.heroButtons %}
+                            <a href="{% if button.permalink != null %} {{ button.permalink | prepend: site.baseurl }} {% else %} {{ button.link }} {% endif %}" class="btn btn-primary waves-effect waves-button waves-light waves-float" {% if button.link != null %}target="_blank"{% endif %}>{{ button.text }}</a>
+                            {% endfor %}
+                            <a href="https://maps.google.com/maps?ll={{ site.hackathonPlaceCoordinates | replace:' ',''}}&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q={{ site.hackathonStreetAddress | replace:' ','%20' | replace:',','%2C'}}%2C%20{{ site.hackathonAddressLocality | replace:' ','%20' | replace:',','%2C'}}" class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">{{ site.viewOnMap }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div id="canvas-map" class="canvas-map"></div>
+                    </div>
+                </div>
+                <hr />
+                <div class="container">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-md-offset-3">
+                        <div class="card">
+                            <div class="card-body">
+                            <p>Discord server under construction!</p>
+                            <p><a href="https://discord.com/" class="btn btn-primary">Download the Discord client</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <a href="#about" class="explore">
-        <svg class="icon icon-arrow-down" viewBox="0 0 32 32">
-            <use xlink:href="{{ site.baseurl }}/img/sprites/sprites.svg#icon-arrow-down"></use>
-        </svg>
-    </a>
+        <a href="#about" class="explore">
+            <svg class="icon icon-arrow-down" viewBox="0 0 32 32">
+                <use xlink:href="{{ site.baseurl }}/img/sprites/sprites.svg#icon-arrow-down"></use>
+            </svg>
+        </a>
     </div>
 </section>
 <!-- End Hero Section -->

@@ -2,9 +2,6 @@ $hackathon-map-height: 450px;
 .hackathon-location {
 	padding: 20px 50px;
 	height: $hackathon-map-height;
-	.canvas-map {
-		height: $hackathon-map-height + 30px;
-	}
 	.location-description {
 		font-size: 15px;
 	    padding: 18px 16px 22px;

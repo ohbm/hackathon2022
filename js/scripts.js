@@ -4,7 +4,6 @@
             $('#st-container').removeClass('disable-scrolling');
             $('#loading-animation').fadeOut();
             $('#preloader').delay(350).fadeOut(800);
-            initGooglePlus();
             equalheight('.same-height');
         });
 
@@ -267,29 +266,18 @@
         }
     });
 
-    //Google plus
-    function initGooglePlus() {
-        var po = document.createElement('script');
-        po.type = 'text/javascript';
-        po.async = true;
-        po.src = '/js/platform.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(po, s);
-    }
-
     // Google maps static
     if (typeof staticGoogleMaps !== 'undefined') {
-        $('#canvas-map').addClass('image-section').css('background-image','url(https://maps.googleapis.com/maps/api/staticmap?zoom=17&center=' + mobileCenterMapCoordinates +'&size=' + $(window).width() + 'x700&scale=2&language=en&markers=icon:' + icon +'|'+ eventPlaceCoordinates +'&maptype=roadmap&style=visibility:on|lightness:40|gamma:1.1|weight:0.9&style=element:labels|visibility:off&style=feature:water|hue:0x0066ff&style=feature:road|visibility:on&style=feature:road|element:labels|saturation:-30)');
+        $('#canvas-map').addClass('image-section').css('background-image','url(https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDOeyARupaWJ7LVB2uRkWotvDf9-xbG3rQ&zoom=17&center=' + mobileCenterMapCoordinates +'&size=' + $(window).width() + 'x700&scale=2&language=en)');
     }
 
     //Google maps
     if (typeof googleMaps !== 'undefined') {
         var map, autocomplete, directionsDisplay, geocoder, polyline, origin;
         var markers = [];
-        var directionsService = new google.maps.DirectionsService();
         var MY_MAPTYPE_ID = 'custom_style';
 
-        function initialize() {
+        function initializeMap() {
             directionsDisplay = new google.maps.DirectionsRenderer({
                 suppressMarkers: true
             });
@@ -578,7 +566,7 @@
             }
         }
 
-        google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'load', initializeMap);
     }
 
 })(jQuery);
