@@ -12,14 +12,14 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-md-offset-3">
                         <div class="card">
                             <div class="card-body">
-                            <p>{{ site.hackathonLocationName }}</p>
-                            <p>{{ site.hackathonStreetAddress }}, {{ site.hackathonAddressLocality }}</p>
-        
-                            {% for button in site.heroButtons %}
-                            <a href="{% if button.permalink != null %} {{ button.permalink | prepend: site.baseurl }} {% else %} {{ button.link }} {% endif %}" class="btn btn-primary waves-effect waves-button waves-light waves-float" {% if button.link != null %}target="_blank"{% endif %}>{{ button.text }}</a>
-                            {% endfor %}
-                            <a href="https://maps.google.com/maps?ll={{ site.hackathonPlaceCoordinates | replace:' ',''}}&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q={{ site.hackathonStreetAddress | replace:' ','%20' | replace:',','%2C'}}%2C%20{{ site.hackathonAddressLocality | replace:' ','%20' | replace:',','%2C'}}" class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">{{ site.viewOnMap }}</a>
-                            </div>
+                                <p>{{ site.hackathonLocationName }}</p>
+                                <p>{{ site.hackathonStreetAddress }}, {{ site.hackathonAddressLocality }}</p>
+            
+                                {% for button in site.heroButtons %}
+                                <a href="{% if button.permalink != null %} {{ button.permalink | prepend: site.baseurl }} {% else %} {{ button.link }} {% endif %}" class="btn btn-primary waves-effect waves-button waves-light waves-float" {% if button.link != null %}target="_blank"{% endif %}>{{ button.text }}</a>
+                                {% endfor %}
+                                <a href="https://maps.google.com/maps?ll={{ site.hackathonPlaceCoordinates | replace:' ',''}}&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q={{ site.hackathonStreetAddress | replace:' ','%20' | replace:',','%2C'}}%2C%20{{ site.hackathonAddressLocality | replace:' ','%20' | replace:',','%2C'}}" class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">{{ site.viewOnMap }}</a>
+                                </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6">
@@ -31,8 +31,9 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-md-offset-3">
                         <div class="card">
                             <div class="card-body">
-                            <p>Discord server under construction!</p>
-                            <p><a href="https://discord.com/" class="btn btn-primary">Download the Discord client</a></p>
+                                <p>Discord server under construction!</p>
+                                <p><a href="https://discord.com/" class="btn btn-primary">Download the Discord client</a></p>
+                                <p><small>Download the client for a better experience.</small></p>
                             </div>
                         </div>
                     </div>
