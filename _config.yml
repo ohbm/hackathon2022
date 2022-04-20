@@ -192,7 +192,7 @@ footerBlocks:
    - {link: "/hackathon2022/coc", text: "Code of Conduct"}
   #  - {link: "/hackathon2022/FAQ/", text: "FAQ"}
    - {link: "/hackathon2022/contact/", text: "Contact"}
-   - {link: "/hackathon2022/buddy-system/", text: "Buddy System"}
+
 # Blog
 blogTitle: "Latest news"
 blogCommentsEnabled: true
