@@ -54,6 +54,8 @@ navigationLinks:
 #  - {permalink: "/sponsors", text: "Sponsors"}
 #  - {permalink: "/contact", text: "Contact"}
 #  - {permalink: "/venue", text: "Venue"}
+ - {permalink: "/buddy-system/", text: "Buddy System"}
+
 
 bottomNavigationLinks:
 
@@ -190,6 +192,7 @@ footerBlocks:
    - {link: "/hackathon2022/coc", text: "Code of Conduct"}
   #  - {link: "/hackathon2022/FAQ/", text: "FAQ"}
    - {link: "/hackathon2022/contact/", text: "Contact"}
+
 # Blog
 blogTitle: "Latest news"
 blogCommentsEnabled: true
