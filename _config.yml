@@ -54,6 +54,8 @@ navigationLinks:
 #  - {permalink: "/sponsors", text: "Sponsors"}
 #  - {permalink: "/contact", text: "Contact"}
 #  - {permalink: "/venue", text: "Venue"}
+ - {permalink: "/buddy-system/", text: "Buddy System"}
+
 
 bottomNavigationLinks:
 
