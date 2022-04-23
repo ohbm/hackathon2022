@@ -46,7 +46,7 @@ navigationLinks:
  # - {permalink: "/#about/", text: "About"}
 #  - {permalink: "/schedule", text: "Schedule"}
 #  - {permalink: "/hacktrack", text: "HackTrack"}
-#  - {permalink: "/traintrack/", text: "TrainTrack"}
+ - {permalink: "/traintrack/", text: "TrainTrack Corner"}
  # - {permalink: "/logistics", text: "Logistics"}
 #  - {permalink: "/FAQ", text: "FAQ"}
 #  - {permalink: "/coc", text: "Conduct"}
@@ -261,7 +261,7 @@ hackathonAddressLocality: "Glasgow"
 hackathonAddressLocalityRegion: ""
 hackathonPostalCode: "G12 8QN"
 hackathonAddressCountry: "United Kingdom"
-hackathonTimeTitle: 
+hackathonTimeTitle:
 hackathonStartTime: "2022-06-16"
 hackathonDoorTime: "09:00"
 hackathonEndTime: "2022-06-16"
