@@ -22,9 +22,9 @@ Don’t be shy, reach out to other brainhackers in person or through discords!
 ## What to expect
 
 An important skill of a brainhacker is learning new things with friends.
-There’s no instructors or leaders in the Traintrack Corners, just like minded individuals who want to do Science!
+There’s no instructors or leaders in Traintrack Corner, just like minded individuals who want to do Science!
 You decide what your experience will be like.
-If you are not sure how to approach people, consider joining our buddy system.
+If you are not sure how to approach people, consider joining our [Buddy System](/buddy-system/).
 If you found better materials for the topics you want, why not try to submit a pull request to add a link to the content?
 
 ## Suggested topics
