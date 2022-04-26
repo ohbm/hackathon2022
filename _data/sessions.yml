@@ -38,13 +38,13 @@
   id: 000
   type: social
   title: "Lunch"
-  place: "Breakout room"
+  place: "Queen Margret Union"
   description: "Mandatory lunch time."
 
 -
   id: 001
   type: social
-  title: "Registeration"
+  title: "Welcome desk"
   place: "Queen Margret Union"
   description: "Get your name badge!"
 
@@ -70,7 +70,6 @@
   description: "Catch up with your friends. Meet new people!"
 
 # Intro, wrap up, project pitches
-
 -
   id: 1010
   type: hacktrack
@@ -84,8 +83,8 @@
   id: 1011
   type: hacktrack
   title: "Welcome"
-  place: "Crowdcast"
-  description: "Welcoming ceremony for the EMEA hub"
+  place: "Discord"
+  description: "Welcoming ceremony for the APAC hub"
   links:
     presentation: #https://osf.io/
 
@@ -93,7 +92,7 @@
   id: 1012
   type: hacktrack
   title: "Welcome"
-  place: "Crowdcast"
+  place: "Discord"
   description: "Welcoming ceremony for the Americas hub"
   links:
     presentation: #https://osf.io/
@@ -102,50 +101,21 @@
   id: 102
   type: hacktrack
   title: "Project Pitches & mingling"
-  place: "Queen Margret Union"
+  place: "Queen Margret Union / Discord"
   description: "Project leaders have 2 minutes to describe their project."
-
--
-  id: 103
-  type: hacktrack
-  title: "Daily intro"
-  place: "Queen Margret Union"
-  description: "Let's check-in,"
-
--
-  id: 104
-  type: hacktrack
-  title: "Project kickoff"
-  place: "Crowdcast"
-  description: "The first time all the project team 'gathers around a table', discuss how they want
-  to work together and how to get started."
-
--
-  id: 105
-  type: hacktrack
-  title: "Daily intro"
-  place: "Crowdcast"
-  description: ""
-
--
-  id: 106
-  type: hacktrack
-  title: "Daily wrap-up"
-  place: "Crowdcast"
-  description: ""
 
 -
   id: 107
   type: hacktrack
   title: "Final wrap-up"
-  place: "Crowdcast"
+  place: "Queen Margret Union / Discord"
   description: "We all get together to hear what was accomplished in the past 3 days."
 
 -
   id: 108
   type: hacktrack
   title: "Closing remarks"
-  place: "Crowdcast"
+  place: "Queen Margret Union / Discord"
   description: "Say goodbey to Brainhack. See you at OHBM."
 
 # Hacking... More hacking
@@ -153,70 +123,68 @@
   id: 201
   type: hacktrack
   title: "Hacking"
-  place: "Queen Margret Union"
+  place: "Queen Margret Union / Discord"
   description: ""
 
 -
   id: 202
   type: hacktrack
   title: "Overtime hacking"
-  place: "Queen Margret Union"
+  place: "Queen Margret Union / Discord"
   description: ""
 
 -
   id: 203
   type: hacktrack
   title: "Unconference!!!"
-  place: "Queen Margret Union"
+  place: "Queen Margret Union / Discord"
   description: "The best time to start talking with others"
 
 # Talks
-
-# Traintrack...
 -
   id: 300
   type: traintrack
   title: "Talk 1"
-  place: "APAC: zoom ; EMEA / Americas: Crowdcast"
+  place: "Queen Margret Union Main Stage / Discord"
   description: >
     Talk 1.
   long_description: >
     TBA.
   links:
-  speakers: [saskia_steffan_bollmann] # from speakers.yml
+  speakers: [reinder_vosdewael] # from speakers.yml # use reinder as placeholder for lols
 
 -
   id: 301
   type: traintrack
   title: "Talk 2"
-  place: "APAC: zoom ; EMEA / Americas: Crowdcast"
+  place: "Queen Margret Union Main Stage / Discord"
   description: >
     Talk 2.
   long_description: >
     TBA.
   links:
-  speakers: [saskia_steffan_bollmann] # from speakers.yml
+  speakers: [reinder_vosdewael] # from speakers.yml
 
 -
   id: 302
   type: traintrack
   title: "Talk 3"
-  place: "APAC: zoom ; EMEA / Americas: Crowdcast"
+  place: "Queen Margret Union Main Stage / Discord"
   description: >
     Talk 3.
   long_description: >
     TBA.
   links:
-  speakers: [saskia_steffan_bollmann] # from speakers.yml
+  speakers: [reinder_vosdewael] # from speakers.yml
   
 -
   id: 303
   type: traintrack
   title: "Talk 4"
-  place: "APAC: zoom ; EMEA / Americas: Crowdcast"
+  place: "Queen Margret Union Main Stage / Discord"
   description: >
     Talk 4.
   long_description: >
     TBA.
   links:
-  speakers: [saskia_steffan_bollmann] # from speakers.yml
+  speakers: [reinder_vosdewael] # from speakers.yml

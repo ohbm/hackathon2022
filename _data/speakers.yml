@@ -186,7 +186,7 @@ reinder_vosdewael:
   surname: "Vos de Wael"
   location: ""
   team: true
-  thumbnailUrl: reinder_vosdewael.png
+  thumbnailUrl: 2020/reinder_vosdewael.png
   hub: Americas
   social:
      - {name: "twitter", link: "https://twitter.com/reindervosdwael"}
