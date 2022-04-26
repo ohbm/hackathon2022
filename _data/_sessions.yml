@@ -37,27 +37,37 @@
 -
   id: 000
   type: social
-  title: "Coffee / Breakfast / Lunch"
+  title: "Lunch"
   place: "Breakout room"
-  description: "Join if you feel like"
+  description: "Mandatory lunch time."
+
 -
   id: 001
   type: social
-  title: "Social / Coffee / Food break"
-  place: "Breakout room"
-  description: "The best time to start talking with others"
+  title: "Registeration"
+  place: "Queen Margret Union"
+  description: "Get your name badge!"
+
 -
   id: 002
   type: social
-  title: "Social / Coffee / Food break + Unconference !!!"
-  place: "Crowdcast"
+  title: "Unconference !!!"
+  place: "Queen Margret Union"
   description: "The best time to start talking with others"
+
 -
   id: 003
   type: social
-  title: "Live discussions"
-  place: "Breakout room"
-  description: "The best time to start talking with others"
+  title: "Coffee break"
+  place: "Queen Margret Union"
+  description: "Dropping payload."
+
+-
+  id: 003
+  type: social
+  title: "Open bar"
+  place: "Queen Margret Union"
+  description: "Catch up with your friends. Meet new people!"
 
 # Intro, wrap up, project pitches
 
@@ -65,10 +75,11 @@
   id: 1010
   type: hacktrack
   title: "Welcome"
-  place: "Crowdcast"
-  description: "Welcoming ceremony for the APAC hub"
+  place: "Queen Margret Union"
+  description: "Welcoming ceremony for Glasgow event."
   links:
     presentation: #https://osf.io/
+
 -
   id: 1011
   type: hacktrack
@@ -77,6 +88,7 @@
   description: "Welcoming ceremony for the EMEA hub"
   links:
     presentation: #https://osf.io/
+
 -
   id: 1012
   type: hacktrack
@@ -85,12 +97,14 @@
   description: "Welcoming ceremony for the Americas hub"
   links:
     presentation: #https://osf.io/
+
 -
   id: 102
   type: hacktrack
-  title: "Project Pitches"
-  place: "Crowdcast"
+  title: "Project Pitches & mingling"
+  place: "Queen Margret Union"
   description: "Project leaders have 2 minutes to describe their project."
+
 -
   id: 103
   type: hacktrack
@@ -98,6 +112,7 @@
   place: "Crowdcast"
   description: "All the attendees can go and meet the project leaders in their video breakout room
   to talk with them about the project."
+
 -
   id: 104
   type: hacktrack
@@ -105,24 +120,34 @@
   place: "Crowdcast"
   description: "The first time all the project team 'gathers around a table', discuss how they want
   to work together and how to get started."
+
 -
   id: 105
   type: hacktrack
   title: "Daily intro and presentation of the Traintrack"
   place: "Crowdcast"
   description: ""
+
 -
   id: 106
   type: hacktrack
   title: "Daily wrap-up"
   place: "Crowdcast"
   description: ""
+
 -
   id: 107
   type: hacktrack
   title: "Final wrap-up"
   place: "Crowdcast"
   description: "We all get together to hear what was accomplished in the past 3 days."
+
+-
+  id: 108
+  type: hacktrack
+  title: "Closing remarks"
+  place: "Crowdcast"
+  description: "Say goodbey to Brainhack. See you at OHBM."
 
 # Hacking... More hacking
 -
@@ -131,7 +156,6 @@
   title: "Hacking"
   place: "Home"
   description: "Don't say 'hackathon' but say 'hack at home'"
-
 
 # Traintrack...
 -

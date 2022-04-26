@@ -44,7 +44,7 @@ c4sponsorsUrl: ""
 navigationLinks:
 #  - {permalink: "/", text: "Home"}
  # - {permalink: "/#about/", text: "About"}
-#  - {permalink: "/schedule", text: "Schedule"}
+ - {permalink: "/schedule", text: "Schedule"}
 #  - {permalink: "/hacktrack", text: "HackTrack"}
  - {permalink: "/traintrack/", text: "TrainTrack Corner"}
  # - {permalink: "/logistics", text: "Logistics"}

@@ -1,0 +1,146 @@
+-
+  date: "2022-06-16"
+  tz: "Etc/UTC"
+  dateReadable: "June 16th, Day 1"
+  tracks:
+    - {title: "Public service announcements", color: "#03a9f4"}
+    - {title: "Hacking", color: "#90be4e"}
+  timeslots:
+    - {
+      startTime: "08:00",
+      endTime: "09:00",
+      sessionIds: [001]
+    }
+    - {
+      startTime: "09:00",
+      endTime: "10:00",
+      sessionIds: [1010]
+    }
+    - {
+      startTime: "10:00",
+      endTime: "12:00",
+      sessionIds: [102, 201]
+    }
+    - {
+      startTime: "12:00",
+      endTime: "13:00",
+      sessionIds: [000]
+    }
+    - {
+      startTime: "15:00",
+      endTime: "15:30",
+      sessionIds: [003, 201]
+    }
+    - {
+      startTime: "16:00",
+      endTime: "17:00",
+      sessionIds: [203, 201]
+    }
+    - {
+      startTime: "17:00",
+      endTime: "18:00",
+      sessionIds: [202]
+    }
+    - {
+      startTime: "18:00",
+      endTime: "24:00",
+      sessionIds: [004]
+    }
+
+-
+  date: "2022-06-17"
+  tz: "Etc/UTC"
+  dateReadable: "June 17th, Day 2"
+  tracks:
+    - {title: "Public service announcements", color: "#03a9f4"}
+    - {title: "Hacking", color: "#90be4e"}
+  timeslots:
+    - {
+      startTime: "08:30",
+      endTime: "09:00",
+      sessionIds: [002]
+    }
+    - {
+        startTime: "09:00",
+        endTime: "09:30",
+        sessionIds: [300, 201]
+    }
+    - {
+        startTime: "09:30",
+        endTime: "10:00",
+        sessionIds: [301, 201]
+    }
+    - {
+    	startTime: "10:00",
+    	endTime: "10:30",
+    	sessionIds: [203, 201]
+    }
+    - {
+      startTime: "12:00",
+      endTime: "13:00",
+      sessionIds: [000]
+    }
+    - {
+      startTime: "15:00",
+      endTime: "15:30",
+      sessionIds: [003, 201]
+    }
+    - {
+      startTime: "16:00",
+      endTime: "17:00",
+      sessionIds: [203, 201]
+    }
+    - {
+      startTime: "17:00",
+      endTime: "18:00",
+      sessionIds: [202]
+    }
+
+-
+  date: "2022-06-18"
+  tz: "Etc/UTC"
+  dateReadable: "June 18th, Day 3"
+  tracks:
+    - {title: "Public service announcements", color: "#03a9f4"}
+    - {title: "Hacking", color: "#90be4e"}
+  timeslots:
+    - {
+      startTime: "08:30",
+      endTime: "09:00",
+      sessionIds: [002]
+    }
+    - {
+        startTime: "09:00",
+        endTime: "09:30",
+        sessionIds: [302, 201]
+    }
+    - {
+        startTime: "09:30",
+        endTime: "10:00",
+        sessionIds: [303, 201]
+    }
+    - {
+    	startTime: "10:00",
+    	endTime: "10:30",
+    	sessionIds: [203, 201]
+    }
+    - {
+      startTime: "12:00",
+      endTime: "13:00",
+      sessionIds: [000]
+    }
+    - {
+      startTime: "15:00",
+      endTime: "15:30",
+      sessionIds: [003]
+    }
+    - {
+      startTime: "16:30",
+      endTime: "17:30",
+      sessionIds: [107]
+    }
+    - {
+      startTime: "17:30",
+      endTime: "18:00",
+      sessionIds: [108]
+    }
