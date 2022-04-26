@@ -14,6 +14,9 @@ for issue in issues:
     if "Hacktrack: Good to go" not in [i['name'] for i in issue["labels"]]:
         continue
 
+    if issue["state"] != "open":
+        continue
+
     body = issue["body"]
 
     fields = [
