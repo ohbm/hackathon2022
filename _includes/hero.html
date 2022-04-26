@@ -8,18 +8,20 @@
                 <h1>{{ heroText[0] }}<span id="typeout-text" class="hidden-xs"></span><span class="typeout-fallback">{{ site.typeoutFallback }}</span>{{ heroText[1] }}</h1>
                 <p>{{ site.eventDate }}</p>
                 <p>{{ site.hubStreamingInfo }}</p>
+                <div class="container">
+                    {% for button in site.heroButtons %}
+                    <a href="{% if button.permalink != null %} {{ button.permalink | prepend: site.baseurl }} {% else %} {{ button.link }} {% endif %}" class="btn btn-primary waves-effect waves-button waves-light waves-float" {% if button.link != null %}target="_blank"{% endif %}>{{ button.text }}</a>
+                    {% endfor %}
+                </div>
+                <hr />
                 <div class="container face-to-face">
                     <div class="col-lg-3 col-md-4 col-sm-6 col-md-offset-3">
                         <div class="card">
                             <div class="card-body">
                                 <p>{{ site.hackathonLocationName }}</p>
                                 <p>{{ site.hackathonStreetAddress }}, {{ site.hackathonAddressLocality }}</p>
-            
-                                {% for button in site.heroButtons %}
-                                <a href="{% if button.permalink != null %} {{ button.permalink | prepend: site.baseurl }} {% else %} {{ button.link }} {% endif %}" class="btn btn-primary waves-effect waves-button waves-light waves-float" {% if button.link != null %}target="_blank"{% endif %}>{{ button.text }}</a>
-                                {% endfor %}
                                 <a href="https://maps.google.com/maps?ll={{ site.hackathonPlaceCoordinates | replace:' ',''}}&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q={{ site.hackathonStreetAddress | replace:' ','%20' | replace:',','%2C'}}%2C%20{{ site.hackathonAddressLocality | replace:' ','%20' | replace:',','%2C'}}" class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">{{ site.viewOnMap }}</a>
-                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6">
