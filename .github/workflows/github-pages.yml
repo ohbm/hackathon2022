@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+  issues:
+    - edited
+    - labeled
+
 jobs:
   github-pages:
     runs-on: ubuntu-latest
@@ -16,6 +20,9 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+
+      - run: python scripts/fetch_gh_issues.py
+
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
