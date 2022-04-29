@@ -21,7 +21,19 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - run: python scripts/fetch_gh_issues.py
+      - run: pip install -r requirements.txt
+
+      - name: Fetching projects from GitHub
+        run: python scripts/fetch_gh_issues.py
+
+      - name: Creating Discord channels
+        run: python scripts/ensure_discord_channels.py
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}
+
+      # TODO script to tweet about the project
+      #   (make sure we tweet only once about the project)
 
       - uses: helaili/jekyll-action@v2
         with:
