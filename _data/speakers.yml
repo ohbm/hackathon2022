@@ -1,3 +1,13 @@
+brainhack:
+  name: "OHBM"
+  surname: "Brainhack"
+  team: true
+  thumbnailUrl: brainhack.png
+  social:
+     - {name: "twitter", link: "https://twitter.com/brainhackorg"}
+     - {name: "github", link: "https://github.com/ohbm"}
+
+
 saskia_steffan_bollmann:
   name: "Saskia & Steffan"
   surname: "Bollmann"

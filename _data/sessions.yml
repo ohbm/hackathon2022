@@ -69,13 +69,21 @@
   place: "Queen Margret Union"
   description: "Catch up with your friends. Meet new people!"
 
+-
+  id: 005
+  type: social
+  title: "Virtual breakfast"
+  place: "Discord"
+  description: "Say hi to your friends!"
+
 # Intro, wrap up, project pitches
 -
   id: 1010
   type: hacktrack
   title: "Welcome"
   place: "Queen Margret Union"
-  description: "Welcoming ceremony for Glasgow event."
+  description: "Welcoming ceremony for Glasgow / EMEA hub."
+  speakers: [brainhack] # from speakers.yml
   links:
     presentation: #https://osf.io/
 
@@ -84,31 +92,47 @@
   type: hacktrack
   title: "Welcome"
   place: "Discord"
-  description: "Welcoming ceremony for the APAC hub"
+  description: "Welcoming ceremony for the Americas hub"
   links:
     presentation: #https://osf.io/
-
+  
 -
   id: 1012
   type: hacktrack
   title: "Welcome"
   place: "Discord"
-  description: "Welcoming ceremony for the Americas hub"
+  description: "Welcoming ceremony for the APAC hub"
   links:
     presentation: #https://osf.io/
 
 -
-  id: 102
+  id: 1020
   type: hacktrack
   title: "Project Pitches & mingling"
   place: "Queen Margret Union / Discord"
   description: "Project leaders have 2 minutes to describe their project."
 
 -
+  id: 1021
+  type: hacktrack
+  title: "Americas Project Pitches"
+  place: "Discord"
+  description: "Tune in to Discrod to join the Americas."
+
+-
+  id: 103
+  type: hacktrack
+  title: "The fantastic projects and where to find them"
+  place: "Queen Margret Union / Discord"
+  description: "Project pitches continues, and let's chat and find your project."
+
+
+-
   id: 107
   type: hacktrack
   title: "Final wrap-up"
   place: "Queen Margret Union / Discord"
+  speakers: [brainhack] # from speakers.yml
   description: "We all get together to hear what was accomplished in the past 3 days."
 
 -
@@ -116,6 +140,7 @@
   type: hacktrack
   title: "Closing remarks"
   place: "Queen Margret Union / Discord"
+  speakers: [brainhack] # from speakers.yml
   description: "Say goodbey to Brainhack. See you at OHBM."
 
 # Hacking... More hacking
@@ -124,14 +149,14 @@
   type: hacktrack
   title: "Hacking"
   place: "Queen Margret Union / Discord"
-  description: ""
+  description: "Anytime is hack time."
 
 -
   id: 202
   type: hacktrack
   title: "Overtime hacking"
   place: "Queen Margret Union / Discord"
-  description: ""
+  description: "Anytime is hack time."
 
 -
   id: 203
@@ -140,51 +165,58 @@
   place: "Queen Margret Union / Discord"
   description: "The best time to start talking with others"
 
+
+-
+  id: 204
+  type: hacktrack
+  title: "Hacking"
+  place: "Queen Margret Union / Discord"
+  description: "We won't judge you for hacking at meal time."
+
 # Talks
 -
-  id: 300
+  id: 301
   type: traintrack
   title: "Talk 1"
   place: "Queen Margret Union Main Stage / Discord"
   description: >
-    Talk 1.
+    TBA.
   long_description: >
     TBA.
   links:
-  speakers: [reinder_vosdewael] # from speakers.yml # use reinder as placeholder for lols
-
--
-  id: 301
-  type: traintrack
-  title: "Talk 2"
-  place: "Queen Margret Union Main Stage / Discord"
-  description: >
-    Talk 2.
-  long_description: >
-    TBA.
-  links:
-  speakers: [reinder_vosdewael] # from speakers.yml
+  speakers: [brainhack] # from speakers.yml
 
 -
   id: 302
   type: traintrack
-  title: "Talk 3"
+  title: "Talk 2"
   place: "Queen Margret Union Main Stage / Discord"
   description: >
-    Talk 3.
+    TBA.
   long_description: >
     TBA.
   links:
-  speakers: [reinder_vosdewael] # from speakers.yml
+  speakers: [brainhack] # from speakers.yml
   
 -
   id: 303
   type: traintrack
-  title: "Talk 4"
+  title: "Talk 3"
   place: "Queen Margret Union Main Stage / Discord"
   description: >
-    Talk 4.
+    TBA.
   long_description: >
     TBA.
   links:
-  speakers: [reinder_vosdewael] # from speakers.yml
+  speakers: [brainhack] # from speakers.yml
+-
+  id: 304
+  type: traintrack
+  title: "Talk 4"
+  place: "Queen Margret Union Main Stage / Discord"
+  description: >
+    TBA.
+  long_description: >
+    TBA.
+  links:
+  speakers: [brainhack] # from speakers.yml
