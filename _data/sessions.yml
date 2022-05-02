@@ -53,7 +53,7 @@
   type: social
   title: "Morning mingling"
   place: "Queen Margrat Union / Discord"
-  description: "Slowly move to the venue / get to your desk."
+  description: "Slowly move to the venue / get to your desk / start caffeine intake."
 
 -
   id: 003
@@ -82,7 +82,7 @@
   type: hacktrack
   title: "Welcome - EMEA + APAC"
   place: "Queen Margrat Union"
-  description: "Welcoming ceremony for Glasgow / EMEA hub."
+  description: "Welcoming ceremony for Glasgow / EMEA and APAC hub."
   speakers: [brainhack] # from speakers.yml
   links:
     presentation: #https://osf.io/
@@ -117,7 +117,7 @@
   type: hacktrack
   title: "Americas Project Pitches"
   place: "Discord"
-  description: "Tune in to Discrod to join the Americas."
+  description: "Tune in to Discord to join the Americas project pitches."
 
 -
   id: 103
@@ -149,7 +149,7 @@
   title: "Closing remarks"
   place: "Queen Margrat Union / Discord"
   speakers: [brainhack] # from speakers.yml
-  description: "Say goodbey to Brainhack. See you at OHBM."
+  description: "Say goodbye to Brainhack. See you at OHBM."
 
 # Hacking... More hacking
 -
