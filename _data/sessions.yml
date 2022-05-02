@@ -38,35 +38,35 @@
   id: 000
   type: social
   title: "Lunch"
-  place: "Queen Margret Union"
+  place: "Queen Margrat Union"
   description: "Mandatory lunch time."
 
 -
   id: 001
   type: social
   title: "Welcome desk"
-  place: "Queen Margret Union"
+  place: "Queen Margrat Union"
   description: "Get your name badge!"
 
 -
   id: 002
   type: social
   title: "Morning mingling"
-  place: "Queen Margret Union"
+  place: "Queen Margrat Union"
   description: "Slowly move to the venue."
 
 -
   id: 003
   type: social
   title: "Coffee break"
-  place: "Queen Margret Union"
+  place: "Queen Margrat Union"
   description: "Dropping payload."
 
 -
   id: 004
   type: social
   title: "Open bar"
-  place: "Queen Margret Union"
+  place: "Queen Margrat Union"
   description: "Catch up with your friends. Meet new people!"
 
 -
@@ -81,7 +81,7 @@
   id: 1010
   type: hacktrack
   title: "Welcome"
-  place: "Queen Margret Union"
+  place: "Queen Margrat Union"
   description: "Welcoming ceremony for Glasgow / EMEA hub."
   speakers: [brainhack] # from speakers.yml
   links:
@@ -109,7 +109,7 @@
   id: 1020
   type: hacktrack
   title: "Project Pitches & mingling"
-  place: "Queen Margret Union / Discord"
+  place: "Queen Margrat Union / Discord"
   description: "Project leaders have 2 minutes to describe their project."
 
 -
@@ -123,7 +123,7 @@
   id: 103
   type: hacktrack
   title: "The fantastic projects and where to find them"
-  place: "Queen Margret Union / Discord"
+  place: "Queen Margrat Union / Discord"
   description: "Project pitches continues, and let's chat and find your project."
 
 
@@ -131,7 +131,7 @@
   id: 107
   type: hacktrack
   title: "Final wrap-up"
-  place: "Queen Margret Union / Discord"
+  place: "Queen Margrat Union / Discord"
   speakers: [brainhack] # from speakers.yml
   description: "We all get together to hear what was accomplished in the past 3 days."
 
@@ -139,7 +139,7 @@
   id: 108
   type: hacktrack
   title: "Closing remarks"
-  place: "Queen Margret Union / Discord"
+  place: "Queen Margrat Union / Discord"
   speakers: [brainhack] # from speakers.yml
   description: "Say goodbey to Brainhack. See you at OHBM."
 
@@ -148,21 +148,21 @@
   id: 201
   type: hacktrack
   title: "Hacking"
-  place: "Queen Margret Union / Discord"
+  place: "Queen Margrat Union / Discord"
   description: "Anytime is hack time."
 
 -
   id: 202
   type: hacktrack
   title: "Overtime hacking"
-  place: "Queen Margret Union / Discord"
+  place: "Queen Margrat Union / Discord"
   description: "Anytime is hack time."
 
 -
   id: 203
   type: hacktrack
   title: "Unconference!!!"
-  place: "Queen Margret Union / Discord"
+  place: "Queen Margrat Union / Discord"
   description: "The best time to start talking with others"
 
 
@@ -170,7 +170,7 @@
   id: 204
   type: hacktrack
   title: "Hacking"
-  place: "Queen Margret Union / Discord"
+  place: "Queen Margrat Union / Discord"
   description: "We won't judge you for hacking at meal time."
 
 # Talks
@@ -178,7 +178,7 @@
   id: 301
   type: traintrack
   title: "Talk 1"
-  place: "Queen Margret Union Main Stage / Discord"
+  place: "Queen Margrat Union Main Stage / Discord"
   description: >
     TBA.
   long_description: >
@@ -190,7 +190,7 @@
   id: 302
   type: traintrack
   title: "Talk 2"
-  place: "Queen Margret Union Main Stage / Discord"
+  place: "Queen Margrat Union Main Stage / Discord"
   description: >
     TBA.
   long_description: >
@@ -202,7 +202,7 @@
   id: 303
   type: traintrack
   title: "Talk 3"
-  place: "Queen Margret Union Main Stage / Discord"
+  place: "Queen Margrat Union Main Stage / Discord"
   description: >
     TBA.
   long_description: >
@@ -213,7 +213,7 @@
   id: 304
   type: traintrack
   title: "Talk 4"
-  place: "Queen Margret Union Main Stage / Discord"
+  place: "Queen Margrat Union Main Stage / Discord"
   description: >
     TBA.
   long_description: >
