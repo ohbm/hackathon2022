@@ -1,14 +1,14 @@
 -
   date: "2022-06-16"
   tz: "Etc/GMT-7"
-  dateReadable: "June 16th, Day 1"
+  dateReadable: "June 16th, Day 1 (UTC -7)"
   tracks:
     - {title: "Public service announcements", color: "#03a9f4"}
   timeslots:
     - {
       startTime: "08:00",
       endTime: "08:30",
-      sessionIds: [005]
+      sessionIds: [002]
     }
     - {
         startTime: "08:30",
@@ -49,24 +49,24 @@
 -
   date: "2022-06-17"
   tz: "Etc/GMT-7"
-  dateReadable: "June 17th, Day 2"
+  dateReadable: "June 17th, Day 2 (UTC -7)"
   tracks:
     - {title: "Public service announcements", color: "#03a9f4"}
   timeslots:
     - {
         startTime: "08:30",
         endTime: "09:00",
-        sessionIds: [005]
+        sessionIds: [002]
     }
     - {
       startTime: "09:00",
       endTime: "09:30",
-      sessionIds: [302]
+      sessionIds: [303]
     }
     - {
       startTime: "09:30",
       endTime: "10:00",
-      sessionIds: [203]
+      sessionIds: [2031]
     }
     - {
       startTime: "10:00",
@@ -86,7 +86,7 @@
     - {
       startTime: "15:00",
       endTime: "15:30",
-      sessionIds: [303]
+      sessionIds: [302]
     }
     - {
       startTime: "15:30",
@@ -97,7 +97,7 @@
 -
   date: "2022-06-18"
   tz: "Etc/GMT-7"
-  dateReadable: "June 18th, Day 3"
+  dateReadable: "June 18th, Day 3 (UTC -7)"
   tracks:
     - {title: "Public service announcements", color: "#03a9f4"}
   timeslots:
@@ -105,7 +105,7 @@
     - {
         startTime: "08:30",
         endTime: "09:00",
-        sessionIds: [005]
+        sessionIds: [002]
     }
     - {
       startTime: "09:00",
@@ -115,7 +115,7 @@
     - {
       startTime: "09:30",
       endTime: "10:30",
-      sessionIds: [107]
+      sessionIds: [1071]
     }
     - {
       startTime: "10:00",
@@ -135,10 +135,10 @@
     - {
       startTime: "15:00",
       endTime: "15:30",
-      sessionIds: [303]
+      sessionIds: [107]
     }
     - {
       startTime: "15:30",
       endTime: "16:00",
-      sessionIds: [203]
+      sessionIds: [108]
     }
