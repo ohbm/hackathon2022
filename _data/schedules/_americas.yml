@@ -1,0 +1,144 @@
+-
+  date: "2022-06-16"
+  tz: "Etc/GMT-7"
+  dateReadable: "June 16th, Day 1"
+  tracks:
+    - {title: "Public service announcements", color: "#03a9f4"}
+  timeslots:
+    - {
+      startTime: "08:00",
+      endTime: "08:30",
+      sessionIds: [005]
+    }
+    - {
+        startTime: "08:30",
+        endTime: "09:00",
+        sessionIds: [1011]
+    }
+    - {
+      startTime: "09:00",
+      endTime: "10:00",
+      sessionIds: [1021]
+    }
+    - {
+      startTime: "10:00",
+      endTime: "10:30",
+      sessionIds: [003]
+    }
+    - {
+      startTime: "11:30",
+      endTime: "12:30",
+      sessionIds: [000, 204]
+    }
+    - {
+      startTime: "13:30",
+      endTime: "14:30",
+      sessionIds: [003]
+    }
+    - {
+      startTime: "15:00",
+      endTime: "15:30",
+      sessionIds: [301]
+    }
+    - {
+      startTime: "15:30",
+      endTime: "16:00",
+      sessionIds: [203]
+    }
+
+-
+  date: "2022-06-17"
+  tz: "Etc/GMT-7"
+  dateReadable: "June 17th, Day 2"
+  tracks:
+    - {title: "Public service announcements", color: "#03a9f4"}
+  timeslots:
+    - {
+        startTime: "08:30",
+        endTime: "09:00",
+        sessionIds: [005]
+    }
+    - {
+      startTime: "09:00",
+      endTime: "09:30",
+      sessionIds: [302]
+    }
+    - {
+      startTime: "09:30",
+      endTime: "10:00",
+      sessionIds: [203]
+    }
+    - {
+      startTime: "10:00",
+      endTime: "10:30",
+      sessionIds: [003]
+    }
+    - {
+      startTime: "11:30",
+      endTime: "12:30",
+      sessionIds: [000, 204]
+    }
+    - {
+      startTime: "13:30",
+      endTime: "14:30",
+      sessionIds: [003]
+    }
+    - {
+      startTime: "15:00",
+      endTime: "15:30",
+      sessionIds: [303]
+    }
+    - {
+      startTime: "15:30",
+      endTime: "16:00",
+      sessionIds: [203]
+    }
+
+-
+  date: "2022-06-18"
+  tz: "Etc/GMT-7"
+  dateReadable: "June 18th, Day 3"
+  tracks:
+    - {title: "Public service announcements", color: "#03a9f4"}
+  timeslots:
+  timeslots:
+    - {
+        startTime: "08:30",
+        endTime: "09:00",
+        sessionIds: [005]
+    }
+    - {
+      startTime: "09:00",
+      endTime: "09:30",
+      sessionIds: [304]
+    }
+    - {
+      startTime: "09:30",
+      endTime: "10:30",
+      sessionIds: [107]
+    }
+    - {
+      startTime: "10:00",
+      endTime: "10:30",
+      sessionIds: [003]
+    }
+    - {
+      startTime: "11:30",
+      endTime: "12:30",
+      sessionIds: [000, 204]
+    }
+    - {
+      startTime: "13:30",
+      endTime: "14:30",
+      sessionIds: [003]
+    }
+    - {
+      startTime: "15:00",
+      endTime: "15:30",
+      sessionIds: [303]
+    }
+    - {
+      startTime: "15:30",
+      endTime: "16:00",
+      sessionIds: [203]
+    }

@@ -35,99 +35,188 @@
 # 000 Breaks, socials and that sort of things
 
 -
-  id: 101
-  type: hacktrack
-  title: "Kick-start day 1!"
-  place: "Live stage"
-  description: "Kicking off the 2021 OHBM Brainhack."
+  id: 000
+  type: social
+  title: "Lunch"
+  place: "Queen Margrat Union"
+  description: "Mandatory lunch time."
+
 -
-  id: 102
+  id: 001
+  type: social
+  title: "Welcome desk"
+  place: "Queen Margrat Union"
+  description: "Get your name badge!"
+
+-
+  id: 002
+  type: social
+  title: "Morning mingling"
+  place: "Queen Margrat Union"
+  description: "Slowly move to the venue."
+
+-
+  id: 003
+  type: social
+  title: "Coffee break"
+  place: "Queen Margrat Union"
+  description: "Dropping payload."
+
+-
+  id: 004
+  type: social
+  title: "Open bar"
+  place: "Queen Margrat Union"
+  description: "Catch up with your friends. Meet new people!"
+
+-
+  id: 005
+  type: social
+  title: "Virtual breakfast"
+  place: "Discord"
+  description: "Say hi to your friends!"
+
+# Intro, wrap up, project pitches
+-
+  id: 1010
   type: hacktrack
-  title: "Battery-included Brainhack with QMENTA!"
-  place: "Live stage"
-  description: "A discussion of the QMENTA platform and how attendees can freely use their resources for their hackathon projects"
+  title: "Welcome"
+  place: "Queen Margrat Union"
+  description: "Welcoming ceremony for Glasgow / EMEA hub."
+  speakers: [brainhack] # from speakers.yml
+  links:
+    presentation: #https://osf.io/
+
+-
+  id: 1011
+  type: hacktrack
+  title: "Welcome"
+  place: "Discord"
+  description: "Welcoming ceremony for the Americas hub"
+  links:
+    presentation: #https://osf.io/
+  
+-
+  id: 1012
+  type: hacktrack
+  title: "Welcome"
+  place: "Discord"
+  description: "Welcoming ceremony for the APAC hub"
+  links:
+    presentation: #https://osf.io/
+
+-
+  id: 1020
+  type: hacktrack
+  title: "Project Pitches & mingling"
+  place: "Queen Margrat Union / Discord"
+  description: "Project leaders have 2 minutes to describe their project."
+
+-
+  id: 1021
+  type: hacktrack
+  title: "Americas Project Pitches"
+  place: "Discord"
+  description: "Tune in to Discrod to join the Americas."
+
 -
   id: 103
   type: hacktrack
-  title: "Project pitches"
-  place: "Live stage"
-  description: "You can offer your project proposals for the hackathon here. Try to find others with interests that might work well with yours."
--
-  id: 104
-  type: hacktrack
-  title: "Project Q&A"
-  place: "GatherTown"
-  description: "Did anyone say GatherTown? :)"
--
-  id: 105
-  type: hacktrack
-  title: "(Brain)Hacking"
-  place: "Hacking Projects"
-  description: "It's time to hack stuff together!"
--
-  id: 106
-  type: hacktrack
-  title: "OpenMic Session for Projects!"
-  place: "Live stage"
-  description: "Hackathon attendees step up to the mic to discuss thoughts on their projects."
+  title: "The fantastic projects and where to find them"
+  place: "Queen Margrat Union / Discord"
+  description: "Project pitches continues, and let's chat and find your project."
+
+
 -
   id: 107
   type: hacktrack
-  title: "Project presentations"
-  place: "Live stage"
-  description: "Brainhack attendees present the results of their projects to the rest of the group."
--
-  id: 201
-  type: traintrack
-  title: "Live Q&A - Version Control & Code Testing"
-  place: "Live stage"
-  description: "Live Q&A on Version control best practices. Open to hackathon attendees that have registered for the event."
--
-  id: 202
-  type: traintrack
-  title: "Live Q&A - Reproducible Workflows"
-  place: "Live stage"
-  description: "Live Q&A on Reproducible Workflows practices. Open to hackathon attendees that have registered for the event."
--
-  id: 203
-  type: traintrack
-  title: "Live Q&A - Data Visualization & Machine Learning"
-  place: "Live stage"
-  description: "Live Q&A on Data visualization and Machine learning practices. Open to hackathon attendees that have registered for the event."
--
-  id: 204
-  type: traintrack
-  title: "Live Q&A - Community Building"
-  place: "Live stage"
-  description: "Live Q&A on Community Building. Open to hackathon attendees that have registered for the event."
--
-  id: 205
-  type: traintrack
-  title: "BrainArt Session"
-  place: "Live stage"
-  description: "Presentation and discussions of creating art with the brain. Led by the OHBM BrainArt SIG."
--
-  id: 301
-  type: social
-  title: "Social"
-  place: "GatherTown"
-  description: "Did anyone say GatherTown? :)"
--
-  id: 302
-  type: social
-  title: "Kick-start day 2!"
-  place: "Live stage"
-  description: "Starting off the second day of the Brainhack - with NeuroMatch Academy! Come and see what they have been up to."
--
-  id: 303
-  type: social
-  title: "Kick-start day 3!"
-  place: "Live stage"
-  description: "Starting off the final day of the Brainhack - with CNeuroMod! Come and see what they have been up to."
+  title: "Final wrap-up"
+  place: "Queen Margrat Union / Discord"
+  speakers: [brainhack] # from speakers.yml
+  description: "We all get together to hear what was accomplished in the past 3 days."
 
 -
+  id: 108
+  type: hacktrack
+  title: "Closing remarks"
+  place: "Queen Margrat Union / Discord"
+  speakers: [brainhack] # from speakers.yml
+  description: "Say goodbey to Brainhack. See you at OHBM."
+
+# Hacking... More hacking
+-
+  id: 201
+  type: hacktrack
+  title: "Hacking"
+  place: "Queen Margrat Union / Discord"
+  description: "Anytime is hack time."
+
+-
+  id: 202
+  type: hacktrack
+  title: "Overtime hacking"
+  place: "Queen Margrat Union / Discord"
+  description: "Anytime is hack time."
+
+-
+  id: 203
+  type: hacktrack
+  title: "Unconference!!!"
+  place: "Queen Margrat Union / Discord"
+  description: "The best time to start talking with others"
+
+
+-
+  id: 204
+  type: hacktrack
+  title: "Hacking"
+  place: "Queen Margrat Union / Discord"
+  description: "We won't judge you for hacking at meal time."
+
+# Talks
+-
+  id: 301
+  type: traintrack
+  title: "Talk 1"
+  place: "Queen Margrat Union Main Stage / Discord"
+  description: >
+    TBA.
+  long_description: >
+    TBA.
+  links:
+  speakers: [brainhack] # from speakers.yml
+
+-
+  id: 302
+  type: traintrack
+  title: "Talk 2"
+  place: "Queen Margrat Union Main Stage / Discord"
+  description: >
+    TBA.
+  long_description: >
+    TBA.
+  links:
+  speakers: [brainhack] # from speakers.yml
+  
+-
+  id: 303
+  type: traintrack
+  title: "Talk 3"
+  place: "Queen Margrat Union Main Stage / Discord"
+  description: >
+    TBA.
+  long_description: >
+    TBA.
+  links:
+  speakers: [brainhack] # from speakers.yml
+-
   id: 304
-  type: social
-  title: "Better Together"
-  place: "Live stage"
-  description: "Panel discussion & call for people to anonymously share their experiences within neurosciece related to academia or research environments."
+  type: traintrack
+  title: "Talk 4"
+  place: "Queen Margrat Union Main Stage / Discord"
+  description: >
+    TBA.
+  long_description: >
+    TBA.
+  links:
+  speakers: [brainhack] # from speakers.yml
