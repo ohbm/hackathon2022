@@ -1,7 +1,7 @@
 -
   date: "2022-06-16"
   tz: "Etc/GMT+1"
-  dateReadable: "June 16th, Day 1"
+  dateReadable: "June 16th, Day 1 (GMT+1)"
   tracks:
     - {title: "Public service announcements", color: "#03a9f4"}
   timeslots:
@@ -59,7 +59,7 @@
 -
   date: "2022-06-17"
   tz: "Etc/GMT+1"
-  dateReadable: "June 17th, Day 2"
+  dateReadable: "June 17th, Day 2 (GMT+1)"
   tracks:
     - {title: "Public service announcements", color: "#03a9f4"}
   timeslots:
@@ -107,7 +107,7 @@
 -
   date: "2022-06-18"
   tz: "Etc/GMT+1"
-  dateReadable: "June 18th, Day 3"
+  dateReadable: "June 18th, Day 3 (GMT+1)"
   tracks:
     - {title: "Public service announcements", color: "#03a9f4"}
   timeslots:
