@@ -3,7 +3,7 @@
   tz: "Etc/GMT+1"
   dateReadable: "June 16th, Day 0 (UTC + 8)"
   tracks:
-    - {title: "Public service announcements", color: "#03a9f4"}
+    # - {title: "Public service announcements", color: "#03a9f4"}
   timeslots:
     - {
       startTime: "15:30",
