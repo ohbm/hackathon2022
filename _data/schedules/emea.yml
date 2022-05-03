@@ -48,7 +48,7 @@
     - {
       startTime: "17:30",
       endTime: "18:00",
-      sessionIds: [301]
+      sessionIds: [3011, 3012]
     }
     - {
       startTime: "18:00",
@@ -61,7 +61,7 @@
   tz: "Etc/GMT+1"
   dateReadable: "June 17th, Day 2 (GMT+1)"
   tracks:
-    - {title: "Public service announcements", color: "#03a9f4"}
+    # - {title: "Public service announcements", color: "#03a9f4"}
   timeslots:
     - {
       startTime: "08:00",
@@ -71,7 +71,7 @@
     - {
         startTime: "09:00",
         endTime: "09:30",
-        sessionIds: [302]
+        sessionIds: [3021, 3022]
     }
     - {
         startTime: "09:30",
@@ -96,7 +96,7 @@
     - {
       startTime: "17:00",
       endTime: "17:30",
-      sessionIds: [303]
+      sessionIds: [3031, 3032]
     }
     - {
       startTime: "17:30",
@@ -109,7 +109,7 @@
   tz: "Etc/GMT+1"
   dateReadable: "June 18th, Day 3 (GMT+1)"
   tracks:
-    - {title: "Public service announcements", color: "#03a9f4"}
+    # - {title: "Public service announcements", color: "#03a9f4"}
   timeslots:
     - {
       startTime: "08:00",
@@ -119,7 +119,7 @@
     - {
         startTime: "09:00",
         endTime: "09:30",
-        sessionIds: [304]
+        sessionIds: [3041, 3042]
     }
     - {
         startTime: "09:30",
