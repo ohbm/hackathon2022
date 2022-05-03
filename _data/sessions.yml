@@ -198,101 +198,103 @@
 -
   id: 3011
   type: traintrack
-  title: "Talk 1-1"
+  title: "Talk 1-1"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: >
+  description: >  # please edit this
     TBA.
-  long_description: >
+  long_description: >  # Please edit this and keep the last line
     TBA.
-    Live for EMEA. Replay for APAC and America.
+    Live event for EMEA. Replay for APAC and America.
   links:
-  speakers: [brainhack] # from speakers.yml
+  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
 
 -
   id: 3012
   type: traintrack
-  title: "Talk 1-2"
+  title: "Talk 1-2"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: >
+  description: >  # please edit this
     TBA.
-  long_description: >
+  long_description: >  # Please edit this and keep the last line
     TBA.
-    Live for EMEA. Replay for APAC and America.
+    Live event for EMEA. Replay for APAC and America.
   links:
-  speakers: [brainhack] # from speakers.yml
+  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
 
 -
   id: 3021
   type: traintrack
-  title: "Talk 2-1"
+  title: "Talk 2-1"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: >
+  description: >  # please edit this
     TBA.
-  long_description: >
+  long_description: >  # Please edit this and keep the last line
     TBA.
-    Live for EMEA and APAC. Replay for Americas.
+    Live event for EMEA and APAC. Replay for Americas.
   links:
-  speakers: [brainhack] # from speakers.yml
+  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
 
 -
   id: 3022
   type: traintrack
-  title: "Talk 2-2"
+  title: "Talk 2-2"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: >
+  description: >  # please edit this
     TBA.
-  long_description: >
+  long_description: >  # Please edit this and keep the last line
     TBA.
-    Live for EMEA and APAC. Replay for Americas.
+    Live event for EMEA and APAC. Replay for Americas.
   links:
-  speakers: [brainhack] # from speakers.yml
+  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
+
 -
   id: 3031
   type: traintrack
-  title: "Talk 3-1"
+  title: "Talk 3-1"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: >
+  description: >  # please edit this
     TBA.
-  long_description: >
+  long_description: >  # Please edit this and keep the last line
     TBA.
-    Live for EMEA and America. Replay for APAC.
+    Live event for EMEA and America. Replay for APAC.
   links:
-  speakers: [brainhack] # from speakers.yml
+  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
 
 -
   id: 3032
   type: traintrack
-  title: "Talk 3-2"
+  title: "Talk 3-2"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: >
+  description: >  # please edit this
     TBA.
-  long_description: >
+  long_description: >  # Please edit this and keep the last line
     TBA.
-    Live for EMEA and America. Replay for APAC.
+    Live event for EMEA and America. Replay for APAC.
   links:
-  speakers: [brainhack] # from speakers.yml
+  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
+
 -
   id: 3041
   type: traintrack
-  title: "Talk 4-1"
+  title: "Talk 4-1"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: >
+  description: >  # please edit this
     TBA.
-  long_description: >
+  long_description: >  # Please edit this and keep the last line
     TBA.
-    Live for EMEA and APAC. Replay for Americas.
+    Live event for EMEA and APAC. Replay for Americas.
   links:
-  speakers: [brainhack] # from speakers.yml
+  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
 
 -
   id: 3042
   type: traintrack
-  title: "Talk 4-2"
+  title: "Talk 4-2"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: >
+  description: >  # please edit this
     TBA.
-  long_description: >
+  long_description: >  # Please edit this and keep the last line
     TBA.
-    Live for EMEA and APAC. Replay for Americas.
+    Live event for EMEA and APAC. Replay for Americas.  
   links:
-  speakers: [brainhack] # from speakers.yml
+  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here

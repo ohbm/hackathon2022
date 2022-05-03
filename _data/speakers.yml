@@ -2,7 +2,7 @@ brainhack:
   name: "OHBM"
   surname: "Brainhack"
   team: true
-  thumbnailUrl: brainhack.png
+  thumbnailUrl: brainhack.png   # add image to img/team
   social:
      - {name: "twitter", link: "https://twitter.com/brainhackorg"}
      - {name: "github", link: "https://github.com/ohbm"}
