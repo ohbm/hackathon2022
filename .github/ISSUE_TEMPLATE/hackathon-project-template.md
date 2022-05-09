@@ -11,7 +11,7 @@ assignees: '@ohbm/hack2022-monitors'
 *We are very excited to meet you at the 2022 OHBM Brainhack 🎉* *To submit a project, you need to be an attendee of the 2022 OHBM Brainhack. We ask you to register first over [here](http://www.humanbrainmapping.org/HackathonReg/). Thank you!*
 
 *We have prepared this template to help with your project submission. Here is how to proceed:*
- 1. *Before fill the template and [the guidline](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md) be sure to include as many information as possible*
+ 1. *Before fill the template check [the guideline](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md). Be sure to include as many information as possible*
  2. *Submit the issue*
  3. *Check items in the checklist*
  4. *Once you are done (at least all 'required' items must be provided), please delete the "Guidelines" section add a comment saying 'hi @ohbm/project-monitors: My project is ready!'*
