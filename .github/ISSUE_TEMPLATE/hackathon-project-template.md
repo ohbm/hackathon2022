@@ -38,7 +38,7 @@ Include the GitHub login if you are planning to use.
 
 **[In-person/online]**:
 <!--Provide information if leaders are planning to be in-person and/or online. 
-If online, please provide your timezone (cf. https://www.timeanddate.com/time/map/ for example).
+If online, please provide your venue - either EPAC (Europe, Middle East, and Africa) Hub, APAC (Asia-Pacific) Hub or Americas Hub.
 -->
 
 **Description**:
@@ -54,10 +54,37 @@ see [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPL
 **Skills**:
 <!--Provide a list of the skills, you can specify required and recommended, 
 see [examples](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-skills)
+(please list each skill in new line)
 -->
 
-**List of recommended tutorials**
-<!--TODO/trainhack-->
+
+**List of [recommended tutorials](https://ohbm.github.io/hackathon2022/traintrack/)**
+<!--We provided a list of tutorials that might be helpful for new contributors.
+Please check which section will be useful to work on your project.
+-->
+
+**Installation**
+- [ ] [Set up a brainhack friendly computing environment](https://psy6983.brainhackmtl.org/modules/introduction_to_terminal/)
+- [ ] [A introduction to Bash](https://psy6983.brainhackmtl.org/modules/introduction_to_terminal/)
+
+**Introduction to python for data analysis**
+- [ ] [Writing a script](https://psy6983.brainhackmtl.org/modules/python_scripts/)
+- [ ] [Data analysis with Python](https://psy6983.brainhackmtl.org/modules/python_data_analysis/)
+- [ ] [Visualisation](https://psy6983.brainhackmtl.org/modules/python_visualization/)
+
+**Machine learning for neuroimaging**
+- [ ] [Machine learning basics](https://psy6983.brainhackmtl.org/modules/machine_learning_basics/)
+- [ ] [BIDS](https://psy6983.brainhackmtl.org/modules/bids/)
+- [ ] [Machine learning- for neuroimaging](https://psy6983.brainhackmtl.org/modules/machine_learning_neuroimaging/)
+
+**Version control systems**
+- [ ] [Using Git and Github](https://psy6983.brainhackmtl.org/modules/git_github/)
+- [ ] [Data management with Datalad](https://psy6983.brainhackmtl.org/modules/datalad/)
+
+**Cloud resource**
+- [ ] [Virtualization](https://psy6983.brainhackmtl.org/modules/containers/)
+- [ ] High Performance Computing: [Oracle cloud resource](https://brainhack.org/brainhack_cloud/)
+
 
 **Good first issues**:
 <!--If you would like to welcome new people, please provide a list of good-first-issues-->
