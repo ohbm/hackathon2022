@@ -27,38 +27,38 @@ Thank you!
 See [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#link-to-project)
 -->
 
-**Title**:
+### Title
 <!--Name of your awesome project. Please also update the title of the issue to be the title of your project-->
 
-**Project leaders with Mattermost handle and GitHub login**:
+### Project leaders with Mattermost handle and GitHub login
 <!--Please provide more than one leader if possible and include the [Mattermost handle](https://mattermost.brainhack.org/) (i.e. your username). 
 If you do not have an account, please [sign up here](https://mattermost.brainhack.org/signup_email).
 Include the GitHub login if you are planning to use.
 -->
 
-**[In-person/online]**:
+### In-person/online
 <!--Provide information if leaders are planning to be in-person and/or online. 
 If online, please provide your venue - either EPAC (Europe, Middle East, and Africa) Hub, APAC (Asia-Pacific) Hub or Americas Hub.
 -->
 
-**Description**:
+### Description
 <!--Describe the main idea and context of your project in a few sentences.-->
 
-**Link to project**:
+### Link to the project
 
-**Goals for the OHBM Brainhack**
+### Goals for the OHBM Brainhack
 <!-- Describe what you want to achieve during this brainhack, 
 see [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#goals)
 -->
 
-**Skills**:
+### Skills
 <!--Provide a list of the skills, you can specify required and recommended, 
 see [examples](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-skills)
-(please list each skill in new line)
+(please list each skill in a new line)
 -->
 
 
-**List of [recommended tutorials](https://ohbm.github.io/hackathon2022/traintrack/)**
+### List of [recommended tutorials](https://ohbm.github.io/hackathon2022/traintrack/)
 <!--We provided a list of tutorials that might be helpful for new contributors.
 Please check which section will be useful to work on your project.
 -->
@@ -86,11 +86,11 @@ Please check which section will be useful to work on your project.
 - [ ] High Performance Computing: [Oracle cloud resource](https://brainhack.org/brainhack_cloud/)
 
 
-**Good first issues**:
+### Good first issues
 <!--If you would like to welcome new people, please provide a list of good-first-issues-->
 
 
-**Chat channel**:
+### Chat channel
 <!-- If you are creating a channel on the [brainhack mattermost](https://mattermost.brainhack.org/) try to create a
 **public** channel with one of the following template names:
 
@@ -110,7 +110,14 @@ As we are not finalised the platform for the hackathon yet, for now there is no 
 
 -->
 
-**Image for the OHBM brainhack website**
+### Image for the OHBM brainhack website
+
+
+### Twitter summary
+<!--
+Twitter-size summary of your project pitch, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)
+-->
+
 
 ## Project submission
 
