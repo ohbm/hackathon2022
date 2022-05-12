@@ -24,7 +24,7 @@ Don’t be shy, reach out to other brainhackers in person or through discords!
 An important skill of a brainhacker is learning new things with friends.
 There’s no instructors or leaders in Traintrack Corner, just like minded individuals who want to do Science!
 You decide what your experience will be like.
-If you are not sure how to approach people, consider joining our [Buddy System](/buddy-system/).
+If you are not sure how to approach people, consider joining our [Buddy System](./buddy-system/).
 If you found better materials for the topics you want, why not try to submit a pull request to add a link to the content?
 
 ## Suggested topics
@@ -34,7 +34,7 @@ You can explore one topic that suits you at Braihack!
 Of course, feel free to come up with your own!
 
 - Installation
-  - [Set up a brainhack friendly computing environment](https://psy6983.brainhackmtl.org/modules/introduction_to_terminal/)
+  - [Set up a brainhack friendly computing environment](https://psy6983.brainhackmtl.org/modules/installation/)
   - [A introduction to Bash](https://psy6983.brainhackmtl.org/modules/introduction_to_terminal/)
 - Introduction to python for data analysis
   - [Writing a script](https://psy6983.brainhackmtl.org/modules/python_scripts/)
