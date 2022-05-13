@@ -89,6 +89,7 @@ body:
   - type: checkboxes
     id: checklist
     attributes:
+      label:
       description: Please include the following above (all required)
       options:
         - label: I agree to follow this project's Code of Conduct
