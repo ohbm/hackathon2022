@@ -86,11 +86,10 @@ body:
         ## Submission checklist
         *Once the issue is submitted, please check items in this list as you add under 'Additional project info'*
 
-       
   - type: checkboxes
     id: checklist
     attributes:
-      description:  Please include the following above (all required):
+      description: Please include the following above (all required)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
