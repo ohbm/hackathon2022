@@ -78,11 +78,19 @@ body:
     validations:
       required: true
       
-  - type: checkboxes
-    id: terms
+  - type: markdown
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      value: |
+        ## Project submission
+
+        ## Submission checklist
+        *Once the issue is submitted, please check items in this list as you add under 'Additional project info'*
+
+       
+  - type: checkboxes
+    id: checklist
+    attributes:
+      description:  Please include the following above (all required):
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
