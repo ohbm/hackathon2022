@@ -19,49 +19,65 @@ body:
         Thank you!
 
         *After submission, we will assign a 'project monitor' to follow your submission. If at any time you need help or anything is unclear, please add a comment and ping your project monitor. Our team is here to help!*
+        
   - type: input
-    id: contact
+    id: title
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Title
+      description: Name of your awesome project. Please also update the title of the issue to be the title of your project
+    validations:
+      required: true
+      
+  - type: textarea
+    id: project-leads
+    attributes:
+      label: Project lead
+      description: Your name and GitHub login, possibly more than 1 lead
+      placeholder: One per line
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: hub
+    attributes:
+      label: Hub
+      description: The Hackathon Hub your availability fits better.
+      options:
+        - Glasgow
+        - Asia / Pacific
+        - Europe / Middle East / Africa
+        - Americas
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link to Project
     validations:
       required: false
-  - type: textarea
-    id: what-happened
+
+  - type: input
+    id: goals
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Goals for the OHBM BrainHack
     validations:
       required: true
-  - type: dropdown
-    id: version
+      
+  - type: textarea
+    id: skills
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: Skills
     validations:
       required: true
-  - type: dropdown
-    id: browsers
+      
+  - type: input
+    id: website-image
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Image for the OHBM brainhack website
+    validations:
+      required: true
+      
   - type: checkboxes
     id: terms
     attributes:
