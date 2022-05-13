@@ -96,7 +96,7 @@ body:
           required: true
 
   - type: checkboxes
-    id: checklist
+    id: checklist-required
     attributes:
       label: '⠀'
       description: Please include the following above (all required)
@@ -110,7 +110,7 @@ body:
         - label: 'Provide an image of your project for the OHBM brainhack website'
 
   - type: checkboxes
-    id: checklist
+    id: checklist-optional
     attributes:
       label: '⠀'
       description: You can also include information about (all optional)
@@ -122,7 +122,7 @@ body:
         - label: 'Project snippet for the OHBM Brainhack website, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#project-snippet-for-the-ohbm-brainhack-website)'
   
   - type: checkboxes
-    id: checklist
+    id: checklist-recommended
     attributes:
       label: '⠀'
       description: We would like to think about how you will credit and onboard new members to your project. We recommend reading references from [this section](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#credit-and-onboarding). If you'd like to share your thoughts with future project participants, you can include information about (recommended)
@@ -131,7 +131,7 @@ body:
         - label: 'Provide links to onboarding documents if you have some.'
   
   - type: checkboxes
-    id: checklist
+    id: checklist-qmenta
     attributes:
       label: '⠀'
       description: QMENTA has agreed to sponsor the event and provide computational resources through their platform.
