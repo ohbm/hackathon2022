@@ -8,10 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        *We are very excited to meet you at the 2022 OHBM Brainhack 🎉*
-        *To submit a project, you need to be an attendee of the 2022 OHBM Brainhack.
-        We ask you to register first over [here](http://www.humanbrainmapping.org/HackathonReg/).
-        Thank you!*
+        *We are very excited to meet you at the 2022 OHBM Brainhack 🎉* *To submit a project, you need to be an attendee of the 2022 OHBM Brainhack. We ask you to register first over [here](http://www.humanbrainmapping.org/HackathonReg/). Thank you!*
         
         *We have prepared this template to help with your project submission. Here is how to proceed:*
          1. *Before fill the template check [the guideline](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md). Be sure to include as many information as possible*
