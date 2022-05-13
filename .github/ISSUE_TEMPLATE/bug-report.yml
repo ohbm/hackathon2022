@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ![OHBM Hackathon](../../img/ohbm-brainhack-logo.png)
+        ![OHBM Hackathon](https://raw.githubusercontent.com/ohbm/hackathon2022/main/img/ohbm-brainhack-logo.png)
         *We are very excited to meet you at the 2022 OHBM Brainhack 🎉* *To submit a project, you need to be an attendee of the 2022 OHBM Brainhack. We ask you to register first over [here](http://www.humanbrainmapping.org/HackathonReg/). Thank you!*
         
         *We have prepared this template to help with your project submission. Here is how to proceed:*
