@@ -27,7 +27,15 @@ body:
       description: Name of your awesome project. Please also update the title of the issue to be the title of your project
     validations:
       required: true
-      
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: Short description and the goals for the OHBM BrainHack
+      description: Please provide a short description and/or goals for the hackathon
+    validations:
+      required: true
+
   - type: textarea
     id: project-leads
     attributes:
@@ -76,14 +84,6 @@ body:
       description: not required, but highly recommended 
     validations:
       required: false
-
-  - type: input
-    id: goals
-    attributes:
-      label: Goals for the OHBM BrainHack
-      description: Please provide goals for the hackathon, so others can have better idea what you will be working on
-    validations:
-      required: true
       
   - type: textarea
     id: skills
@@ -112,7 +112,7 @@ body:
         - label: "[Virtualization](https://psy6983.brainhackmtl.org/modules/containers/)"
         - label: "High Performance Computing: [Oracle cloud resource](https://brainhack.org/brainhack_cloud/)"
 
-  - type: input
+  - type: textarea
     id: issues
     attributes:
       label: Good first issues
@@ -120,7 +120,7 @@ body:
     validations:
       required: false
  
-  - type: input
+  - type: textarea
     id: twiter
     attributes:
       label: Twitter summary
