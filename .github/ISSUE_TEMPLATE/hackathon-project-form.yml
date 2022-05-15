@@ -32,7 +32,7 @@ body:
     id: project-leads
     attributes:
       label: Project lead
-      description: Your name and GitHub login, possibly more than 1 lead
+      description: Your name and GitHub login AND Discord login (we will be using Discord during the hackathon, please be sure to register [here](https://discord.com/invite/qUzW56dZT2)). Add multiple leaders if you can, if leaders cover different time zones, please add this next to the name.
       placeholder: One per line
     validations:
       required: true
@@ -40,8 +40,8 @@ body:
   - type: dropdown
     id: hub
     attributes:
-      label: Hub
-      description: The Hackathon Hub your availability fits better.
+      label: Main Hub
+      description: The main Hackathon Hub of your project (the project pitch will be given during in this hub).
       options:
         - Glasgow
         - Asia / Pacific
@@ -50,10 +50,30 @@ body:
     validations:
       required: true
 
+  - type: checklist-optional
+    id: otherhub
+    attributes:
+      label: Other Hub covered by the leaders
+      description: Please choose other hubs that are covered by your leaders (be sure to have at least one leader in the specific timezones, and make a note next to their names)
+      options:
+        - label: Glasgow
+        - label: Asia / Pacific
+        - label: Europe / Middle East / Africa
+        - label: Americas
+
   - type: input
     id: link
     attributes:
-      label: Link to Project
+      label: Link to the Project
+      description: Please provide at least one link to the project, e.g. GitHub repository
+    validations:
+      required: true
+
+ - type: input
+    id: website-image
+    attributes:
+      label: Image for the OHBM brainhack website
+      description: not required, but highly recommended 
     validations:
       required: false
 
@@ -61,6 +81,7 @@ body:
     id: goals
     attributes:
       label: Goals for the OHBM BrainHack
+      description: Please provide goals for the hackathon, so others can have better idea what you will be working on
     validations:
       required: true
       
@@ -68,63 +89,50 @@ body:
     id: skills
     attributes:
       label: Skills
-    validations:
+      description: Please provide skills you expect contributors to have, so others can have better ideas if they can join. You can include non-technical skills, or simply write None.
       required: true
-      
+     
+   - type: checklist-optional
+    id: tutorials
+    attributes:
+      label: Recommended tutorials for new contributors 
+      description: We provided [a list of tutorials](https://ohbm.github.io/hackathon2022/traintrack/) that might be helpful for new contributors. Please check all the tutorials that will be useful to work on your project.
+      options:
+        - label: [Set up a brainhack friendly computing environment](https://psy6983.brainhackmtl.org/modules/installation/)
+        - label: [A introduction to Bash](https://psy6983.brainhackmtl.org/modules/introduction_to_terminal/)
+        - label: [Python: Writing a script](https://psy6983.brainhackmtl.org/modules/python_scripts/)
+        - label: [Python: Data analysis with Python](https://psy6983.brainhackmtl.org/modules/python_data_analysis/)
+        - label: [Python: Visualisation](https://psy6983.brainhackmtl.org/modules/python_visualization/)
+        - label: [Machine learning basics](https://psy6983.brainhackmtl.org/modules/machine_learning_basics/)
+        - label: [BIDS](https://psy6983.brainhackmtl.org/modules/bids/)
+        - label: [Machine learning for neuroimaging](https://psy6983.brainhackmtl.org/modules/machine_learning_neuroimaging/)
+        - label: [VCS: Using Git and Github](https://psy6983.brainhackmtl.org/modules/git_github/)
+        - label: [VCS: Data management with Datalad](https://psy6983.brainhackmtl.org/modules/datalad/)
+        - label: [Virtualization](https://psy6983.brainhackmtl.org/modules/containers/)
+        - label: High Performance Computing: [Oracle cloud resource](https://brainhack.org/brainhack_cloud/)
+
   - type: input
-    id: website-image
+    id: issues
     attributes:
-      label: Image for the OHBM brainhack website
+      label: Good first issues
+      description: If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended)
     validations:
-      required: true
-      
-  - type: markdown
+      required: false
+ 
+ - type: input
+    id: twiter
     attributes:
-      value: |
-        ## Project submission
+      label: Twitter summary
+      description: Twitter-size summary of your project pitch, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)
+    validations:
+      required: false
 
-        ## Submission checklist
-        *Once the issue is submitted, please check items in this list as you add under 'Additional project info'*
+ - type: checkboxes
+  id: coc
+  attributes:
+    label: Please read and follow [the OHBM Code of Conduct](https://ohbm.github.io/hackathon2022/coc/)
+    options:
+      - label: I agree to follow the OHBM Code of Conduct during the hackathon
+        required: true
 
-  - type: checkboxes
-    id: checklist-required
-    attributes:
-      label: '⠀'
-      description: Please include the following above (all required)
-      options:
-        - label: 'Link to your project: could be a code repository, a shared document, etc. See [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#link-to-project)'
-        - label: 'Include your [Mattermost handle](https://mattermost.brainhack.org/) (i.e. your username). If you do not have an account, please [sign up here](https://mattermost.brainhack.org/signup_email).'
-        - label: 'Goals for the OHBM Brainhack: describe what you want to achieve during this brainhack. See [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#goals).'
-        - label: 'Flesh out at least 2 "good first issues": those are tasks that do not require any prior knowledge about your project, could be defined as issues in a GitHub repository, or in a shared document, cf [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-2-good-first-issues).'
-        - label: 'Skills: list skills that would be particularly suitable for your project. We ask you to include at least one non-coding skill, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-skills).'
-        - label: 'Chat channel: A link to a chat channel that will be used during the OHBM Brainhack. This can be an existing channel or a new one. We recommend using the [Brainhack space on mattermost](https://mattermost.brainhack.org/), cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#chat).'
-        - label: 'Provide an image of your project for the OHBM brainhack website'
-
-  - type: checkboxes
-    id: checklist-optional
-    attributes:
-      label: '⠀'
-      description: You can also include information about (all optional)
-      options:
-        - label: 'Someone co-leading the project in the timeslot you have not selected to provide additional visibility.'
-        - label: 'Number of participants, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#participant-capacity)'
-        - label: 'Twitter-size summary of your project pitch, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)'
-        - label: 'Set up a kanban board on your repository to better divide the work and keep track of things, cf [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#set-up-a-kanban-board)'
-        - label: 'Project snippet for the OHBM Brainhack website, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#project-snippet-for-the-ohbm-brainhack-website)'
-  
-  - type: checkboxes
-    id: checklist-recommended
-    attributes:
-      label: '⠀'
-      description: We would like to think about how you will credit and onboard new members to your project. We recommend reading references from [this section](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#credit-and-onboarding). If you'd like to share your thoughts with future project participants, you can include information about (recommended)
-      options:
-        - label: 'Specify how will you acknowledge contributions (e.g. listing members on a contributing page).'
-        - label: 'Provide links to onboarding documents if you have some.'
-  
-  - type: checkboxes
-    id: checklist-qmenta
-    attributes:
-      label: '⠀'
-      description: QMENTA has agreed to sponsor the event and provide computational resources through their platform.
-      options:
-        - label: 'Get in touch with QMENTA through their [Brain Innovation Hub Slack space](https://brain-innovation-hub.slack.com), if you think your project would benefit from their support.'
+ 
