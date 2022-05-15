@@ -90,6 +90,7 @@ body:
     attributes:
       label: Skills
       description: Please provide skills you expect contributors to have, so others can have better ideas if they can join. You can include non-technical skills, or simply write None.
+    validations:
       required: true
      
   - type: checkboxes
@@ -133,4 +134,4 @@ body:
       label: Please read and follow [the OHBM Code of Conduct](https://ohbm.github.io/hackathon2022/coc/)
       options:
         - label: I agree to follow the OHBM Code of Conduct during the hackathon
-      required: true
+          required: true
