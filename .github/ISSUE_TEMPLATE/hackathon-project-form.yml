@@ -50,7 +50,7 @@ body:
     validations:
       required: true
 
-  - type: checklist-optional
+  - type: checkboxes
     id: otherhub
     attributes:
       label: Other Hub covered by the leaders
@@ -69,7 +69,7 @@ body:
     validations:
       required: true
 
- - type: input
+  - type: input
     id: website-image
     attributes:
       label: Image for the OHBM brainhack website
@@ -92,24 +92,24 @@ body:
       description: Please provide skills you expect contributors to have, so others can have better ideas if they can join. You can include non-technical skills, or simply write None.
       required: true
      
-   - type: checklist-optional
+  - type: checkboxes
     id: tutorials
     attributes:
       label: Recommended tutorials for new contributors 
       description: We provided [a list of tutorials](https://ohbm.github.io/hackathon2022/traintrack/) that might be helpful for new contributors. Please check all the tutorials that will be useful to work on your project.
       options:
-        - label: [Set up a brainhack friendly computing environment](https://psy6983.brainhackmtl.org/modules/installation/)
-        - label: [A introduction to Bash](https://psy6983.brainhackmtl.org/modules/introduction_to_terminal/)
-        - label: [Python: Writing a script](https://psy6983.brainhackmtl.org/modules/python_scripts/)
-        - label: [Python: Data analysis with Python](https://psy6983.brainhackmtl.org/modules/python_data_analysis/)
-        - label: [Python: Visualisation](https://psy6983.brainhackmtl.org/modules/python_visualization/)
-        - label: [Machine learning basics](https://psy6983.brainhackmtl.org/modules/machine_learning_basics/)
-        - label: [BIDS](https://psy6983.brainhackmtl.org/modules/bids/)
-        - label: [Machine learning for neuroimaging](https://psy6983.brainhackmtl.org/modules/machine_learning_neuroimaging/)
-        - label: [VCS: Using Git and Github](https://psy6983.brainhackmtl.org/modules/git_github/)
-        - label: [VCS: Data management with Datalad](https://psy6983.brainhackmtl.org/modules/datalad/)
-        - label: [Virtualization](https://psy6983.brainhackmtl.org/modules/containers/)
-        - label: High Performance Computing: [Oracle cloud resource](https://brainhack.org/brainhack_cloud/)
+        - label: "Set up a brainhack friendly computing environment](https://psy6983.brainhackmtl.org/modules/installation/)"
+        - label: "A introduction to Bash](https://psy6983.brainhackmtl.org/modules/introduction_to_terminal/)"
+        - label: "Python: Writing a script](https://psy6983.brainhackmtl.org/modules/python_scripts/)"
+        - label: "Python: Data analysis with Python](https://psy6983.brainhackmtl.org/modules/python_data_analysis/)"
+        - label: "Python: Visualisation](https://psy6983.brainhackmtl.org/modules/python_visualization/)"
+        - label: "Machine learning basics](https://psy6983.brainhackmtl.org/modules/machine_learning_basics/)"
+        - label: "BIDS](https://psy6983.brainhackmtl.org/modules/bids/)"
+        - label: "Machine learning for neuroimaging](https://psy6983.brainhackmtl.org/modules/machine_learning_neuroimaging/)"
+        - label: "VCS: Using Git and Github](https://psy6983.brainhackmtl.org/modules/git_github/)"
+        - label: "VCS: Data management with Datalad](https://psy6983.brainhackmtl.org/modules/datalad/)"
+        - label: "Virtualization](https://psy6983.brainhackmtl.org/modules/containers/)"
+        - label: "igh Performance Computing: [Oracle cloud resource](https://brainhack.org/brainhack_cloud/)"
 
   - type: input
     id: issues
@@ -119,7 +119,7 @@ body:
     validations:
       required: false
  
- - type: input
+  - type: input
     id: twiter
     attributes:
       label: Twitter summary
@@ -127,12 +127,12 @@ body:
     validations:
       required: false
 
- - type: checkboxes
-  id: coc
-  attributes:
-    label: Please read and follow [the OHBM Code of Conduct](https://ohbm.github.io/hackathon2022/coc/)
-    options:
-      - label: I agree to follow the OHBM Code of Conduct during the hackathon
-        required: true
+  - type: checkboxes
+    id: coc
+    attributes:
+      label: Please read and follow [the OHBM Code of Conduct](https://ohbm.github.io/hackathon2022/coc/)
+      options:
+        - label: I agree to follow the OHBM Code of Conduct during the hackathon
+          required: true
 
  
