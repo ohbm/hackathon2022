@@ -6,8 +6,9 @@ on:
       - main
 
   issues:
-    - edited
-    - labeled
+    types:
+      - edited
+      - labeled
 
 jobs:
   github-pages:
