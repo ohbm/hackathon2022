@@ -1,56 +1,34 @@
-# OHBM Brainhack 2021 Project handbook
+# OHBM Brainhack 2022 Project handbook
 
 ## Project submission
 
-You can then submit a project [here](https://github.com/ohbm/hackathon2021/issues/new/choose).
+You can then submit a project [here](https://github.com/ohbm/hackathon2022/issues/new?assignees=octocat&labels=Hackathon+Project&template=hackathon-project-form.yml&title=%3CMy+Project+Name%3E).
 
 We will ask you to provide some information about your project in order to advertise it and help onboarding new members.
 
-If you have any questions on the way of submitting your project, a dedicated project advisor will be here to guide you.
+If you have any questions on the way of submitting your project, feel free to open a general issue to ask any question.
 
-In order to keep things to a manageable size, we hope to limit the number of projects to maximum 25 per time slot. If the topic of your submitted project is close to another submission, your project advisor might recommend that you consider creating a joint project.
 
 This handbook includes more information on each item.
 
-### Timezone
+### Hubs
 
-The OHBM Brainhack 2021 will run across two main time slots (1AM-6AM UTC and 2PM-7PM UTC). We ask you to include the [UTC offset](https://en.wikipedia.org/wiki/UTC_offset) of your time zone. This information is available on many website (cf. [here](https://www.timeanddate.com/time/map/) for example).
+The OHBM Brainhack 2022 will be in Glasgow in person, but will also have [3 online hubs](https://ohbm.github.io/hackathon2022/schedule/):
+- Europe, Middle East, Africa (the same time zone as Glasgow)
+- Asia, Pacific
+- Americas
 
-Here are a few examples:
-- Fairbanks UTC-8
--   Los Angeles UTC-7
--   Denver UTC-6
--   Minneapolis UTC-5
--   Montreal UTC-4
--   Brasilia UTC-3
--   UTC-2
--   UTC-1
--   Timbuktu UTC-0
--   London UTC+1
--   Berlin, Brussels UTC+2
--   Moscow UTC+3
--   New Delhi UTC+3.5
--   Yekaterinburg
--   UTC+5
--   UTC+6
--   UTC+7
--   Beijing UTC+8
--   Tokyo UTC+9
--   Brisbane UTC+10
--   UTC+11
--   Auckland UTC+12
--   UTC-11
--   UTC-10
--   UTC-9
+Your project could have leaders in multiple hubs, but the project pitch will be given just once in the main hub (please note that some sessions will be shared with other hubs, check the schedule for details)
+
 
 ### Link to project
 
-If your project involves code we recommend using a GitHub or GitLab repository.
+If your project involves code we recommend using a public repository (e.g. GitHub).
 
 If your project does not involve coding, please include a link to the relevant documentation
 (e.g. shared online document, space on the open science framework, etc.).
 
-[YourRepo](_insert_URL_here) with a [README.md](https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/write-a-great-project-readme/) containing:
+The repository should have [README.md](https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/write-a-great-project-readme/) containing:
 -   project idea and context;
 -   installation guidelines if applicable;
 -   links to further reading/tutorials;
@@ -69,33 +47,29 @@ For some other projects it could be a set of **SMART** goals:
 -   Relevant (reasonable, realistic and resourced, results-based).
 -   Time bound (time-based, time limited, time/cost limited, timely, time-sensitive).
 
-If you have set up a repository for your code, we will ask you to open at least 2 `good first issues`
-issues that describe the goals you would like to achieve in this brainhack.
-
-Some examples:
--   implement a new feature for a package
--   create a tutorial for a package
--   make a Python version of your Matlab based toolbox
--   come up with a prototype of a standardized consent form that can be used by different labs
--   create a fantastic list of neuroscience resources that will help generations of young researchers to come
-
-### Onboarding: 2 good first issues
-
-Flesh out at least 2 "good first issues": those are tasks that do not require any prior knowledge about your project, could be defined as issues in a GitHub repository, or in a shared document.
-
-#### Set up a kanban board
-
-To keep track of the progress on the 2 issues of your project and all the sub-tasks this might involve you
-can use a kanban board.
+To keep track of the progress on the 2 issues of your project and all the sub-tasks you might use a kanban board.
 
 A kanban board helps you manage your work in a very visual way: here is a short [video explaining the
 idea](https://www.digite.com/kanban/what-is-kanban/).
 
 You can use the integrated kanban on [GitHub](https://help.github.com/en/github/managing-your-work-on-github/about-project-boards) or use an external app like [trello](https://trello.com/).
 
+
+### Good first issues
+
+If you have set up a repository for your code, it would be great if you open at least 2 `good first issues`
+issues that describe the goals you would like to achieve in this brainhack.
+
+Some examples:
+-   improve documentation or tutorial for a package
+-   fix an easy to truck bug
+-   add tests for specific features
+
+
+
 ### Onboarding: skills
 
-List skills that would be particularly suitable for your project. We ask you to include at least one non-coding skill.
+List skills that would be particularly suitable for your project. Sill can include coding skills and non-coding skills.
 
 #### Non-coding skills
 
@@ -105,13 +79,10 @@ It is not all about coding! Are you interested in collaborating with someone wit
 good visualization? Someone with more experience who can make a good user interface? Someone who
 knows how to develop good, tidy and clear documentation?
 
-#### Coding skills
+#### Example of Coding skills
 
 ##### Programming languages
 
--   no coding skills required
-
-or use the table below
 
 | language          | level of expertise required   |
 |-------------------|-------------------------------|
@@ -124,9 +95,6 @@ or use the table below
 
 ##### neuro-software specific skills
 
--   no software specific skills required
-
-or use one of the tables below
 
 **MRI / fMRI**
 
@@ -166,31 +134,17 @@ or use one of the tables below
 | Git - 2 | comfortable working with branches and can do a pull request on another repository |
 | Git - 3 | can work with continuous integration
 
+
 ### Communication
 
-#### Chat
+During the hackathon we will be using [Discord](https://discord.com/), please download the client and join [OHBM space](https://discord.com/invite/qUzW56dZT2). The channel for your project will be created automatically.
 
-Add a link to the communication channel for your project.
+If you run the project online or hybrid, after the project kick-off, you should suggest the time of the meeting on your Discord channel.
+It would be great if you plan one daily video meetings with your team members.
 
-You can, for example, create a mattermost channel for your project inside the
-[brainhack mattermost](https://mattermost.brainhack.org/), and include a mattermost badge
-<a href="https://mattermost.brainhack.org/">
-  <img src="http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png" width=100px>
-</a> to invite people to the brainhack mattermost, where they can then find and join your channel.
+If you are in Glasgow, please be open to online contributors and monitor the discord channel!
 
-If you already have a [slack]() workspace or are using [gitter]() or [discord]() or any other platform
-to communicate for your project, just mention it here.
 
-#### Video calls
-
-To facilitate coordination we suggest you set up a [jitsi room](https://meet.jit.si/) or use
-zoom / [a permanent skype group](https://support.skype.com/en/faq/FA34799/how-do-i-create-a-group-chat-in-skype-on-desktop) /
-google hangouts or some similar service so you can interact live with all project members wherever they are.
-
-### Participant capacity
-
-As a project leader it is important that you do not overstretch yourself.
-Try to estimate the maximum number of people you would be comfortable having on your team.
 
 ### Credit and onboarding
 
@@ -202,18 +156,10 @@ We recommend that you read through Mozilla Open Leadership material on
 
 If you want to easily list contributors on your repository you can look into the [all contributors bot](https://github.com/all-contributors/all-contributors-bot).
 
-## Project kick-off
-
-After the project kick-off, we ask you to add the following information to your project on GitHub:
-
-### Suggested meeting time
-We would like you to plan one daily video meetings with your team members.
-
-Choose a time that will suit the majority of project members (there might be multiple timezones).
 
 
 ### Twitter-size summary of your project pitch
-During the project pitch session, we will tweet about yout project. Our default tweet will be as follows:
+During the project pitch session, we will tweet about your project. Our default tweet will be as follows:
 
 ```
 Title
@@ -224,53 +170,6 @@ Project leader Twitter handle
 
 Please provide a twitter-sized summary of your project if you would like us to tweet that insteas of title.
 
-### Project snippet for the OHBM Brainhack website
-
-If you want to help us list your project on the hackathon website, you can paste your `PROJECT TITLE`
-and `PROJECT DESCRIPTION` and the `ISSUE_NUMBER`of your project in the snippet of code below. You can
-also provide an image for your project.
-
-If you want you can then open a pull-request to add this code in the
-[`_data/projects.yml`](https://github.com/ohbm/hackathon2021/blob/master/_data/projects.yml)
-file. If you have no idea how to do this, don't worry: we are here
-to help.
-
-If you want to add an image to illustrate your project it should go in the
-[`img/hackathon`](https://github.com/ohbm/hackathon2021/tree/master/img/hackathon) folder.
-If you don't have any image you can use `whatever.png`.
 
 
-```
- -
-   title: "PROJECT TITLE"
-   image: IMAGE_FILENAME
-   details: "PROJECT DESCRIPTION.
-   <br>More information <a href=https://github.com/ohbm/hackathon2021/issues/ISSUE_NUMBER>in this github issue</a>"
-```
 
-### Day 1: summary
--   What was done? What problem was solved? How?
--   What new problem / question emerged?
--   What needs to be discussed?
--   Was there any unconference/within project tutorial sessions held so far?
--   What are the skills are exchanged/gained by the attendees so far (eg. Git/Github usage, networking etc.)
-
-
-### Day 2: summary
--   What was done? What problem was solved? How?
--   What new problem / question emerged?
--   What needs to be discussed?
--   Was there any unconference/within project tutorial sessions held so far?
--   What are the skills are exchanged/gained by the attendees so far (eg. Git/Github usage, networking etc.)
-
-
-### Day 3:
-Tweet content for final wrap up
-```
-Short description of was done
-What’s next?
-Twitter handles of the people involved
-URL to project repo
-Images
-#OHBMHackathon #Brainhack #OHBM2021
-```
