@@ -27,7 +27,7 @@ body:
     id: goals
     attributes:
       label: Short description and the goals for the OHBM BrainHack
-      description: Please provide a short description and/or goals for the hackathon
+      description: Please provide a short description and goals for the hackathon, check [the guide](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#goals) for suggestions
     validations:
       required: true
 
@@ -44,7 +44,7 @@ body:
     id: hub
     attributes:
       label: Main Hub
-      description: The main Hackathon Hub of your project (the project pitch will be given during in this hub).
+      description: The main Hackathon Hub of your project (the project pitch will be given during in this hub), see more [here](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#hubs)
       options:
         - Glasgow
         - Asia / Pacific
@@ -68,7 +68,7 @@ body:
     id: link
     attributes:
       label: Link to the Project
-      description: Please provide at least one link to the project, e.g. GitHub repository
+      description: Please provide at least one link to the project, e.g. GitHub repository, check [the guide](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#link-to-project) for more suggestions
     validations:
       required: true
 
@@ -84,7 +84,7 @@ body:
     id: skills
     attributes:
       label: Skills
-      description: Please provide skills you expect contributors to have, so others can have better ideas if they can join. You can include non-technical skills, or simply write None.
+      description: Please provide skills you expect contributors to have, so others can have better ideas if they can join. You can include non-technical skills, or simply write None, check [the guide](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-skills) for more suggestions.
     validations:
       required: true
 
@@ -111,7 +111,7 @@ body:
     id: issues
     attributes:
       label: Good first issues
-      description: If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended)
+      description: If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions
     validations:
       required: false
 
@@ -119,7 +119,7 @@ body:
     id: twiter
     attributes:
       label: Twitter summary
-      description: Twitter-size summary of your project pitch, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)
+      description: Twitter-size summary of your project pitch, please check [the guide](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)
     validations:
       required: false
 
