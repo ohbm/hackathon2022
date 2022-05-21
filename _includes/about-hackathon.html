@@ -39,7 +39,11 @@
                     <h4>{{ row.title }}</h4>
                     <h6> Time slot : <a href="{{ site.baseurl }}/schedule">{{ row.timeslot }}</a></h6>
                     <p>PROJECT DESCRIPTION</p>
-                    <p>{{ row.details }}</p>
+                    <p>{{ row.goals }}</p>
+                    {% if row.skills %}
+                    <p>SKILLS</p>
+                    <p>{{ row.skills }}</p>
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}
