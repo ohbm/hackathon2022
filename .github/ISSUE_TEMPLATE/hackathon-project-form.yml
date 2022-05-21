@@ -9,12 +9,12 @@ body:
     attributes:
       value: |
         *We are very excited to meet you at the 2022 OHBM Brainhack 🎉* *To submit a project, you need to register to 2022 OHBM Brainhack first, please follow [the link](http://www.humanbrainmapping.org/HackathonReg/). Thank you!*
-        
+
         *We have prepared this template to help with your project submission. Please fill the template (at least all 'required' items must be provided) and we will assign a 'project monitor' to follow your submission.
         If at any time you need help or anything is unclear, please add a comment and ping your project monitor.*
-  
+
         Thank you!
-        
+
   - type: input
     id: title
     attributes:
@@ -39,7 +39,7 @@ body:
       placeholder: One per line
     validations:
       required: true
-      
+
   - type: dropdown
     id: hub
     attributes:
@@ -76,10 +76,10 @@ body:
     id: website-image
     attributes:
       label: Image for the OHBM brainhack website
-      description: not required, but highly recommended 
+      description: not required, but highly recommended
     validations:
       required: false
-      
+
   - type: textarea
     id: skills
     attributes:
@@ -87,11 +87,11 @@ body:
       description: Please provide skills you expect contributors to have, so others can have better ideas if they can join. You can include non-technical skills, or simply write None.
     validations:
       required: true
-     
+
   - type: checkboxes
     id: tutorials
     attributes:
-      label: Recommended tutorials for new contributors 
+      label: Recommended tutorials for new contributors
       description: We provided [a list of tutorials](https://ohbm.github.io/hackathon2022/traintrack/) that might be helpful for new contributors. Please check all the tutorials that will be useful to work on your project.
       options:
         - label: "[Set up a brainhack friendly computing environment](https://psy6983.brainhackmtl.org/modules/installation/)"
@@ -114,7 +114,7 @@ body:
       description: If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended)
     validations:
       required: false
- 
+
   - type: textarea
     id: twiter
     attributes:
@@ -122,6 +122,14 @@ body:
       description: Twitter-size summary of your project pitch, cf. [here](https://github.com/ohbm/hackathon2022/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)
     validations:
       required: false
+
+  - type: input
+    id: chatchannel
+    attributes:
+      label: Short name for the Discord chat channel (~15 chars)
+      description: Please give a short name for the Discord chat channel, e.g. "my-brain-project"
+    validations:
+      required: true
 
   - type: checkboxes
     id: coc

@@ -25,14 +25,14 @@ class EnsureChannelsClient(discord.Client):
                 project_channels[channel.name] = channel
 
         for project in projects:
-            if project['chat_channel'] not in project_channels:
-                print(f'Creating channel {project["chat_channel"]}')
+            if project['chatchannel'] not in project_channels:
+                print(f'Creating channel {project["chatchannel"]}')
                 await guild.create_text_channel(
-                    project['chat_channel'],
+                    project['chatchannel'],
                     category=project_channels_category
                 )
                 await guild.create_voice_channel(
-                    project['chat_channel'],
+                    project['chatchannel'],
                     category=project_channels_category
                 )
 

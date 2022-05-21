@@ -66,37 +66,6 @@ for issue in issues:
 
         issue_info[field_id] = field_value
 
-
-
-
-
-        # if field_mapping[field] == 'project_type':
-        #     if field_value.lower().startswith('online'):
-        #         field_value = [
-        #             x.strip() for x in re.split('[,\n\r]', field_value)
-        #             if x.strip() != ''
-        #         ]
-        #         issue_info['timeslot'] = re.sub(r'[^\w]', '', field_value[1].lower())
-        #         field_value = 'online'
-
-        # if field_mapping[field] == 'project_leaders':
-        #     field_value = [
-        #         x.strip() for x in re.split(r'[,\n\r]', field_value)
-        #         if x.strip() != ''
-        #     ]
-
-        # if field_mapping[field] == 'image':
-        #     if field_value == '':
-        #         field_value = None
-
-        # if field_mapping[field] == 'skills':
-        #     field_value = [
-        #         x.strip() for x in re.split(r'[,\n\r]', field_value)
-        #         if x.strip() != ''
-        #     ]
-
-        # issue_info[field_mapping[field]] = field_value
-
     if issue_info['hub'] in issue_info['otherhub']:
         issue_info['otherhub'].remove(issue_info['hub'])
 
