@@ -4,102 +4,109 @@ import requests
 import re
 import yaml
 
-url = 'https://api.github.com/repos/ohbm/hackathon2022/issues'
+issue_form = yaml.safe_load(open('.github/ISSUE_TEMPLATE/hackathon-project-form.yml'))
+fields = issue_form['body']
+fields = [f for f in fields if f['type'] != 'markdown']
 
-resp = requests.get(url)
-issues = resp.json()
+url = 'https://api.github.com/repos/ohbm/hackathon2022/issues?labels=Hackathon Project'
 
+issues = requests.get(url).json()
 issues_list = []
 for issue in issues:
-    if "Hacktrack: Good to go" not in [i['name'] for i in issue["labels"]]:
-        continue
+    # if "Hacktrack: Good to go" not in [i['name'] for i in issue["labels"]]:
+    #     continue
 
     if issue["state"] != "open":
         continue
 
     body = issue["body"]
+    lines = [l.strip() for l in body.replace('\r\n', '\n').split('\n')]
 
-    fields = [
-        'Title',
-        'Project leaders with Mattermost handle and GitHub login',
-        '[In-person/online]',
-        'Description',
-        'Link to project',
-        'Goals for the OHBM Brainhack',
-        'Skills',
-        'List of recommended tutorials',
-        'Good first issues',
-        'Chat channel',
-        'Image for the OHBM brainhack website'
-    ]
-
-    field_mapping = dict(zip(fields, [
-        'title',
-        'project_leaders',
-        'project_type',
-        'description',
-        'project_link',
-        'hackathon_goals',
-        'skills',
-        'tutorials',
-        'good_first_issues',
-        'chat_channel',
-        'image'
-    ]))
-
-    lines = body.split('\r\n')
-    issue_dict = {}
-
-    for field in fields:
+    issue_info = {}
+    for field, next_field in zip(fields, fields[1:] + [None]):
         field_start, field_end = None, None
+
+        field_id = field['id']
+        field_label = field['attributes']['label']
+        next_field_label = next_field['attributes']['label'] if next_field is not None else None
+
         for li, line in enumerate(lines):
-            if field_start is None and line.startswith(f'**{field}**'):
+            if field_start is None and line.startswith(f'### {field_label}'):
                 field_start = li
 
-            elif field_start is not None and field_end is None and (line.startswith('**') or line.startswith('##')):
-                field_end = li
-                break
+        if field_start is None:
+            continue
 
-        if field_start is None or field_end is None:
-            raise ValueError(f'Missing field "{field}" for issue {issue["html_url"]}')
-            # TODO make bot add comment to issue about the missing field
-            break
+        if next_field_label is not None:
+            for li, line in enumerate(lines[field_start:], start=field_start):
+                if line.startswith(f'### {next_field_label}'):
+                    field_end = li
+                    break
 
-        field_value = '\n'.join(lines[field_start+1:field_end])
+        field_value = '\n'.join(filter(None, lines[field_start+1:field_end]))
         field_value = re.sub(r'<!--.*?-->', '', field_value, flags=re.DOTALL)
         field_value = field_value.strip()
 
-        if field_mapping[field] == 'project_type':
-            if field_value.lower().startswith('online'):
-                field_value = [
-                    x.strip() for x in re.split('[,\n\r]', field_value)
-                    if x.strip() != ''
-                ]
-                issue_dict['timeslot'] = re.sub(r'[^\w]', '', field_value[1].lower())
-                field_value = 'online'
+        if field_value == '_No response_':
+            field_value = None
 
-        if field_mapping[field] == 'project_leaders':
-            field_value = [
-                x.strip() for x in re.split(r'[,\n\r]', field_value)
-                if x.strip() != ''
-            ]
+        if field['type'] == 'checkboxes':
+            field_options_labels = [o['label'].strip() for o in field['attributes']['options']]
+            field_selected_options = []
+            field_options_value = field_value.split('\n')
+            for l in field_options_value:
+                if l[6:] not in field_options_labels:
+                    continue
+                if l.startswith('- [X] '):
+                    field_selected_options.append(l[6:])
+                if l.startswith('- [x] '):
+                    field_selected_options.append(l[6:])
 
-        if field_mapping[field] == 'image':
-            if field_value == '':
-                field_value = None
+            field_value = field_selected_options
 
-        if field_mapping[field] == 'skills':
-            field_value = [
-                x.strip() for x in re.split(r'[,\n\r]', field_value)
-                if x.strip() != ''
-            ]
+        issue_info[field_id] = field_value
 
-        issue_dict[field_mapping[field]] = field_value
 
-    issue_dict['issue_link'] = issue["html_url"]
-    issue_dict['issue_number'] = issue["number"]
 
-    issues_list.append(issue_dict)
+
+
+        # if field_mapping[field] == 'project_type':
+        #     if field_value.lower().startswith('online'):
+        #         field_value = [
+        #             x.strip() for x in re.split('[,\n\r]', field_value)
+        #             if x.strip() != ''
+        #         ]
+        #         issue_info['timeslot'] = re.sub(r'[^\w]', '', field_value[1].lower())
+        #         field_value = 'online'
+
+        # if field_mapping[field] == 'project_leaders':
+        #     field_value = [
+        #         x.strip() for x in re.split(r'[,\n\r]', field_value)
+        #         if x.strip() != ''
+        #     ]
+
+        # if field_mapping[field] == 'image':
+        #     if field_value == '':
+        #         field_value = None
+
+        # if field_mapping[field] == 'skills':
+        #     field_value = [
+        #         x.strip() for x in re.split(r'[,\n\r]', field_value)
+        #         if x.strip() != ''
+        #     ]
+
+        # issue_info[field_mapping[field]] = field_value
+
+    if issue_info['hub'] in issue_info['otherhub']:
+        issue_info['otherhub'].remove(issue_info['hub'])
+
+    issue_info['issue_link'] = issue["html_url"]
+    issue_info['issue_number'] = issue["number"]
+
+    from pprint import pprint
+    pprint(issue_info)
+
+    issues_list.append(issue_info)
 
 with open('./_data/projects.yml', 'w') as f:
     yaml.dump(issues_list, f, default_flow_style=False)
