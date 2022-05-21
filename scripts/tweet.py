@@ -1,5 +1,4 @@
 import os
-import random
 import yaml
 import tweepy
 
@@ -17,6 +16,10 @@ with open('_data/projects.yml', 'r') as f:
 class TweetFound(Exception): pass
 
 for p in projects:
+
+    if p.get('twiter') is None:
+        continue
+
     try:
         for t in tweets:
             if '#' + p['chat_channel'] in t.text:
@@ -24,7 +27,7 @@ for p in projects:
     except TweetFound:
         continue
     else:
-        tweet = random.choice(p['tweet'] + ' #' + p['chat_channel'])
+        tweet = 'New Hackathon project: ' + p['twiter'] + ' #' + p['chat_channel']
         api.update_status(
             tweet.format(**p),
             attachment_url=p['issue_link']
