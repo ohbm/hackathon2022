@@ -134,7 +134,8 @@ body:
   - type: checkboxes
     id: coc
     attributes:
-      label: "Please read and follow [the OHBM Code of Conduct](https://ohbm.github.io/hackathon2022/coc/)"
+      label: "Please read and follow the OHBM Code of Conduct"
+      description: Read here [the OHBM Code of Conduct](https://ohbm.github.io/hackathon2022/coc/)
       options:
         - label: I agree to follow the OHBM Code of Conduct during the hackathon
           required: true
