@@ -13,8 +13,8 @@ url = 'https://api.github.com/repos/ohbm/hackathon2022/issues?labels=Hackathon P
 issues = requests.get(url).json()
 issues_list = []
 for issue in issues:
-    # if "Hacktrack: Good to go" not in [i['name'] for i in issue["labels"]]:
-    #     continue
+    if "Hacktrack: Good to go" not in [i['name'] for i in issue["labels"]]:
+         continue
 
     if issue["state"] != "open":
         continue
