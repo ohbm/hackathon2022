@@ -69,7 +69,7 @@ Some examples:
 
 ### Onboarding: skills
 
-List skills that would be particularly suitable for your project. Sill can include coding skills and non-coding skills.
+List skills that would be particularly suitable for your project. Skills can include coding skills and non-coding skills.
 
 #### Non-coding skills
 
@@ -165,7 +165,7 @@ During the project pitch session, we will tweet about your project. Our default 
 Title
 Repo URL
 Project leader Twitter handle
-#OHBMHackathon #Brainhack #OHBM2021
+#OHBMHackathon #Brainhack #OHBM2022
 ```
 
 Please provide a twitter-sized summary of your project if you would like us to tweet that insteas of title.
