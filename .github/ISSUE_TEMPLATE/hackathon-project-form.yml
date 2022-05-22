@@ -35,7 +35,7 @@ body:
     id: project-leads
     attributes:
       label: Project lead
-      description: Your name and GitHub login AND Discord login (we will be using Discord during the hackathon, please be sure to register [here](https://discord.com/invite/qUzW56dZT2)). Add multiple leaders if you can, if leaders cover different time zones, please add this next to the name.
+      description: Your name and GitHub login AND Discord login (we will be using Discord during the hackathon, please be sure to register [here](https://discord.com/invite/qUzW56dZT2)). Add multiple leaders if you can, if leaders cover different Hubs, please add this next to the name.
       placeholder: One per line
     validations:
       required: true
