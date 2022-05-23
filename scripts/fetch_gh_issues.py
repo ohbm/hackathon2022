@@ -22,28 +22,29 @@ for issue in issues:
     body = issue["body"]
     lines = [l.strip() for l in body.replace('\r\n', '\n').split('\n')]
 
-    issue_info = {}
-    for field, next_field in zip(fields, fields[1:] + [None]):
-        field_start, field_end = None, None
-
-        field_id = field['id']
+    field_ordering = []
+    for field in fields:
+        field_start = None
         field_label = field['attributes']['label']
-        next_field_label = next_field['attributes']['label'] if next_field is not None else None
-
+        
         for li, line in enumerate(lines):
             if field_start is None and line.startswith(f'### {field_label}'):
                 field_start = li
 
-        if field_start is None:
+        field_ordering += [(field, field_start)]
+    field_ordering = list(sorted(field_ordering, key=lambda f: f[1]))
+
+    issue_info = {}
+
+    for (field, i), (_, ni) in zip(field_ordering, field_ordering[1:] + [(None, None)]):
+        field_id = field['id']
+        field_label = field['attributes']['label']
+
+        if i is None:
+            issue_info[field_id] = None
             continue
 
-        if next_field_label is not None:
-            for li, line in enumerate(lines[field_start:], start=field_start):
-                if line.startswith(f'### {next_field_label}'):
-                    field_end = li
-                    break
-
-        field_value = '\n'.join(filter(None, lines[field_start+1:field_end]))
+        field_value = '\n'.join(filter(None, lines[i+1:ni]))
         field_value = re.sub(r'<!--.*?-->', '', field_value, flags=re.DOTALL)
         field_value = field_value.strip()
 
