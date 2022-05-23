@@ -71,7 +71,7 @@ typeoutFallback: ""
 heroButtons:
    - {link: "https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4073", text: "Register"}
   #  - {link: "#about", text: "What is it"}
-  #  - {link: "https://github.com/ohbm/hackathon2022/issues/new/choose", text: "Submit your project"}
+   - {link: "https://github.com/ohbm/hackathon2022/issues/new/choose", text: "Submit your project"}
   #  - {link: "https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAC9pqdJUQlRINlAzUVdXMzhDTFIwRzkwNDBKUU45SC4u", text: "Sign up for hands-on sessions" }
 
 aboutButtons:
