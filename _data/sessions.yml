@@ -196,9 +196,9 @@
 
 # Talks
 -
-  id: 3011
+  id: 301
   type: traintrack
-  title: "Talk 1-1"  # please edit this
+  title: "Talk 1"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
   description: >  # please edit this
     TBA.
@@ -209,22 +209,9 @@
   speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
 
 -
-  id: 3012
+  id: 302
   type: traintrack
-  title: "Talk 1-2"  # please edit this
-  place: "Queen Margrat Union Main Stage / Discord"
-  description: >  # please edit this
-    TBA.
-  long_description: >  # Please edit this and keep the last line
-    TBA.
-    Live event for EMEA. Replay for APAC and America.
-  links:
-  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
-
--
-  id: 3021
-  type: traintrack
-  title: "Talk 2-1"  # please edit this
+  title: "Talk 2"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
   description: >  # please edit this
     TBA.
@@ -235,22 +222,9 @@
   speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
 
 -
-  id: 3022
+  id: 303
   type: traintrack
-  title: "Talk 2-2"  # please edit this
-  place: "Queen Margrat Union Main Stage / Discord"
-  description: >  # please edit this
-    TBA.
-  long_description: >  # Please edit this and keep the last line
-    TBA.
-    Live event for EMEA and APAC. Replay for Americas.
-  links:
-  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
-
--
-  id: 3031
-  type: traintrack
-  title: "Talk 3-1"  # please edit this
+  title: "Talk 3"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
   description: >  # please edit this
     TBA.
@@ -261,40 +235,14 @@
   speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
 
 -
-  id: 3032
+  id: 304
   type: traintrack
-  title: "Talk 3-2"  # please edit this
-  place: "Queen Margrat Union Main Stage / Discord"
-  description: >  # please edit this
-    TBA.
-  long_description: >  # Please edit this and keep the last line
-    TBA.
-    Live event for EMEA and America. Replay for APAC.
-  links:
-  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
-
--
-  id: 3041
-  type: traintrack
-  title: "Talk 4-1"  # please edit this
+  title: "Talk 4"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
   description: >  # please edit this
     TBA.
   long_description: >  # Please edit this and keep the last line
     TBA.
     Live event for EMEA and APAC. Replay for Americas.
-  links:
-  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
-
--
-  id: 3042
-  type: traintrack
-  title: "Talk 4-2"  # please edit this
-  place: "Queen Margrat Union Main Stage / Discord"
-  description: >  # please edit this
-    TBA.
-  long_description: >  # Please edit this and keep the last line
-    TBA.
-    Live event for EMEA and APAC. Replay for Americas.  
   links:
   speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
