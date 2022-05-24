@@ -1,5 +1,5 @@
-$hackathon-img-width: 250px;
-$small-hackathon-img-width: 150px;
+$hackathon-img-width: 180px;
+$small-hackathon-img-width: 60px;
 
 .hackathon-row {
 	margin-bottom: 90px;
@@ -23,6 +23,7 @@ $small-hackathon-img-width: 150px;
 }
 .hackathon-img-wrapper {
 	float: left;
+    padding-top: 15px;
     @media (max-width: 767px) {
         float: right;
     }

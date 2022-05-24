@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+  issues:
+    types:
+      - edited
+      - labeled
+
 jobs:
   github-pages:
     runs-on: ubuntu-latest
@@ -16,6 +21,26 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+
+      - run: pip install -r requirements.txt
+
+      - name: Fetching projects from GitHub
+        run: python scripts/fetch_gh_issues.py
+
+      - name: Creating Discord channels
+        run: python scripts/ensure_discord_channels.py
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}
+
+#       - name: Tweeting about new projects
+#         run: python scripts/tweet.py
+#         env:
+#           TWITTER_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+#           TWITTER_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+#           TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
+#           TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
