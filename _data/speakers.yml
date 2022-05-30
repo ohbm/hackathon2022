@@ -201,3 +201,13 @@ reinder_vosdewael:
   social:
      - {name: "twitter", link: "https://twitter.com/reindervosdwael"}
      - {name: "github", link: "https://github.com/ReinderVosDeWael"}
+
+yasmin_mzayek:
+  name: "Yasmin"
+  surname: "Mzayek"
+  location: "France"
+  team: true
+  thumbnailUrl:
+  hub: EMEA
+  social:
+     - {name: "github", link: "https://github.com/ymzayek"}

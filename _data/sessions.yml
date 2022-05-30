@@ -232,7 +232,7 @@
     TBA.
     Live event for EMEA and America. Replay for APAC.
   links:
-  speakers: [brainhack] # edit speaker profile in speakers.yml and reference it here
+  speakers: [yasmin_mzayek] # edit speaker profile in speakers.yml and reference it here
 
 -
   id: 3041
