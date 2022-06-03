@@ -29,7 +29,7 @@ class EnsureChannelsClient(discord.Client):
                 category=project_category
             )
             await guild.create_voice_channel(
-                'project space',
+                'project-space',
                 category=project_category
             )
 
