@@ -35,7 +35,7 @@ body:
     id: link
     attributes:
       label: Link to the Project
-      description: Please provide at least one link to the project, e.g. GitHub repository, check [the guide](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#link-to-project) for more suggestions
+      description: Please provide **one URL** for the project, e.g. GitHub repository. See [the guide](https://github.com/ohbm/hackathon2022/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#link-to-project) for other suggestions.
     validations:
       required: true
 
