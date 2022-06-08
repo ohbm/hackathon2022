@@ -54,4 +54,4 @@ Of course, feel free to come up with your own!
 
 ## Questions?
 
-If you have any further questions, feel free to reach us on [Discord](TBA).
+If you have any further questions, feel free to reach us on [Discord](https://discord.gg/67zSDzsggN).
