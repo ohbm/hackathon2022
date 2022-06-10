@@ -43,7 +43,7 @@ body:
     id: website-image
     attributes:
       label: Image for the OHBM brainhack website
-      description: Please provide a link only (not required, but highly recommended)
+      description: Please provide a link only (not required, but highly recommended). Please provide the RAW content of the file if you use an image from a GitHub repo.
     validations:
       required: false
 
