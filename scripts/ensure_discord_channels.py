@@ -16,7 +16,7 @@ class EnsureChannelsClient(discord.Client):
         # Delete old channels: project-space, project-chat
         for channel in guild_channels:
             if channel.name in ['project-space', 'project-chat']:
-                channel.delete()
+                await channel.delete()
 
         # Find Projects category. If none, make it.
         projects_category = None
