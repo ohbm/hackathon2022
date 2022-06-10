@@ -12,25 +12,32 @@ class EnsureChannelsClient(discord.Client):
 
         guild = self.get_guild(int(os.getenv('DISCORD_GUILD_ID')))
         guild_channels = guild.channels
-        categories = [channel.name for channel in guild_channels
-                      if isinstance(channel, discord.CategoryChannel)]
+
+        # Find Projects category. If none, make it.
+        projects_category = None
+        for channel in guild_channels:
+            if (isinstance(channel, discord.CategoryChannel)
+                    and 'projects' in channel.name.lower()):
+                projects_category = channel
+                break
+
+        if projects_category is None:
+            print("Creating 'Projects' category")
+            projects_category = await guild.create_category_channel('Projects')
+
+        # A voice channel for each project
+        project_channels = {channel.name: channel for channel
+                            in projects_category.voice_channels}
 
         for project in projects:
-            if project['chatchannel'] in categories:
-                print(f"{project['chatchannel']} exists")
+            if project['chatchannel'] in project_channels:
+                print(f"'{project['chatchannel']}' exists")
                 continue
 
-            print(f"Creating {project['chatchannel']}")
-            project_category = await guild.create_category_channel(
-                project['chatchannel']
-            )
-            await guild.create_text_channel(
-                'project-chat',
-                category=project_category
-            )
+            print(f"Creating '{project['chatchannel']}'")
             await guild.create_voice_channel(
-                'project-space',
-                category=project_category
+                project['chatchannel'],
+                category=projects_category
             )
 
         await self.close()
