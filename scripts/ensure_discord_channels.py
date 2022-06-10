@@ -13,6 +13,11 @@ class EnsureChannelsClient(discord.Client):
         guild = self.get_guild(int(os.getenv('DISCORD_GUILD_ID')))
         guild_channels = guild.channels
 
+        # Delete old channels: project-space, project-chat
+        for channel in guild_channels:
+            if channel.name in ['project-space', 'project-chat']:
+                channel.delete()
+
         # Find Projects category. If none, make it.
         projects_category = None
         for channel in guild_channels:
