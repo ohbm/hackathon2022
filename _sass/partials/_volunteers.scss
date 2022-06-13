@@ -1,3 +1,5 @@
+$crown-sprite: $sprites-dir + "/crown.png";
+
 .volunteers {
 	p{
 		font-size: 18px;
@@ -5,10 +7,24 @@
 		line-height: 200%;
 	}
 	h3 {
-	    margin-bottom: 26px;
+		margin-bottom: 26px;
 	}
 	h4 {
-	    margin: 50px 0 20px;
-	    text-align: center;
+		margin: 50px 0 20px;
+		text-align: center;
+	}
+	.liege {
+		margin-bottom: 20px;
+
+		&::after {
+			content: '';
+			background-image: url($crown-sprite);
+			background-repeat: no-repeat;
+			position: absolute;
+			width: 60px;
+			height: 51px;
+			top: -27px;
+			right: -13px;
+		}
 	}
 }

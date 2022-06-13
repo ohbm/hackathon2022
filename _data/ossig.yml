@@ -1,0 +1,54 @@
+-
+  id: 0
+  name: "Roza"
+  surname: "Gunes Bayrak"
+  title: "OSR Chair"
+  thumbnailUrl: roza_gunes_bayrak.png
+  social:
+    - {name: "twitter", link: "https://twitter.com/redgreenblues"}
+    - {name: "github", link: "https://github.com/matteomancini"}
+    - {name: "website", link: "https://github.com/matteomancini"}
+-
+  id: 1
+  name: "Naomi"
+  surname: "Gaggi"
+  title: "OSR Deputy Chair"
+  thumbnailUrl: naomi_gaggi.png
+  social:
+    - {name: "twitter", link: "https://twitter.com/NaomiGaggi"}
+    - {name: "github", link: "https://github.com/NaomiGaggi"}
+    - {name: "website", link: "https://naomigaggi.wordpress.com/"}
+-
+  id: 2
+  name: "Subapriya"
+  surname: "Suppiah"
+  title: "OSR Chair Elect"
+  thumbnailUrl: subapriya_suppiah.png
+  social:
+    - {name: "twitter", link: "https://twitter.com/SubapriyaSuppi1"}
+    - {name: "github", link: "https://github.com/Drpriyasiva"}
+    - {name: "website", link: "https://www.linkedin.com/in/subapriya-suppiah-93375b8b/"}
+-
+  id: 3
+  name: "Janine"
+  surname: "Bijsterbosch"
+  title: "OSSIG Chair"
+  thumbnailUrl: janine_bijsterbosch.png
+  social:
+    - {name: "twitter", link: "https://twitter.com/PersonomicsLab"}
+-
+  id: 4
+  name: "Stephanie"
+  surname: "Noble"
+  title: "OSSIG Inclusivity Officer"
+  thumbnailUrl: stephanie_noble.png
+  social:
+    - {name: "twitter", link: "https://twitter.com/sNeuroble"}
+-
+  id: 5
+  name: "Valentina"
+  surname: "Borghesani"
+  title: "Community Liason Officer"
+  thumbnailUrl: valentina_borghesani.png
+  social:
+    - {name: "twitter", link: "https://twitter.com/vborghesani"}
