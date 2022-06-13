@@ -1,8 +1,8 @@
 FROM ruby:2.7-alpine3.15
 
 RUN apk update
-RUN apk add --no-cache build-base gcc cmake git
-RUN gem update bundler && gem install bundler jekyll
+RUN apk add --no-cache build-base gcc cmake git nodejs bash
+RUN gem update bundler && gem install bundler jekyll execjs
 
 ADD scripts/docker-start.sh /start
 RUN chmod a+x /start
