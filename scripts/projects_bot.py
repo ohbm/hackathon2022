@@ -23,7 +23,7 @@ class Project:
             s += f"\nrole: {self.role.id}"
         if self.channel is not None:
             s += f"\nchannel: {self.channel.id}"
-        if self.reaction is not None:
+        if self.react is not None:
             s += f"\nreact: {self.react[1]} on {self.react[0]}"
         return s
 
@@ -121,9 +121,9 @@ class ProjectsClient(discord.Client):
             if len(msg.embeds) < 1 or msg.embeds[0].title != 'Projects':
                 continue
             text = msg.embeds[0].description
-            self.react_keys[msg] = self.parse_projects(text)
+            self.react_keys[msg.id] = self.parse_projects(text)
 
-            for i, key in enumerate(self.react_keys[msg]):
+            for i, key in enumerate(self.react_keys[msg.id]):
                 if key in self.projects:
                     self.projects[key].react = (msg.id, i)
                     print(f"'{key}' react exists")
@@ -133,29 +133,58 @@ class ProjectsClient(discord.Client):
                 react_made = False
 
                 # add to existing msg if not full
-                for msg, keys in self.react_keys.items():
+                for msg_id, keys in self.react_keys.items():
                     if len(keys) >= len(EMOJI_NUMS):
                         continue
+                    msg = await self.roles_channel.fetch_message(msg_id)
+                    num = len(keys)
                     keys.append(key)
                     await msg.edit(embed=discord.Embed(
                         title='Projects',
                         description=self.format_projects(keys)))
-                    await msg.add_reaction(EMOJI_NUMS[len(keys) - 1])
+                    await msg.add_reaction(EMOJI_NUMS[num])
                     react_made = True
+                    break
 
                 # start new embed msg if full
                 if not react_made:
                     msg = await self.roles_channel.send(embed=discord.Embed(
                         title='Projects',
                         description=self.format_projects([key])))
-                    self.react_keys[msg] = [key]
-                    await msg.add_reaction(EMOJI_NUMS[0])
+                    num = 0
+                    self.react_keys[msg.id] = [key]
+                    await msg.add_reaction(EMOJI_NUMS[num])
                     react_made = True
 
                 if react_made:
+                    project.react = (msg.id, num)
                     print(f"'{key}' react made")
                 else:
                     print(f"ERROR: failed to make '{key}' react")
+
+    async def reaction_role(self, payload, add):
+        if (payload.message_id not in self.react_keys
+                or str(payload.emoji) not in EMOJI_NUMS
+                or payload.user_id == self.user.id):
+            return
+
+        num = EMOJI_NUMS.index(str(payload.emoji))
+        project = self.projects[self.react_keys[payload.message_id][num]]
+        if project.react != (payload.message_id, num):
+            print(f"ERROR: {project.react} != {(payload.message_id, num)}")
+            return
+
+        user = await self.roles_channel.guild.fetch_member(payload.user_id)
+        if add:
+            await user.add_roles(project.role)
+        else:
+            await user.remove_roles(project.role)
+
+    async def on_raw_reaction_add(self, payload):
+        await self.reaction_role(payload, True)
+
+    async def on_raw_reaction_remove(self, payload):
+        await self.reaction_role(payload, False)
 
 
 client = ProjectsClient()
