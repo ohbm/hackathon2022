@@ -39,7 +39,7 @@
     - id: 4
       name: "Dorota"
       surname: "Jarecka"
-      title: "Traintrach & Hacktrack"
+      title: "Traintrack & Hacktrack"
       location: "Cambridge, MA, USA"
       thumbnailUrl: dorota_jarecka.png
       social:
@@ -47,7 +47,7 @@
     - id: 5
       name: "Yu-Fang"
       surname: "Yang"
-      title: "Traintrach & Hacktrack"
+      title: "Traintrack & Hacktrack"
       location: "Berlin, Germany"
       thumbnailUrl: yu-fang_yang.png
       social:
@@ -106,9 +106,40 @@
     - id: 11
       name: "Damion"
       surname: "Demeter"
-      title: "Social media"
+      title: "Buddy System"
       location: "Geneva, Switzerland"
       thumbnailUrl: damion_demeter.png
       social:
         - {name: "twitter", link: "https://twitter.com/iamdamion"}
         - {name: "github", link: "https://github.com/iamdamion"}
+    - id: 12
+      name: "Matt"
+      surname: "Rosenblatt"
+      title: "Buddy System"
+      location: "New Haven, CT, USA"
+      thumbnailUrl: damion_demeter.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/rosenblattmatt"}
+        - {name: "github", link: "https://github.com/iamdamion"}
+
+- name: Hub Hosts
+  description:
+  team:
+    - id: 30
+      name: "Host"
+      surname: ""
+      title: "APAC Hub Host"
+      location: ""
+      thumbnailUrl:
+      social:
+        - {name: "twitter", link: "https://twitter.com/"}
+        - {name: "github", link: "https://github.com/"}
+    - id: 31
+      name: "Anibal"
+      surname: "Solon"
+      title: "America Hub Host"
+      location: "Austin, TX, USA"
+      thumbnailUrl: anibal_solon.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/anibalsolon"}
+        - {name: "github", link: "https://github.com/anibalsolon"}
