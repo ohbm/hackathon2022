@@ -117,10 +117,9 @@
       surname: "Rosenblatt"
       title: "Buddy System"
       location: "New Haven, CT, USA"
-      thumbnailUrl: damion_demeter.png
+      thumbnailUrl: 
       social:
         - {name: "twitter", link: "https://twitter.com/rosenblattmatt"}
-        - {name: "github", link: "https://github.com/iamdamion"}
 
 - name: Hub Hosts
   description:
