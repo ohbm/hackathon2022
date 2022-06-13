@@ -211,3 +211,13 @@ yasmin_mzayek:
   hub: EMEA
   social:
      - {name: "github", link: "https://github.com/ymzayek"}
+
+alexis_thual:
+  name: "Alexis"
+  surname: "Thual"
+  location: "France"
+  team: true
+  thumbnailUrl:
+  hub: EMEA
+  social:
+     - {name: "github", link: "https://github.com/alexisthual"}
