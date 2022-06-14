@@ -6,7 +6,12 @@ import discord
 import discord.ext.tasks
 import yaml
 
+import logging
+
 from fetch_gh_issues import fetch_gh_issues
+
+dlogger = logging.getLogger('discord')
+logger = logging.getLogger('OHBM Bot')
 
 EMOJI_PROJECT_ROLES = list(
     "🐁🐂🐄🐇🐈🐉🐊🐋🐌"
@@ -192,7 +197,7 @@ class ProjectsClient(discord.Client):
             self._ready_to_bot = True
             return
 
-        print('Refreshing issues and all')
+        logger.info('Refreshing issues and all')
         current_project_ids = set(self.projects.keys())
         await self.cache_structures()
         await self.ensure_projects()
@@ -200,8 +205,8 @@ class ProjectsClient(discord.Client):
         # There are new projects. refresh internal memory
         # TODO just run things for new projects?
         if current_project_ids.difference(self.projects.keys()):
-            print(f'Loaded {len(self.projects)} projects')
-            print('Checking roles messages')
+            logger.info(f'Loaded {len(self.projects)} projects')
+            logger.info('Checking roles messages')
             await self.ensure_roles_messages()
 
     async def ensure_projects(self):
@@ -219,12 +224,14 @@ class ProjectsClient(discord.Client):
                 self.projects_emoji[project.emoji] = project
 
     async def on_ready(self):
-        print('Logged on as', self.user)
+
+        logger.handlers = dlogger.handlers
+        logger.setLevel(dlogger.level)
 
         await self.cache_structures()
         await self.ensure_projects()
 
-        print(f'Loaded {len(self.projects)} projects')
+        logger.info(f'Loaded {len(self.projects)} projects')
 
         await self.roles['muted'].edit(position=1)
 
