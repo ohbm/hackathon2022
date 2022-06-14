@@ -18,3 +18,9 @@ ehthumbs.db
 ### MAC ###
 *DS_Store
 .Rproj.user
+
+.env
+
+__pycache__/
+*.py[cod]
+*$py.class
