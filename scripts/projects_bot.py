@@ -360,10 +360,12 @@ class ProjectsClient(discord.Client):
 
 
 if __name__ == '__main__':
+    from dotenv import load_dotenv
+    load_dotenv()
 
-    guild = 920383461829795920
+    guild = int(os.getenv('GUILD', ''))
     # roles_channel = 920383461829795929
-    roles_channel = 986052228303429654 # Private channel for testing
+    roles_channel = int(os.getenv('ROLES_CHANNEL', ''))
 
     client = ProjectsClient(guild, roles_channel)
     client.run(os.getenv('DISCORD_TOKEN', ''))
