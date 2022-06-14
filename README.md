@@ -7,8 +7,6 @@
 
 The [Open Science Special Interest Group](https://ossig.netlify.com/) is very happy to announce that the 8th Annual OHBM Brainhack will be held on June 16-18 as online.
 
-![landing_image](img/landing_hackathon_2022.jpg)
-
 ## What is a Brainhack?
 
 At the OHBM Brainhack members of the community gather to work collaboratively on common projects. The event also features a TrainTrack in which tutorials are provided. Brainhacks differ from typical academic conference in that attendees can actively take part in the program and co-learn from each other such that they will be actively trying to create something rather than passively attending. Although many Brainhack projects might involve coding, it is not a requirement and many projects can be done without coding skills.
