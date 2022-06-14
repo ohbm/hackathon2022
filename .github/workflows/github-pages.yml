@@ -28,6 +28,7 @@ jobs:
             ${{ runner.os }}-pip-
 
       - run: pip install -r requirements.txt
+      - run: cp .env.example .env
 
       - name: Fetching projects from GitHub
         run: python scripts/fetch_gh_issues.py
