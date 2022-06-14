@@ -229,9 +229,9 @@
   description: >  # please edit this
     We will discuss recent progress made in Nilearn since the last major release.
   long_description: >  # Please edit this and keep the last line
-    We will give a brief introduction about Nilearn and then navigate through some of the highlights from release v0.9. A plotting demo will also be showcased.
+    Nilearn is an open-source and community-driven Python toolbox for working with brain images. It provides statistical and machine learning tools with detailed documentation. We will give a brief introduction about Nilearn and then navigate through some of the highlights from release v0.9. A plotting demo will also be showcased.
     Live event for EMEA and America. Replay for APAC.
-  links:
+  links: https://nilearn.github.io/stable/index.html
   speakers: [yasmin_mzayek, alexis_thual] # edit speaker profile in speakers.yml and reference it here
 
 -
