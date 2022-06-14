@@ -1,9 +1,17 @@
 #!/bin/env python
-import requests
+import os
 import re
+
+import requests
 import yaml
 
-URL = 'https://api.github.com/repos/ohbm/hackathon2022/issues?labels=Hackathon Project'
+GH_AUTH = os.environ['GH_AUTH']
+REPO = 'ohbm/hackathon2022'
+ISSUE_LABEL = 'Hackathon Project'
+ISSUE_READY_LABEL = 'Hacktrack: Good to go'
+ISSUE_FILTER = f'labels={ISSUE_LABEL}'
+URL = f'https://{GH_AUTH}@api.github.com/repos/{REPO}/issues?{ISSUE_FILTER}'
+
 
 def fetch_gh_issues():
 
@@ -13,10 +21,11 @@ def fetch_gh_issues():
     fields = issue_form['body']
     fields = [f for f in fields if f['type'] != 'markdown']
 
-    issues = requests.get(URL).json()
+    res = requests.get(URL)
+    issues = res.json()
     issues_list = []
     for issue in issues:
-        if "Hacktrack: Good to go" not in [i['name'] for i in issue["labels"]]:
+        if ISSUE_READY_LABEL not in [i['name'] for i in issue["labels"]]:
             continue
 
         if issue["state"] != "open":
@@ -31,7 +40,8 @@ def fetch_gh_issues():
             field_label = field['attributes']['label']
             
             for li, line in enumerate(lines):
-                if field_start is None and line.startswith(f'### {field_label}'):
+                is_line_title = line.startswith(f'### {field_label}')
+                if field_start is None and is_line_title:
                     field_start = li
 
             field_ordering += [(field, field_start)]

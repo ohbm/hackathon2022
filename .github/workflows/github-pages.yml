@@ -26,12 +26,15 @@ jobs:
 
       - name: Fetching projects from GitHub
         run: python scripts/fetch_gh_issues.py
+        env:
+          GH_AUTH: ${{ secrets.GH_AUTH }}
 
       - name: Creating Discord channels
         run: python scripts/ensure_discord_channels.py
         env:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}
+          GH_AUTH: ${{ secrets.GH_AUTH }}
 
 #       - name: Tweeting about new projects
 #         run: python scripts/tweet.py
