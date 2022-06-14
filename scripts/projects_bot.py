@@ -354,7 +354,7 @@ if __name__ == '__main__':
 
     guild = 920383461829795920
     # roles_channel = 920383461829795929
-    roles_channel = 986052228303429654 # Pivate channel for testing
+    roles_channel = 986052228303429654 # Private channel for testing
 
     client = ProjectsClient(guild, roles_channel)
     client.run(os.getenv('DISCORD_TOKEN', ''))
