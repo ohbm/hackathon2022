@@ -100,7 +100,7 @@ class Project:
             view_channel=True
         )
         overwrites = {
-            self.guild.default_role: permission_shown, # TODO need to change this for the roles to work
+            self.guild.default_role: permission_hidden, # TODO need to change this for the roles to work
             self.client.roles['muted']: permission_hidden,
             self.client.roles['carl']: permission_shown,
             self.client.roles['hackathon-bot']: permission_shown,
@@ -218,7 +218,9 @@ class ProjectsClient(discord.Client):
         with open('_data/projects.yml', 'r') as f:
             projects = yaml.safe_load(f)
 
-            for i, data in enumerate(projects):
+            for i, data in enumerate(sorted(projects, key=lambda x: x['issue_number'])):
+                if EMOJI_PROJECT_ROLES[i] == '': # Hack to skip emojis
+                    continue
                 project = await Project(self, data, EMOJI_PROJECT_ROLES[i])
                 self.projects[project.key] = project
                 self.projects_emoji[project.emoji] = project
