@@ -11,7 +11,7 @@ def fetch_gh_issues():
     REPO = 'ohbm/hackathon2022'
     ISSUE_LABEL = 'Hackathon Project'
     ISSUE_READY_LABEL = 'Hacktrack: Good to go'
-    ISSUE_FILTER = f'labels={ISSUE_LABEL}'
+    ISSUE_FILTER = f'labels={ISSUE_LABEL}&per_page=100'
     URL = f'https://{GH_AUTH}@api.github.com/repos/{REPO}/issues?{ISSUE_FILTER}'
 
     with open('.github/ISSUE_TEMPLATE/hackathon-project-form.yml') as f:
@@ -97,4 +97,7 @@ def fetch_gh_issues():
         yaml.dump(issues_list, f, default_flow_style=False)
 
 if __name__ == '__main__':
+    from dotenv import load_dotenv
+    load_dotenv()
+
     fetch_gh_issues()
