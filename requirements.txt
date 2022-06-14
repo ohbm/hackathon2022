@@ -1,2 +1,4 @@
 discord.py==1.7.3
 tweepy==4.0.0
+pillow==8.3.2
+cairosvg==2.5.2
