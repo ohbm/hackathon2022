@@ -82,17 +82,17 @@ with open('_data/projects.yml', 'r') as f:
             print(f'Processed project {name}')
 
         except Exception as e:
-            # requests.post(
-            #     f'https://api.github.com/repos/{REPO}/issues/{issue_number}/comments',
-            #     headers={
-            #         'Authorization': f'token {GH_TOKEN}',
-            #         'Accept': 'application/vnd.github.v3+json',
-            #         'Content-Type': 'application/json'
-            #     },
-            #     json={
-            #         'body': f'Failed to process image: {e}'
-            #     }
-            # )
+            requests.post(
+                f'https://api.github.com/repos/{REPO}/issues/{issue_number}/comments',
+                headers={
+                    'Authorization': f'token {GH_TOKEN}',
+                    'Accept': 'application/vnd.github.v3+json',
+                    'Content-Type': 'application/json'
+                },
+                json={
+                    'body': f'Failed to process image: {e}'
+                }
+            )
 
             print(f'Failed to process image from project {issue_link}:')
             print(f'Image URL: {image_url}')
