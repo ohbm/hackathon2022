@@ -40,7 +40,7 @@ jobs:
           path: ./img/projects
           key: ${{ runner.os }}-images-${{ hashFiles('_data/projects.yml') }}
           restore-keys: |
-            ${{ runner.os }}-images
+            ${{ runner.os }}-images-
             
       - name: Compress images
         run: python scripts/compress_images.py
