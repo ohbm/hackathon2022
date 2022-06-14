@@ -100,7 +100,7 @@ class Project:
             view_channel=True
         )
         overwrites = {
-            self.guild.default_role: permission_hidden, # TODO need to change this for the roles to work
+            self.guild.default_role: permission_hidden,
             self.client.roles['muted']: permission_hidden,
             self.client.roles['carl']: permission_shown,
             self.client.roles['hackathon-bot']: permission_shown,
