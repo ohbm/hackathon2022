@@ -62,7 +62,56 @@
       social:
         - {name: "twitter", link: "https://twitter.com/anibalsolon"}
         - {name: "github", link: "https://github.com/anibalsolon"}
-    - id: 7
+
+
+- name: "Volunteers"
+  description:
+  team:
+    - id: 10
+      name: "Sim"
+      surname: "Kim"
+      title:  "Website & Discord management"
+      location: "Daejeon, Korea"
+      thumbnailUrl:  sin_kim.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/SinKim98"}
+        - {name: "github", link: "https://github.com/AKSoo"}
+    - id: 11
+      name: "Xinhui"
+      surname: "Li"
+      title: "Website & Discord management"
+      location: "Atlanta, GA, USA"
+      thumbnailUrl: xinhui_li.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/xin_hui_li"}
+        - {name: "github", link: "https://github.com/XinhuiLi"}
+    - id: 12
+      name: "Valentina"
+      surname: "Borghesani"
+      title: "Social media"
+      location: "Geneva, Switzerland"
+      thumbnailUrl: valentina_borghesani.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/vborghesani"}
+        - {name: "github", link: "https://github.com/vborghe"}
+    - id: 13
+      name: "Damion"
+      surname: "Demeter"
+      title: "Buddy System"
+      location: "Geneva, Switzerland"
+      thumbnailUrl: damion_demeter.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/iamdamion"}
+        - {name: "github", link: "https://github.com/iamdamion"}
+    - id: 14
+      name: "Matt"
+      surname: "Rosenblatt"
+      title: "Buddy System"
+      location: "New Haven, CT, USA"
+      thumbnailUrl: 
+      social:
+        - {name: "twitter", link: "https://twitter.com/rosenblattmatt"}
+    - id: 15
       name: "Remi"
       surname: "Gau"
       title: "Hybridization"
@@ -72,71 +121,30 @@
         - {name: "twitter", link: "https://twitter.com/remigau"}
         - {name: "github", link: "https://github.com/Remi-Gau"}
 
-
-- name: "Volunteers"
-  description:
-  team:
-    - id: 8
-      name: "Sim"
-      surname: "Kim"
-      title:  "Website & Discord management"
-      location: "Daejeon, Korea"
-      thumbnailUrl:  sin_kim.png
-      social:
-        - {name: "twitter", link: "https://twitter.com/SinKim98"}
-        - {name: "github", link: "https://github.com/AKSoo"}
-    - id: 9
-      name: "Xinhui"
-      surname: "Li"
-      title: "Website & Discord management"
-      location: "Atlanta, GA, USA"
-      thumbnailUrl: xinhui_li.png
-      social:
-        - {name: "twitter", link: "https://twitter.com/xin_hui_li"}
-        - {name: "github", link: "https://github.com/XinhuiLi"}
-    - id: 10
-      name: "Valentina"
-      surname: "Borghesani"
-      title: "Social media"
-      location: "Geneva, Switzerland"
-      thumbnailUrl: valentina_borghesani.png
-      social:
-        - {name: "twitter", link: "https://twitter.com/vborghesani"}
-        - {name: "github", link: "https://github.com/vborghe"}
-    - id: 11
-      name: "Damion"
-      surname: "Demeter"
-      title: "Buddy System"
-      location: "Geneva, Switzerland"
-      thumbnailUrl: damion_demeter.png
-      social:
-        - {name: "twitter", link: "https://twitter.com/iamdamion"}
-        - {name: "github", link: "https://github.com/iamdamion"}
-    - id: 12
-      name: "Matt"
-      surname: "Rosenblatt"
-      title: "Buddy System"
-      location: "New Haven, CT, USA"
-      thumbnailUrl: 
-      social:
-        - {name: "twitter", link: "https://twitter.com/rosenblattmatt"}
-
 - name: Hub Hosts
   description:
   team:
     - id: 30
-      name: "Host"
-      surname: ""
+      name: "Jinglei"
+      surname: "Lv"
       title: "APAC Hub Host"
-      location: ""
-      thumbnailUrl:
+      location: "Brisbane, Queensland, Australia"
+      thumbnailUrl: jinglei_lv.png
       social:
-        - {name: "twitter", link: "https://twitter.com/"}
-        - {name: "github", link: "https://github.com/"}
+        - {name: "twitter", link: "https://twitter.com/jingleilv"}
+        - {name: "github", link: "https://github.com/Jinglei-Lv"}
     - id: 31
+      name: "Subapriya"
+      surname: "Suppiah"
+      title: "EMEA Hub Host"
+      location: "Seri Kembangan, Selangor, Malaysia"
+      thumbnailUrl: subapriya_suppiah.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/subapriyasuppi1"}
+    - id: 32
       name: "Anibal"
       surname: "Solon"
-      title: "America Hub Host"
+      title: "Americas Hub Host"
       location: "Austin, TX, USA"
       thumbnailUrl: anibal_solon.png
       social:
