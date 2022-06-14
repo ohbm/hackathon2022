@@ -40,7 +40,7 @@ with open('_data/projects.yml', 'r') as f:
             # Let `requests` handle the URL validation
             pattern = r'(https?://[^\s]+)'
             image_url_search = re.search(pattern, image_url)
-            if not image_url:
+            if not image_url_search:
                 raise Exception(f'Invalid image "{image_url}"')
             image_url = image_url_search.group(0)
             image_url_pieces = image_url.split('/')
