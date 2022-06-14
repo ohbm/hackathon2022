@@ -18,7 +18,7 @@ EMOJI_PROJECT_ROLES = list(
     "🦕🦖🦘🦙🦚🦛🦜🦝🦢"
 )
 
-ROLES_PROJECT_MESSAGE = "{{ emoji }} [{{ title }}]({{ link }}): [@{{ key }}](https://discordapp.com/channels/{{ guild }}/{{ channel }})"
+ROLES_PROJECT_MESSAGE = "{emoji} [{title}]({link}): [@{key}](https://discordapp.com/channels/{guild}/{channel})"
 
 ROLES_MESSAGE = """
 > Please react to this message with the appropriate emoji for the project.
@@ -27,7 +27,7 @@ ROLES_MESSAGE = """
 """
 
 ROLES_MESSAGE_ACK = """
-The emojis were assigned to the projects *at random*, if you'd like to change your project's emoji, please contact the <@&{{ staff_role }}>.
+The emojis were assigned to the projects *at random*, if you'd like to change your project's emoji, please contact the <@&{staff_role}>.
 """
 
 
@@ -252,8 +252,8 @@ class ProjectsClient(discord.Client):
         self._role_messages_ids = [m.id for m in self._role_messages]
         del cur_messages
 
-        ack_message = ROLES_MESSAGE_ACK\
-            .replace('{{ staff_role }}', str(self.roles['staff'].id))
+        ack_message = ROLES_MESSAGE_ACK.format(
+            staff_role=str(self.roles['staff'].id))
 
         ack_embed = discord.Embed(
             description=ack_message,
@@ -270,13 +270,10 @@ class ProjectsClient(discord.Client):
         messages_sent = 0
         for pi, (key, project) in enumerate(self.projects.items()):
 
-            description += ROLES_PROJECT_MESSAGE \
-                .replace('{{ emoji }}', project.emoji) \
-                .replace('{{ title }}', project.title) \
-                .replace('{{ link }}', project.link) \
-                .replace('{{ key }}', key) \
-                .replace('{{ guild }}', str(self.guild.id)) \
-                .replace('{{ channel }}', str(project.channel.id)) + "\n"
+            description += ROLES_PROJECT_MESSAGE.format(
+                emoji=project.emoji, title=project.title, link=project.link,
+                key=key, guild=self.guild.id, channel=project.channel.id)
+            description += "\n"
 
             project_emojis.append(project.emoji)
             projects_in_message += 1
@@ -286,9 +283,9 @@ class ProjectsClient(discord.Client):
                 sum_limit = EMBEDS_CHAR_SUM - len(str(ack_embed.description))
                 description_limit = min(description_limit, sum_limit)
 
-            if len(description) >= description_limit or \
-                projects_in_message >= PROJECTS_PER_MESSAGE or \
-                pi == len(self.projects) - 1:
+            if (len(description) >= description_limit
+                    or projects_in_message >= PROJECTS_PER_MESSAGE
+                    or pi == len(self.projects) - 1):
 
                 embeds = []
                 content = None
@@ -308,6 +305,7 @@ class ProjectsClient(discord.Client):
                         content=content,
                         embeds=embeds
                     )
+                    self._role_messages_ids += [message.id]
                 else:
                     message = self._role_messages[messages_sent]
                     await message.edit(
@@ -334,9 +332,9 @@ class ProjectsClient(discord.Client):
                 messages_sent += 1
 
     async def reaction_role(self, payload, add):
-        if payload.message_id not in self._role_messages_ids or \
-            str(payload.emoji) not in self.projects_emoji or \
-            payload.user_id == self.user.id:
+        if (payload.message_id not in self._role_messages_ids
+                or str(payload.emoji) not in self.projects_emoji
+                or payload.user_id == self.user.id):
             return
 
         project = self.projects_emoji[str(payload.emoji)]
