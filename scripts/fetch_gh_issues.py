@@ -5,15 +5,14 @@ import re
 import requests
 import yaml
 
-GH_AUTH = os.environ['GH_AUTH']
-REPO = 'ohbm/hackathon2022'
-ISSUE_LABEL = 'Hackathon Project'
-ISSUE_READY_LABEL = 'Hacktrack: Good to go'
-ISSUE_FILTER = f'labels={ISSUE_LABEL}'
-URL = f'https://{GH_AUTH}@api.github.com/repos/{REPO}/issues?{ISSUE_FILTER}'
-
-
 def fetch_gh_issues():
+
+    GH_AUTH = os.environ['GH_AUTH']
+    REPO = 'ohbm/hackathon2022'
+    ISSUE_LABEL = 'Hackathon Project'
+    ISSUE_READY_LABEL = 'Hacktrack: Good to go'
+    ISSUE_FILTER = f'labels={ISSUE_LABEL}'
+    URL = f'https://{GH_AUTH}@api.github.com/repos/{REPO}/issues?{ISSUE_FILTER}'
 
     with open('.github/ISSUE_TEMPLATE/hackathon-project-form.yml') as f:
         issue_form = yaml.safe_load(f)
