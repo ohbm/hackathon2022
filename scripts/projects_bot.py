@@ -132,6 +132,7 @@ class ProjectsClient(discord.Client):
         assert isinstance(roles_channel, discord.TextChannel)
         self._roles_channel: discord.TextChannel = roles_channel
 
+        # TODO fixed ids :(
         self._roles = {
             'staff': self._guild.get_role(920383461829795926),
             'carl': self._guild.get_role(971318302100033570),
@@ -356,7 +357,7 @@ if __name__ == '__main__':
 
     guild = 920383461829795920
     # roles_channel = 920383461829795929
-    roles_channel = 986052228303429654
+    roles_channel = 986052228303429654 # Pivate channel for testing
 
     client = ProjectsClient(guild, roles_channel)
     client.run(os.getenv('DISCORD_TOKEN', ''))
