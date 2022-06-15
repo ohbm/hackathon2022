@@ -217,8 +217,10 @@
   title: "Exploding brains"
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
-  description: The serious reasons behind those brain animation projects - Faruk Gulban
-  long_description:
+  description: >
+    The serious reasons behind those brain animation projects
+    —Faruk Gulban
+  long_description: >
     Live event for EMEA. Replay for APAC and America.
   links:
   speakers: []
@@ -229,8 +231,8 @@
   title: "FSL"
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
-  description: Paul McCarthy, Taylor Hanayik
-  long_description:
+  description: — Paul McCarthy, Taylor Hanayik
+  long_description: >
     Live event for EMEA and APAC. Replay for Americas.
   links:
   speakers: []
@@ -242,7 +244,7 @@
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
   description: Hao-Ting Wang
-  long_description:
+  long_description: >
     Live event for EMEA and America. Replay for APAC.
   links:
   speakers: []
@@ -254,7 +256,7 @@
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
   description: The DANDI Archive - Dorota Jacecka
-  long_description:
+  long_description: >
     Live event for EMEA and APAC. Replay for Americas.
   links:
   speakers: []
@@ -265,8 +267,7 @@
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
   description: Tristan Glatard
-  long_description: >  # Please edit this and keep the last line
-    TBA.
+  long_description: >
     Live event for EMEA. Replay for APAC and America.
   links:
   speakers: []
@@ -278,7 +279,7 @@
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
   description:
-  long_description:
+  long_description: >
     Live event for EMEA and APAC. Replay for Americas.
   links:
   speakers: []
@@ -289,8 +290,8 @@
   title: "AFNI"
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
-  description: Paul Taylor, Gang Chen
-  long_description:
+  description: — Paul Taylor, Gang Chen
+  long_description: >
     Live event for EMEA and America. Replay for APAC.
   links:
   speakers: []
@@ -301,7 +302,7 @@
   title: "OpenNeuro"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
-  description: Chris Markiewicz
+  description: — Chris Markiewicz
   long_description:
     Live event for EMEA and APAC. Replay for Americas.
   links:
