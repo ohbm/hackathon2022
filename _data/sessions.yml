@@ -53,6 +53,7 @@
   type: social
   title: "Morning mingling"
   place: "Queen Margrat Union / Discord"
+  discord_channel: lounge
   description: "Slowly move to the venue / get to your desk / start caffeine intake."
 
 -
@@ -74,6 +75,7 @@
   type: social
   title: "Afternoon delights"
   place: "Discord"
+  discord_channel: lounge
   description: "Get ready and tune into Brainhack Discord."
 
 # Intro, wrap up, project pitches
@@ -82,6 +84,7 @@
   type: hacktrack
   title: "Welcome - EMEA + APAC"
   place: "Queen Margrat Union"
+  discord_channel: stage
   description: "Welcoming ceremony for Glasgow / EMEA and APAC hub."
   speakers: [brainhack] # from speakers.yml
   links:
@@ -92,6 +95,7 @@
   type: hacktrack
   title: "Welcome"
   place: "Discord"
+  discord_channel: stage
   description: "Welcoming ceremony for the Americas hub"
   links:
     presentation: #https://osf.io/
@@ -101,6 +105,7 @@
   type: hacktrack
   title: "Welcome"
   place: "Discord"
+  discord_channel: stage
   description: "Welcoming ceremony for the APAC hub"
   links:
     presentation: #https://osf.io/
@@ -110,6 +115,7 @@
   type: hacktrack
   title: "Project Pitches & mingling"
   place: "Queen Margrat Union / Discord"
+  discord_channel: stage
   description: "Project leaders have 2 minutes to describe their project."
 
 -
@@ -117,6 +123,7 @@
   type: hacktrack
   title: "Americas Project Pitches"
   place: "Discord"
+  discord_channel: stage
   description: "Tune in to Discord to join the Americas project pitches."
 
 -
@@ -124,6 +131,7 @@
   type: hacktrack
   title: "The fantastic projects and where to find them"
   place: "Queen Margrat Union / Discord"
+  discord_channel: stage
   description: "Project pitches continues, and let's chat and find your project."
 
 
@@ -132,6 +140,7 @@
   type: hacktrack
   title: "Final wrap-up"
   place: "Queen Margrat Union / Discord"
+  discord_channel: stage
   speakers: [brainhack] # from speakers.yml
   description: "We all get together to hear what was accomplished in the past 3 days."
 
@@ -140,6 +149,7 @@
   type: hacktrack
   title: "Final wrap-up: Live from Glasgow"
   place: "Queen Margrat Union / Discord"
+  discord_channel: stage
   speakers: [brainhack] # from speakers.yml
   description: "Tune in to see how the projects went in Glasgow."
 
@@ -148,6 +158,7 @@
   type: hacktrack
   title: "Closing remarks"
   place: "Queen Margrat Union / Discord"
+  discord_channel: stage
   speakers: [brainhack] # from speakers.yml
   description: "Say goodbye to Brainhack. See you at OHBM."
 
@@ -157,6 +168,7 @@
   type: hacktrack
   title: "Hacking"
   place: "Queen Margrat Union / Discord"
+  discord_channel: lounge
   description: "Anytime is hack time."
 
 -
@@ -164,6 +176,7 @@
   type: hacktrack
   title: "Overtime hacking"
   place: "Queen Margrat Union / Discord"
+  discord_channel: lounge
   description: "Anytime is hack time."
 
 -
@@ -171,6 +184,7 @@
   type: hacktrack
   title: "Unconference!!!"
   place: "Queen Margrat Union / Discord"
+  discord_channel: stage
   description: "The best time to start talking with others"
 
 -
@@ -178,6 +192,7 @@
   type: hacktrack
   title: "Unconference - EMEA + Americas"
   place: "Queen Margrat Union / Discord"
+  discord_channel: stage
   description: "Join the unconference session with friends from EMEA and America!"
 
 -
@@ -185,6 +200,7 @@
   type: hacktrack
   title: "Unconference - EMEA + APAC"
   place: "Queen Margrat Union / Discord"
+  discord_channel: stage
   description: "Join the unconference session with friends from EMEA and APAC!"
 
 -
@@ -200,6 +216,7 @@
   type: traintrack
   title: "Exploding brains"
   place: "Queen Margrat Union Main Stage / Discord"
+  discord_channel: amphitheatre
   description: The serious reasons behind those brain animation projects - Faruk Gulban
   long_description:
     Live event for EMEA. Replay for APAC and America.
@@ -211,7 +228,8 @@
   type: traintrack
   title: "FSL"
   place: "Queen Margrat Union Main Stage / Discord"
-  description: - Paul McCarthy, Taylor Hanayik
+  discord_channel: amphitheatre
+  description: Paul McCarthy, Taylor Hanayik
   long_description:
     Live event for EMEA and APAC. Replay for Americas.
   links:
@@ -222,6 +240,7 @@
   type: traintrack
   title: "Nilearn"
   place: "Queen Margrat Union Main Stage / Discord"
+  discord_channel: amphitheatre
   description: Hao-Ting Wang
   long_description:
     Live event for EMEA and America. Replay for APAC.
@@ -233,6 +252,7 @@
   type: traintrack
   title: "DANDI"
   place: "Queen Margrat Union Main Stage / Discord"
+  discord_channel: amphitheatre
   description: The DANDI Archive - Dorota Jacecka
   long_description:
     Live event for EMEA and APAC. Replay for Americas.
@@ -243,6 +263,7 @@
   type: traintrack
   title: "Numerical stability"
   place: "Queen Margrat Union Main Stage / Discord"
+  discord_channel: amphitheatre
   description: Tristan Glatard
   long_description: >  # Please edit this and keep the last line
     TBA.
@@ -255,6 +276,7 @@
   type: traintrack
   title: "TBA"
   place: "Queen Margrat Union Main Stage / Discord"
+  discord_channel: amphitheatre
   description:
   long_description:
     Live event for EMEA and APAC. Replay for Americas.
@@ -266,7 +288,8 @@
   type: traintrack
   title: "AFNI"
   place: "Queen Margrat Union Main Stage / Discord"
-  description: - Paul Taylor, Gang Chen
+  discord_channel: amphitheatre
+  description: Paul Taylor, Gang Chen
   long_description:
     Live event for EMEA and America. Replay for APAC.
   links:
@@ -277,7 +300,8 @@
   type: traintrack
   title: "OpenNeuro"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: - Chris Markiewicz
+  discord_channel: amphitheatre
+  description: Chris Markiewicz
   long_description:
     Live event for EMEA and APAC. Replay for Americas.
   links:
