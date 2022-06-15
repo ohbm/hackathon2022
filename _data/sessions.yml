@@ -200,13 +200,11 @@
   type: traintrack
   title: "Exploding brains"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: >  # please edit this
-    TBA.
-  long_description: >  # Please edit this and keep the last line
-    TBA.
+  description: The serious reasons behind those brain animation projects
+  long_description:
     Live event for EMEA. Replay for APAC and America.
   links:
-  speakers: [Faruk] # edit speaker profile in speakers.yml and reference it here
+  speakers: []
 
 -
   id: 3021
