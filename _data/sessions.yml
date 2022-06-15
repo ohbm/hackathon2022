@@ -200,8 +200,10 @@
   type: traintrack
   title: "Exploding brains"
   place: "Queen Margrat Union Main Stage / Discord"
-  description: The serious reasons behind those brain animation projects - Faruk Gulban
-  long_description:
+  description: >
+    The serious reasons behind those brain animation projects
+    —Faruk Gulban
+  long_description: >
     Live event for EMEA. Replay for APAC and America.
   links:
   speakers: []
@@ -211,8 +213,8 @@
   type: traintrack
   title: "FSL"
   place: "Queen Margrat Union Main Stage / Discord"
-  description: - Paul McCarthy, Taylor Hanayik
-  long_description:
+  description: — Paul McCarthy, Taylor Hanayik
+  long_description: >
     Live event for EMEA and APAC. Replay for Americas.
   links:
   speakers: []
@@ -223,7 +225,7 @@
   title: "Nilearn"
   place: "Queen Margrat Union Main Stage / Discord"
   description: Hao-Ting Wang
-  long_description:
+  long_description: >
     Live event for EMEA and America. Replay for APAC.
   links:
   speakers: []
@@ -234,7 +236,7 @@
   title: "DANDI"
   place: "Queen Margrat Union Main Stage / Discord"
   description: The DANDI Archive - Dorota Jacecka
-  long_description:
+  long_description: >
     Live event for EMEA and APAC. Replay for Americas.
   links:
   speakers: []
@@ -244,8 +246,7 @@
   title: "Numerical stability"
   place: "Queen Margrat Union Main Stage / Discord"
   description: Tristan Glatard
-  long_description: >  # Please edit this and keep the last line
-    TBA.
+  long_description: >
     Live event for EMEA. Replay for APAC and America.
   links:
   speakers: []
@@ -256,7 +257,7 @@
   title: "TBA"
   place: "Queen Margrat Union Main Stage / Discord"
   description:
-  long_description:
+  long_description: >
     Live event for EMEA and APAC. Replay for Americas.
   links:
   speakers: []
@@ -266,8 +267,8 @@
   type: traintrack
   title: "AFNI"
   place: "Queen Margrat Union Main Stage / Discord"
-  description: - Paul Taylor, Gang Chen
-  long_description:
+  description: — Paul Taylor, Gang Chen
+  long_description: >
     Live event for EMEA and America. Replay for APAC.
   links:
   speakers: []
@@ -277,7 +278,7 @@
   type: traintrack
   title: "OpenNeuro"  # please edit this
   place: "Queen Margrat Union Main Stage / Discord"
-  description: - Chris Markiewicz
+  description: — Chris Markiewicz
   long_description:
     Live event for EMEA and APAC. Replay for Americas.
   links:
