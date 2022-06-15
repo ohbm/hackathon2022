@@ -1,6 +1,6 @@
 -
   date: "2022-06-16"
-  tz: "Etc/GMT+1"
+  tz: "Etc/GMT+8"
   dateReadable: "June 16th, Day 0 (UTC + 8)"
   tracks:
     # - {title: "Public service announcements", color: "#03a9f4"}
@@ -23,7 +23,7 @@
 
 -
   date: "2022-06-17"
-  tz: "Etc/GMT+1"
+  tz: "Etc/GMT+8"
   dateReadable: "June 17th, Day 1 (UTC + 8)"
   tracks:
     # - {title: "Public service announcements", color: "#03a9f4"}
@@ -71,7 +71,7 @@
 
 -
   date: "2022-06-18"
-  tz: "Etc/GMT+1"
+  tz: "Etc/GMT+8"
   dateReadable: "June 18th, Day 2 (UTC + 8)"
   tracks:
     # - {title: "Public service announcements", color: "#03a9f4"}
@@ -119,7 +119,7 @@
 
 -
   date: "2022-06-19"
-  tz: "Etc/GMT+1"
+  tz: "Etc/GMT+8"
   dateReadable: "June 19th, Day 3 (UTC + 8)"
   tracks:
     # - {title: "Public service announcements", color: "#03a9f4"}
