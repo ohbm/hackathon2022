@@ -1,6 +1,9 @@
 # generated from issues
 _data/projects.yml
 
+# generated for local use
+_data/pitch_order.yml
+
 ### General ###
 *.lock
 

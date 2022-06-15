@@ -37,7 +37,7 @@ def fetch_gh_issues():
         for field in fields:
             field_start = None
             field_label = field['attributes']['label']
-            
+
             for li, line in enumerate(lines):
                 is_line_title = line.startswith(f'### {field_label}')
                 if field_start is None and is_line_title:
@@ -95,6 +95,7 @@ def fetch_gh_issues():
 
     with open('./_data/projects.yml', 'w') as f:
         yaml.dump(issues_list, f, default_flow_style=False)
+
 
 if __name__ == '__main__':
     from dotenv import load_dotenv
