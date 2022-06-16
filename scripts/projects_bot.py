@@ -181,8 +181,12 @@ class ProjectsClient(discord.Client):
 
         self._voice_category = voice_category
         self._text_category = text_category
-        self._voice_channels = {ch.name: ch for ch in self._voice_category}
-        self._text_channels = {ch.name: ch for ch in self._text_category}
+        self._voice_channels = {
+            ch.name: ch for ch in self._voice_category.voice_channels
+        }
+        self._text_channels = {
+            ch.name: ch for ch in self._text_category.text_channels
+        }
         self._projects_roles = {
             role.name: role
             for role in self.guild.roles
