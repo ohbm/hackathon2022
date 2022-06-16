@@ -185,8 +185,8 @@ class ProjectsClient(discord.Client):
         self._projects_channels = {}
         for ch in projects_category.channels:
             if ch.name not in self._projects_channels:
-                self._projects_channels = []
-            self._projects_channels.append(ch)
+                self._projects_channels[ch.name] = []
+            self._projects_channels[ch.name].append(ch)
         self._projects_roles = {
             role.name: role
             for role in self.guild.roles
