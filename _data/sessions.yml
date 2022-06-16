@@ -219,7 +219,7 @@
   discord_channel: amphitheatre
   description: >
     The serious reasons behind those brain animation projects
-    —Faruk Gulban
+    — Faruk Gulban
   long_description: >
     Live event for EMEA. Replay for APAC and America.
   links:
@@ -243,7 +243,7 @@
   title: "Nilearn"
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
-  description: Hao-Ting Wang
+  description: — Hao-Ting Wang
   long_description: >
     Live event for EMEA and America. Replay for APAC.
   links:
@@ -255,7 +255,7 @@
   title: "DANDI"
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
-  description: The DANDI Archive - Dorota Jacecka
+  description: The DANDI Archive — Dorota Jacecka
   long_description: >
     Live event for EMEA and APAC. Replay for Americas.
   links:
@@ -266,7 +266,7 @@
   title: "Numerical stability"
   place: "Queen Margrat Union Main Stage / Discord"
   discord_channel: amphitheatre
-  description: Tristan Glatard
+  description: — Tristan Glatard
   long_description: >
     Live event for EMEA. Replay for APAC and America.
   links:
