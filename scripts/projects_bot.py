@@ -49,7 +49,8 @@ class Project:
         self.link = data['issue_link']
         self.emoji = emoji
 
-        self.channels = client.projects_channels.get(self.key)
+        self.voice = client.voice_channels.get(self.key)
+        self.text = client.text_channels.get(self.key)
         self.role = client.projects_roles.get(f'proj-{self.key}')
         self.react = None
 
@@ -59,8 +60,10 @@ class Project:
              f"link: {self.link}")
         if self.role is not None:
             s += f"\nrole: {self.role.id}"
-        if self.channels is not None:
-            s += f"\nchannels: {[ch.id for ch in self.channels]}"
+        if self.voice is not None:
+            s += f"\nchannels: {self.voice.id}"
+        if self.text is not None:
+            s += f"\nchannels: {self.text.id}"
         if self.react is not None:
             s += f"\nreact: {self.react[1]} on {self.react[0]}"
         return s
@@ -84,29 +87,21 @@ class Project:
         return True
 
     async def ensure_channel(self):
-        has_voice, has_text = False, False
-        if self.channels is None:
-            self.channels = []
-        for ch in self.channels:
-            if isinstance(ch, discord.VoiceChannel):
-                has_voice = True
-            elif isinstance(ch, discord.TextChannel):
-                has_text = True
-        if has_voice and has_text:
+        if self.voice is not None and self.text is not None:
             return False
 
         await self.ensure_role()
 
-        if not has_voice:
-            self.channels.append(await self.guild.create_voice_channel(
+        if self.voice is None:
+            self.voice = await self.guild.create_voice_channel(
                 name=self.key,
-                category=self.client.projects_category
-            ))
-        if not has_text:
-            self.channels.append(await self.guild.create_text_channel(
+                category=self.client.voice_category
+            )
+        if self.text is None:
+            self.text = await self.guild.create_text_channel(
                 name=self.key,
-                category=self.client.projects_category
-            ))
+                category=self.client.text_category
+            )
         return True
 
     async def ensure_channel_permissions(self):
@@ -126,8 +121,8 @@ class Project:
             self.client.roles['staff']: permission_shown,
             self.role: permission_shown,
         }
-        for ch in self.channels:
-            await ch.edit(overwrites=overwrites)
+        await self.voice.edit(overwrites=overwrites)
+        await self.text.edit(overwrites=overwrites)
         return True
 
 
@@ -172,25 +167,26 @@ class ProjectsClient(discord.Client):
             'amphitheatre': self._guild.get_channel(986656697638596639),
         }
 
-        projects_category = None
+        voice_category, text_category = None, None
         for category in self._guild.categories:
             if category.name == 'Projects':
-                projects_category = category
-                break
+                voice_category = category
+            elif category.name == 'Projects-text':
+                text_category = category
 
-        if projects_category is None:
-            projects_category = await guild.create_category_channel('Projects')
+        if voice_category is None:
+            voice_category = await guild.create_category('Projects')
+        if text_category is None:
+            text_category = await guild.create_category('Projects-text')
 
-        self._projects_category = projects_category
-        self._projects_channels = {}
-        for ch in projects_category.channels:
-            if ch.name not in self._projects_channels:
-                self._projects_channels[ch.name] = []
-            self._projects_channels[ch.name].append(ch)
+        self._voice_category = voice_category
+        self._text_category = text_category
+        self._voice_channels = {ch.name: ch for ch in self._voice_category}
+        self._text_channels = {ch.name: ch for ch in self._text_category}
         self._projects_roles = {
             role.name: role
             for role in self.guild.roles
-            if role.name.replace('proj-', '') in self._projects_channels
+            if role.name.replace('proj-', '') in self._voice_channels
         }
 
 
@@ -204,12 +200,20 @@ class ProjectsClient(discord.Client):
         return self._roles_channel
 
     @property
-    def projects_category(self) -> discord.CategoryChannel:
-        return self._projects_category
+    def voice_category(self) -> discord.CategoryChannel:
+        return self._voice_category
 
     @property
-    def projects_channels(self) -> Dict[str, discord.VoiceChannel]:
-        return self._projects_channels
+    def text_category(self) -> discord.CategoryChannel:
+        return self._text_category
+
+    @property
+    def voice_channels(self) -> Dict[str, discord.VoiceChannel]:
+        return self._voice_channels
+
+    @property
+    def text_channels(self) -> Dict[str, discord.TextChannel]:
+        return self._text_channels
 
     @property
     def projects_roles(self) -> Dict[str, discord.Role]:
