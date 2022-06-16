@@ -48,8 +48,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
 
-      - name: Creating Discord channels
-        run: python scripts/ensure_discord_channels.py
+      - name: Creating Discord structures
+        run: python scripts/ensure_discord.py
         env:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}

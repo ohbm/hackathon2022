@@ -1,12 +1,14 @@
 import asyncio
+import glob
+import logging
 import os
+from datetime import datetime
 from typing import Dict
 
 import discord
 import discord.ext.tasks
+import pytz
 import yaml
-
-import logging
 
 from fetch_gh_issues import fetch_gh_issues
 
@@ -22,11 +24,13 @@ EMOJI_PROJECT_ROLES = list(
     "🦉🦋🦎🦔"
 )
 
+HUBS = { 'americas': 'Americas', 'emea': 'EMEA', 'apac': 'APAC' }
+
 ROLES_PROJECT_MESSAGE = "{emoji} [{title}]({link}): [@{key}](https://discordapp.com/channels/{guild}/{channel})"
 
 ROLES_MESSAGE = """
 > Please react to this message with the appropriate emoji for the project.
-> 
+>
 > The emoji reaction will allow you to receive notifications from the project via the tag `@proj-<project name>`.
 """
 
@@ -67,7 +71,7 @@ class Project:
         yield from asyncio.create_task(self.ensure_channel())
         yield from asyncio.create_task(self.ensure_channel_permissions())
         return self
-    
+
     async def ensure_role(self):
         if self.role is not None:
             return False
@@ -78,11 +82,11 @@ class Project:
         )
         await self.role.edit(position=2)
         return True
-    
+
     async def ensure_channel(self):
         if self.channel is not None:
             return False
-        
+
         await self.ensure_role()
 
         self.channel = await self.guild.create_voice_channel(
@@ -116,12 +120,14 @@ class ProjectsClient(discord.Client):
     def __init__(self,
                  guild: int, roles_channel: int,
                  just_ensure_channels: bool = False,
+                 just_ensure_events: bool = False,
                  *args, **kwargs):
 
         intents = discord.Intents.default()
         super().__init__(intents=intents, *args, **kwargs)
 
         self._just_ensure_channels = just_ensure_channels
+        self._just_ensure_events = just_ensure_events
         self._guild_id = guild
         self._roles_channel_id = roles_channel
         self._ready_to_bot = False
@@ -142,6 +148,12 @@ class ProjectsClient(discord.Client):
             'carl': self._guild.get_role(971318302100033570),
             'hackathon-bot': self._guild.get_role(965650036308447276),
             'muted': self._guild.get_role(962429030714458162),
+        }
+
+        self._channels = {
+            'lounge': self._guild.get_channel(920383462312120372),
+            'stage': self._guild.get_channel(986407810537492541),
+            'amphitheatre': self._guild.get_channel(986656697638596639),
         }
 
         projects_category = None
@@ -225,26 +237,107 @@ class ProjectsClient(discord.Client):
                 self.projects[project.key] = project
                 self.projects_emoji[project.emoji] = project
 
+    async def ensure_events(self):
+        events = await self.guild.fetch_scheduled_events()
+        events = [e for e in events if e.creator == self.user]
+        events = {
+            f'{e.start_time} {e.name.split("]")[0][1:]} {e.name.split("#")[-1]}': e
+            for e in events
+        }
+
+        with open('_data/sessions.yml', 'r') as f:
+            sessions = yaml.safe_load(f)
+            sessions = {
+                session['id']: session
+                for session in sessions
+            }
+
+        hubs = {}
+        for hub_file in glob.glob('_data/schedules/*.yml'):
+            hub = os.path.basename(hub_file).replace('.yml', '')
+            with open(hub_file, 'r') as f:
+                hubs[hub] = yaml.safe_load(f)
+
+        final_sessions = []
+        for hub, schedules in hubs.items():
+            for schedule in schedules:
+                day = schedule['date']
+
+                # POSIX-style time zones use an inverted offset format
+                tz = pytz.timezone(
+                    schedule['tz'] \
+                        .replace('+', '^')
+                        .replace('-', '+')
+                        .replace('^', '-')
+                )
+                for timeslot in schedule['timeslots']:
+                    start_time = f"{day}T{timeslot['startTime']}"
+                    start_time = datetime.strptime(start_time, '%Y-%m-%dT%H:%M')
+                    start_time = start_time.replace(tzinfo=tz).astimezone(pytz.utc)
+
+                    end_time = f"{day}T{timeslot['endTime']}"
+                    end_time = datetime.strptime(end_time, '%Y-%m-%dT%H:%M')
+                    end_time = end_time.replace(tzinfo=tz).astimezone(pytz.utc)
+
+                    for session_id in timeslot['sessionIds']:
+                        if 'discord_channel' not in sessions[session_id]:
+                            continue
+
+                        key = f'{start_time} {HUBS[hub]} {session_id}'
+                        if key in events:
+                            del events[key]
+                            continue
+
+                        title = sessions[session_id]['title']
+                        title = f'[{HUBS[hub]}] {title} #{session_id}'
+                        channel = sessions[session_id]['discord_channel']
+                        channel = self._channels[channel]
+                        description = sessions[session_id]['description']
+
+                        final_sessions += [
+                            {
+                                'name': title,
+                                'description': description,
+                                'channel': channel,
+                                'entity_type': discord.EntityType.voice,
+                                'start_time': start_time,
+                                'end_time': end_time,
+                            }
+                        ]
+
+        total = len(events) + len(final_sessions)
+        logger.info(f'Generating {len(final_sessions)} events, {total} total')
+
+        # Merge all events and give preference to earlier events
+        for event in sorted(final_sessions, key=lambda x: x['start_time']):
+            await self.guild.create_scheduled_event(**event)
+
+        for key, event in events.items():
+            await event.delete()
+
     async def on_ready(self):
 
         logger.handlers = dlogger.handlers
         logger.setLevel(dlogger.level)
 
+        just_something = self._just_ensure_channels or self._just_ensure_events
+
         await self.cache_structures()
-        await self.ensure_projects()
 
-        logger.info(f'Loaded {len(self.projects)} projects')
+        if not just_something or self._just_ensure_channels:
+            await self.ensure_projects()
+            logger.info(f'Loaded {len(self.projects)} projects')
+            await self.roles['muted'].edit(position=1)
 
-        await self.roles['muted'].edit(position=1)
+        if not just_something or self._just_ensure_events:
+            await self.ensure_events()
 
-        # Checking if all projects are in the guild
-        # Let the roles thing to the constantly-running bot
-        if self._just_ensure_channels:
+        if just_something:
             await self.close()
             return
 
         await self.ensure_roles_messages()
-        
+
         self.on_check_again.start()
 
     async def ensure_roles_messages(self):
