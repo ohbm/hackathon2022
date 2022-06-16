@@ -30,7 +30,7 @@ ROLES_PROJECT_MESSAGE = "{emoji} [{title}]({link}): [@{key}](https://discordapp.
 
 ROLES_MESSAGE = """
 > Please react to this message with the appropriate emoji for the project.
->
+> 
 > The emoji reaction will allow you to receive notifications from the project via the tag `@proj-<project name>`.
 """
 
@@ -279,6 +279,9 @@ class ProjectsClient(discord.Client):
                     end_time = f"{day}T{timeslot['endTime']}"
                     end_time = datetime.strptime(end_time, '%Y-%m-%dT%H:%M')
                     end_time = end_time.replace(tzinfo=tz).astimezone(pytz.utc)
+
+                    if start_time <= datetime.now(pytz.utc):
+                        continue
 
                     for session_id in timeslot['sessionIds']:
                         if 'discord_channel' not in sessions[session_id]:
