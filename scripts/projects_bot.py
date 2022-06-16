@@ -244,6 +244,7 @@ class ProjectsClient(discord.Client):
             f'{e.start_time} {e.name.split("]")[0][1:]} {e.name.split("#")[-1]}': e
             for e in events
         }
+        n_events = len(events)
 
         with open('_data/sessions.yml', 'r') as f:
             sessions = yaml.safe_load(f)
@@ -305,7 +306,7 @@ class ProjectsClient(discord.Client):
                             }
                         ]
 
-        total = len(events) + len(final_sessions)
+        total = n_events + len(final_sessions)
         logger.info(f'Generating {len(final_sessions)} events, {total} total')
 
         # Merge all events and give preference to earlier events
