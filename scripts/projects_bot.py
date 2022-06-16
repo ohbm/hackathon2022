@@ -44,7 +44,7 @@ class Project:
         self.client = client
         self.guild = client.guild
 
-        self.key = data['chatchannel']
+        self.key = data['chatchannel'].lower()
         self.title = data['title']
         self.link = data['issue_link']
         self.emoji = emoji
