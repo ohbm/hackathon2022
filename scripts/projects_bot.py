@@ -49,7 +49,7 @@ class Project:
         self.link = data['issue_link']
         self.emoji = emoji
 
-        self.channel = client.projects_channels.get(self.key)
+        self.channels = client.projects_channels.get(self.key)
         self.role = client.projects_roles.get(f'proj-{self.key}')
         self.react = None
 
@@ -59,8 +59,8 @@ class Project:
              f"link: {self.link}")
         if self.role is not None:
             s += f"\nrole: {self.role.id}"
-        if self.channel is not None:
-            s += f"\nchannel: {self.channel.id}"
+        if self.channels is not None:
+            s += f"\nchannels: {[ch.id for ch in self.channels]}"
         if self.react is not None:
             s += f"\nreact: {self.react[1]} on {self.react[0]}"
         return s
@@ -84,15 +84,30 @@ class Project:
         return True
 
     async def ensure_channel(self):
-        if self.channel is not None:
+        has_voice, has_text = False, False
+        if self.channels is None:
+            self.channels = []
+        for ch in self.channels:
+            if isinstance(ch, discord.VoiceChannel):
+                has_voice = True
+            elif isinstance(ch, discord.TextChannel):
+                has_text = True
+        if has_voice and has_text:
             return False
 
         await self.ensure_role()
 
-        self.channel = await self.guild.create_voice_channel(
-            name=self.key,
-            category=self.client.projects_category
-        )
+        if not has_voice:
+            self.channels.append(await self.guild.create_voice_channel(
+                name=self.key,
+                category=self.client.projects_category
+            ))
+        if not has_text:
+            self.channels.append(await self.guild.create_text_channel(
+                name=self.key,
+                category=self.client.projects_category
+            ))
+        return True
 
     async def ensure_channel_permissions(self):
         await self.ensure_channel()
@@ -111,7 +126,8 @@ class Project:
             self.client.roles['staff']: permission_shown,
             self.role: permission_shown,
         }
-        await self.channel.edit(overwrites=overwrites)
+        for ch in self.channels:
+            await ch.edit(overwrites=overwrites)
         return True
 
 
@@ -166,10 +182,11 @@ class ProjectsClient(discord.Client):
             projects_category = await guild.create_category_channel('Projects')
 
         self._projects_category = projects_category
-        self._projects_channels = {
-            c.name: c
-            for c in projects_category.voice_channels
-        }
+        self._projects_channels = {}
+        for ch in projects_category.channels:
+            if ch.name not in self._projects_channels:
+                self._projects_channels[ch.name] = []
+            self._projects_channels[ch.name].append(ch)
         self._projects_roles = {
             role.name: role
             for role in self.guild.roles
