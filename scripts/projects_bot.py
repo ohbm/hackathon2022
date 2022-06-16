@@ -102,11 +102,11 @@ class Project:
                 name=self.key,
                 category=self.client.projects_category
             ))
-        if not has_text:
-            self.channels.append(await self.guild.create_text_channel(
-                name=self.key,
-                category=self.client.projects_category
-            ))
+        # if not has_text:
+        #     self.channels.append(await self.guild.create_text_channel(
+        #         name=self.key,
+        #         category=self.client.projects_category
+        #     ))
         return True
 
     async def ensure_channel_permissions(self):
@@ -394,7 +394,10 @@ class ProjectsClient(discord.Client):
 
             description += ROLES_PROJECT_MESSAGE.format(
                 emoji=project.emoji, title=project.title, link=project.link,
-                key=key, guild=self.guild.id, channel=project.channel.id)
+                key=key, guild=self.guild.id, channel=[
+                    ch for ch in project.channels if 
+                    isinstance(ch, discord.VoiceChannel)
+                ][0].id)
             description += "\n"
 
             project_emojis.append(project.emoji)
