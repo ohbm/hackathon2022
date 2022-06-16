@@ -60,8 +60,9 @@
   id: 003
   type: social
   title: "Coffee break"
-  place: "Queen Margrat Union"
-  description: "Dropping payload, or get your own coffee."
+  place: "Queen Margrat Union/Discord"
+  discord_channel: lounge
+  description: "Join the EMEA group online for coffee!"
 
 -
   id: 004
