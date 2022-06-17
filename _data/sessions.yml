@@ -196,6 +196,7 @@
   discord_channel: stage
   description: "Join the unconference session with friends from EMEA and America! Click to see the speakers."
   long_description: >
+    Pradeep Reddy Raamana — niQC: MR sequence Protocol compliance</br>
     Chris+Alejandro — BIDS Stats</br>
     Sebastian Urchs — Neurobagel: subject level cohort search across datasets</br>
 
@@ -208,7 +209,6 @@
   description: "Join the unconference session with friends from EMEA and APAC! Click to see the speakers."
   long_description: >
     Ghislain Vaillant — Are BIDS derivatives specifications exhaustive enough?</br>
-    Pradeep Reddy Raamana — niQC: MR sequence Protocol compliance</br>
     Dylan Nielson — Fmriprep group report</br>
     Yu-Fang Yang — do we improve Diversity, Equity and inclusiveness by changing conference to hybird format</br>
     NIMARE (James Kent) — NIMARE meta-analysis documentation</br>
