@@ -69,6 +69,9 @@ hubStreamingInfo: ""
 typeoutTextValues: '"June 16-18th, 2022", "Hybrid", ""'
 typeoutFallback: ""
 heroButtons:
+   - {link: "https://docs.google.com/presentation/d/1slod-8FP9cDMS7yG7rVy3viIh3ugqXl0pn8aR1uvlFY/edit#slide=id.g1351f09fa8b_0_0", text: "Where are the projects?"}
+   - {link: "https://docs.google.com/spreadsheets/d/1YO-Vyks3Tvw2-lYVxd_kg9Zb5N5vGl4b1N3aimo5U-A/edit#gid=0", text: "Unconference sign up!"}
+
    - {link: "https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4073", text: "Register"}
   #  - {link: "#about", text: "What is it"}
    - {link: "https://github.com/ohbm/hackathon2022/issues/new/choose", text: "Submit your project"}

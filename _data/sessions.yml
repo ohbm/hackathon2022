@@ -194,7 +194,7 @@
   title: "Unconference - EMEA + Americas"
   place: "Queen Margrat Union / Discord"
   discord_channel: stage
-  description: "Join the unconference session with friends from EMEA and America!"
+  description: "Join the unconference session with friends from EMEA and America! Click to see the speakers."
   long_description: >
     Chris+Alejandro — BIDS Stats</br>
     Sebastian Urchs — Neurobagel: subject level cohort search across datasets</br>
@@ -205,7 +205,7 @@
   title: "Unconference - EMEA + APAC"
   place: "Queen Margrat Union / Discord"
   discord_channel: stage
-  description: "Join the unconference session with friends from EMEA and APAC!"
+  description: "Join the unconference session with friends from EMEA and APAC! Click to see the speakers."
   long_description: >
     Ghislain Vaillant — Are BIDS derivatives specifications exhaustive enough?</br>
     Pradeep Reddy Raamana — niQC: MR sequence Protocol compliance</br>
