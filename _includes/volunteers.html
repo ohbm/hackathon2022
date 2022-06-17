@@ -3,16 +3,15 @@
   {% for section in site.data.volunteers %}
   <div class="content-wrapper">
     <div class="col-lg-8 col-lg-offset-2" style="margin-top: 30px">
-        <span class="animated hiding appear-animation-trigger"></span>
         {% if section.name %}
-        <h4 class="animated hiding" data-animation="fadeInUp" data-delay="0">{{ section.name }}</h4>
+        <h4>{{ section.name }}</h4>
         {% endif %}
         {% if section.description %}
-        <p class="text-justify animated hiding" data-animation="fadeInUp" data-delay="0">{{ section.description }}</p>
+        <p class="text-justify">{{ section.description }}</p>
         {% endif %}
 
         {% for teamMember in section.team %}
-        <div class="effect-wrapper col-md-4 col-sm-6 col-xs-12 cols-centered appear-animation {% if teamMember.liege %}liege{% endif %}">
+        <div class="effect-wrapper col-md-4 col-sm-6 col-xs-12 cols-centered {% if teamMember.liege %}liege{% endif %}">
             <div class="zoe-effect" data-toggle="modal" data-target="#speakerDetail-{{ teamMember.id }}">
                 <figure class="waves-effect waves-block waves-light" style="background-image: url({{ site.baseurl | append: '/img/team/2022/' | append: teamMember.thumbnailUrl }})">
                     <div class="overlay solid-overlay"></div>
