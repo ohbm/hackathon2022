@@ -214,6 +214,17 @@
     NIMARE (James Kent) — NIMARE meta-analysis documentation</br>
 
 -
+  id: 2033
+  type: traintrack
+  title: "Unconference - EMEA + APAC"
+  place: "Queen Margrat Union / Discord"
+  discord_channel: stage
+  description: "Join the unconference session with friends from EMEA and APAC! Click to see the speakers."
+  long_description: >
+
+
+
+-
   id: 204
   type: hacktrack
   title: "Hacking"
