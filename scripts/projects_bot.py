@@ -312,16 +312,32 @@ class ProjectsClient(discord.Client):
                         if 'discord_channel' not in sessions[session_id]:
                             continue
 
-                        key = f'{start_time} {HUBS[hub]} {session_id}'
-                        if key in events:
-                            del events[key]
-                            continue
-
                         title = sessions[session_id]['title']
                         title = f'[{HUBS[hub]}] {title} #{session_id}'
                         channel = sessions[session_id]['discord_channel']
                         channel = self._channels[channel]
                         description = sessions[session_id]['description']
+
+                        key = f'{start_time} {HUBS[hub]} {session_id}'
+                        if key in events:
+                            edit = {}
+                            if title != events[key].name:
+                                edit['name'] = title
+                            if description != events[key].description:
+                                edit['description'] = description
+                            if channel != events[key].channel:
+                                edit['channel'] = channel
+                            if end_time != events[key].end_time:
+                                edit['end_time'] = end_time
+                            if edit:
+                                await events[key].edit(
+                                    channel=channel, # needs to be set anyway
+                                    **edit
+                                )
+
+                            del events[key]
+                            continue
+
 
                         final_sessions += [
                             {
