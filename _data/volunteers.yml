@@ -108,7 +108,7 @@
       surname: "Rosenblatt"
       title: "Buddy System"
       location: "New Haven, CT, USA"
-      thumbnailUrl: 
+      thumbnailUrl: matt_rosenblatt.png
       social:
         - {name: "twitter", link: "https://twitter.com/rosenblattmatt"}
     - id: 15
