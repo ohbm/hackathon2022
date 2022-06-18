@@ -112,6 +112,31 @@
       social:
         - {name: "twitter", link: "https://twitter.com/rosenblattmatt"}
     - id: 15
+      name: "Andrea"
+      surname: "Gondova"
+      title: "OSSIG Secretary Elect"
+      location: "Paris, France"
+      thumbnailUrl: andrea_gondova.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/reaGondova"}
+    - id: 16
+      name: "Benjamin"
+      surname: "De Leener"
+      title: "OSSIG Treasurer"
+      location: "Montreal, Canada"
+      thumbnailUrl: benjamin_de_leener.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/BenDeLeener"}
+    - id: 17
+      name: "Michele"
+      surname: "Svanera"
+      title: "Local Organization"
+      location: "Glasgow, Scotland"
+      thumbnailUrl: michele_svanera.png
+      social:
+        - {name: "twitter", link: "https://twitter.com/rockNroll87q"}
+        - {name: "github", link: "https://github.com/rockNroll87q"}
+    - id: 18
       name: "Remi"
       surname: "Gau"
       title: "Hybridization"
