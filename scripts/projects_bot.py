@@ -114,7 +114,11 @@ class Project:
             view_channel=True
         )
         overwrites = {
-            self.guild.default_role: permission_hidden,
+            self.guild.default_role: (
+                permission_hidden
+                if not self.client.sleep_mode
+                else permission_shown
+            ),
             self.client.roles['muted']: permission_hidden,
             self.client.roles['carl']: permission_shown,
             self.client.roles['hackathon-bot']: permission_shown,
@@ -132,6 +136,7 @@ class ProjectsClient(discord.Client):
                  guild: int, roles_channel: int,
                  just_ensure_channels: bool = False,
                  just_ensure_events: bool = False,
+                 sleep_mode: bool = False,
                  *args, **kwargs):
 
         intents = discord.Intents.default()
@@ -141,6 +146,7 @@ class ProjectsClient(discord.Client):
         self._just_ensure_events = just_ensure_events
         self._guild_id = guild
         self._roles_channel_id = roles_channel
+        self._sleep_mode = sleep_mode
         self._ready_to_bot = False
 
     async def cache_structures(self):
@@ -226,6 +232,10 @@ class ProjectsClient(discord.Client):
     @property
     def roles(self) -> Dict[str, discord.Role]:
         return self._roles
+
+    @property
+    def sleep_mode(self) -> bool:
+        return self._sleep_mode
 
     @discord.ext.tasks.loop(minutes=1)
     async def on_check_again(self):
@@ -377,7 +387,7 @@ class ProjectsClient(discord.Client):
         if not just_something or self._just_ensure_events:
             await self.ensure_events()
 
-        if just_something:
+        if just_something or self._sleep_mode:
             await self.close()
             return
 
@@ -502,8 +512,7 @@ if __name__ == '__main__':
     load_dotenv()
 
     guild = int(os.getenv('GUILD', ''))
-    # roles_channel = 920383461829795929
     roles_channel = int(os.getenv('ROLES_CHANNEL', ''))
 
-    client = ProjectsClient(guild, roles_channel)
+    client = ProjectsClient(guild, roles_channel, sleep_mode=True)
     client.run(os.getenv('DISCORD_TOKEN', ''))

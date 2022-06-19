@@ -11,7 +11,8 @@ if __name__ == '__main__':
 
     client = ProjectsClient(
         guild, roles_channel,
-        just_ensure_channels=True,
-        just_ensure_events=True
+        # just_ensure_channels=True,
+        # just_ensure_events=True
+        sleep_mode=True
     )
     client.run(token)
